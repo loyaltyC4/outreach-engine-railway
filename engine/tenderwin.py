@@ -169,8 +169,13 @@ def leads_from_results(results, trade, state):
         own = sorted({e.lower().strip(".") for e in EMAIL_RX.findall(md) if reg_domain(e.split("@")[1]) == dom})
         if not own:
             continue
-        title = (r.get("title") or (r.get("metadata") or {}).get("title") or dom.split(".")[0]).strip()
-        company = re.sub(r"\s*[|\-:–—].*$", "", title).strip()[:60] or dom
+        title = (r.get("title") or (r.get("metadata") or {}).get("title") or "").strip()
+        company = re.sub(r"\s*[|\-:–—].*$", "", title).strip()[:60]
+        # 2026-10-29: SEO lead-gen titles ("Get a Fast Cleaning Quote in Perth") tank the Jev
+        # bids_gov/owner_reads scores (~10% pass). Prefer a clean name from the domain instead.
+        if len(company.split()) < 2 or re.search(r"quote|contact us|best |top \d|near me|\bcheap\b|\bfree\b", company, re.I):
+            part = dom.split(".")[0]
+            company = " ".join(w.capitalize() for w in re.split(r"[-_]+", part) if w) or dom
         out.append({"email": own[0], "company": company, "contact_name": "", "trade": trade, "state": state,
                     "source": "firecrawl:" + dom})
     return out
