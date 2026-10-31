@@ -126,9 +126,28 @@ def score(lead):
 
 
 def seed_rows():
+    raw = []
     try:
         raw = json.load(open(SEED_JSON))
     except Exception:
+        raw = []
+    # 2026-11-01: live lead feed via env (base64 JSON list) so new leads need no rebuild.
+    import base64 as _b64
+    _extra = os.environ.get("LEADS_EXTRA_B64", "").strip()
+    if _extra:
+        try:
+            rows = [x for x in json.loads(_b64.b64decode(_extra)) if isinstance(x, dict) and x.get("domain") and (x.get("emails") or x.get("email"))]
+            have = {(r.get("domain") or "").lower() for r in raw if isinstance(r, dict)}
+            for r in rows:
+                if (r.get("domain") or "").lower() in have:
+                    continue
+                if not r.get("emails") and r.get("email"):
+                    r["emails"] = [r["email"]]
+                raw.append(r)
+            print(f"Seed feed: +{len(raw)} via LEADS_EXTRA_B64")
+        except Exception as e:
+            print("WARN LEADS_EXTRA_B64 ignored:", str(e)[:120])
+    if not isinstance(raw, list):
         return []
     out = []
     for r in raw:

@@ -1,0 +1,85 @@
+key,org,org_daily_limit,email,inbox_created,first_sent_agentmail,age_days,sender_first_send,tier_agentmail_age,tier_sender_state,sent_today_agentmail
+1,Bidcheck organization,100,david.bidcheck@agentmail.to,2026-10-04,2026-10-07,22,2026-10-22,25,15,1
+1,Bidcheck organization,100,nadia.bidcheck@agentmail.to,2026-10-04,2026-10-07,22,2026-10-22,25,15,1
+1,Bidcheck organization,100,gareth.bidcheck@agentmail.to,2026-10-04,2026-10-05,24,2026-10-22,25,15,0
+2,Bidcheck,100,jason.bidcheck@agentmail.to,2026-10-04,2026-10-05,24,2026-10-22,25,15,1
+2,Bidcheck,100,grant.bidcheck@agentmail.to,2026-10-04,2026-10-06,23,2026-10-22,25,15,1
+2,Bidcheck,100,devan.bidcheck@agentmail.to,2026-10-04,2026-10-06,23,2026-10-22,25,15,1
+3,Bidcheck Org,100,kyle.bidcheck@agentmail.to,2026-10-04,2026-10-05,24,2026-10-22,25,15,1
+3,Bidcheck Org,100,luka.bidcheck@agentmail.to,2026-10-04,2026-10-07,22,2026-10-22,25,15,0
+3,Bidcheck Org,100,trybidcheck@agentmail.to,2026-10-03,2026-10-07,22,2026-10-22,25,15,1
+4,Bidcheck Pty,100,liam.bidcheck@agentmail.to,2026-10-04,2026-10-05,24,2026-10-22,25,15,1
+4,Bidcheck Pty,100,brad.bidcheck@agentmail.to,2026-10-04,2026-10-05,24,2026-10-22,25,15,1
+4,Bidcheck Pty,100,gobidcheck@agentmail.to,2026-10-03,2026-10-07,22,2026-10-22,25,15,1
+5,,100,willem.bidcheck31@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,1
+5,,100,vusi.bidcheck31@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,1
+5,,100,unathi.bidcheck31@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,1
+6,,100,karabo.bidcheck33@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,1
+6,,100,ayanda.bidcheck33@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,1
+6,,100,brian.bidcheck33@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+7,,100,palesa.bidcheck34@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+7,,100,neo.bidcheck34@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+7,,100,tumi.bidcheck34@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+8,,100,refiloe.bidcheck35@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+8,,100,zane.bidcheck35@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+8,,100,sello.bidcheck35@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+9,,100,james.bidcheck36@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+9,,100,fatima.bidcheck36@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+9,,100,pieter.bidcheck36@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+10,,100,andile.bidcheck37@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+10,,100,nolwazi.bidcheck37@agentmail.to,2026-10-06,2026-10-08,21,2026-10-22,25,15,0
+10,,100,amogelang.bidcheck37@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+11,,100,vusi.bidcheck40@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+11,,100,thandi.bidcheck40@agentmail.to,2026-10-06,2026-10-08,21,2026-10-22,25,15,0
+11,,100,siya.bidcheck40@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+12,,100,thandi.bidcheck54x188@agentmail.to,2026-10-06,2026-10-14,15,2026-10-22,25,15,0
+12,,100,siya.bidcheck54x029@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+12,,100,rudo.bidcheck5426@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+13,,100,amina.bidcheck57x132@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+13,,100,franco.bidcheck57x094@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+13,,100,jade.bidcheck5722@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+14,,100,palesa2.bidcheck2155@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+14,,100,zane2.bidcheck3523@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+14,,100,thando.bidcheck9153@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+15,,100,palesa2.bidcheck7053@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+15,,100,zane2.bidcheck5841@agentmail.to,2026-10-06,2026-10-08,21,2026-10-22,25,15,0
+15,,100,lerato2.bidcheck8375@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+18,David’s organization,100,lerato.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+18,David’s organization,100,sipho.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+18,David’s organization,100,thabo.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+19,Gareth’s organization,100,bongani.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+19,Gareth’s organization,100,nomvula.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+19,Gareth’s organization,100,sibusiso.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+20,Kagiso’s organization,100,themba.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+20,Kagiso’s organization,100,mandla.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+20,Kagiso’s organization,100,zanele.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+21,Lizele’s organization,100,jabulani.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+21,Lizele’s organization,100,nokuthula.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+21,Lizele’s organization,100,philani.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+22,Nadia’s organization,100,tebogo.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+22,Nadia’s organization,100,lindiwe.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+22,Nadia’s organization,100,simphiwe.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+23,,10,lwandle.bidcheck5017@agentmail.to,2026-10-06,,,not in sender state,8,8,0
+24,,10,hope.bidcheck5134@agentmail.to,2026-10-06,,,not in sender state,8,8,0
+25,,10,amina.bidcheck5362@agentmail.to,2026-10-06,,,not in sender state,8,8,0
+26,,10,vusi.bidcheck5523@agentmail.to,2026-10-06,,,not in sender state,8,8,0
+27,,10,mina.bidcheck5613@agentmail.to,2026-10-06,,,not in sender state,8,8,0
+28,,10,nomsa.bidcheck1187@agentmail.to,2026-10-06,,,not in sender state,8,8,0
+29,Chikondi’s organization,100,ollie.marsh@agentmail.to,2026-10-23,2026-10-25,4,not in sender state,8,8,0
+29,Chikondi’s organization,100,mia.hartley@agentmail.to,2026-10-23,2026-10-23,6,not in sender state,8,8,0
+29,Chikondi’s organization,100,bidcheck@agentmail.to,2026-10-02,2026-10-03,26,not in sender state,25,8,0
+30,Devan’s organization,100,selfishaspect334@agentmail.to,2026-10-26,2026-10-26,3,not in sender state,8,8,0
+30,Devan’s organization,100,helplessfarmer615@agentmail.to,2026-10-26,,,not in sender state,8,8,0
+30,Devan’s organization,100,tumelomahlangu.bidcheck@agentmail.to,2026-10-06,,,not in sender state,8,8,0
+31,David’s organization,100,lerato.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+31,David’s organization,100,sipho.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+31,David’s organization,100,thabo.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+32,Gareth’s organization,100,bongani.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+32,Gareth’s organization,100,nomvula.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+32,Gareth’s organization,100,sibusiso.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+33,Nadia’s organization,100,tebogo.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+33,Nadia’s organization,100,lindiwe.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+33,Nadia’s organization,100,simphiwe.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+34,Kagiso’s organization,100,themba.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+34,Kagiso’s organization,100,mandla.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
+34,Kagiso’s organization,100,zanele.bidcheck@agentmail.to,2026-10-06,2026-10-06,23,2026-10-22,25,15,0
