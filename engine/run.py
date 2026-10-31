@@ -183,8 +183,12 @@ def process_inbound(inbox_key, sent_addrs):
                     st("paused", {})["complaint"] = {"ts": iso(), "inbox": iid, "original_subject": orig}
                 else:
                     st("foreign_complaints", []).append({"ts": iso(), "inbox": iid, "original_subject": orig})
-                    notify(inbox_key, f"[{CAMP.upper()}] spam complaint about mail NOT sent by this engine",
-                           f"Inbox: {iid}\nOriginal subject: {orig}\nSomething else is sending from this inbox; complaints hurt every campaign that shares it.")
+                    # 2026-10-31: alert only FRESH foreign complaints (<24h) — redeployed containers otherwise
+                    # re-alert the owner on every historical complaint in the inbox (duplicate-alert flood).
+                    _fresh = ts[:19] >= (now() - dt.timedelta(hours=24)).strftime("%Y-%m-%dT%H:%M:%S")
+                    if _fresh and E("FOREIGN_COMPLAINT_NOTIFY", "1") == "1":
+                        notify(inbox_key, f"[{CAMP.upper()}] spam complaint about mail NOT sent by this engine",
+                               f"Inbox: {iid}\nOriginal subject: {orig}\nSomething else is sending from this inbox; complaints hurt every campaign that shares it.")
             elif kind == "stop":
                 if dom and dom not in sup["domains"] and dom not in FREE_MAIL:
                     sup["domains"].append(dom)
