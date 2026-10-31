@@ -62,9 +62,24 @@ def _h(email, mod):
     return int(hashlib.sha1((email or "").lower().encode()).hexdigest()[:8], 16) % mod
 
 
+_JUNK_TITLE = ("payment","shipping","options","contact","about","policy","terms","privacy","faq","home",
+               "welcome","cart","checkout","account","login","delivery","returns","blog","news","store","shop online","official site")
+
+def _clean_name(lead):
+    raw = (lead.get("name") or lead.get("store") or "").strip()
+    dom = (lead.get("domain") or "").lower()
+    low = raw.lower()
+    if (not raw) or (len(raw) < 3) or any(low.startswith(w) or low == w or f"{w} " in low for w in _JUNK_TITLE) or raw.count(" ") > 5:
+        if dom:
+            part = dom.split(".")[0].replace("-", " ").replace("_", " ")
+            return " ".join(w.capitalize() for w in part.split() if w)
+        return "your store"
+    return raw
+
+
 def render(lead, send_index=0):
     """Returns (subject, body). Arm + CTA mode are stable per lead; subject rotates by send_index."""
-    store = (lead.get("name") or lead.get("store") or lead.get("domain") or "your store").strip()
+    store = _clean_name(lead)
     email = lead.get("email") or ""
     country = lead.get("country") or ""
     arm = "ABC"[_h(email, 3)]
