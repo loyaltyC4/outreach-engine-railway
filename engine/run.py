@@ -268,7 +268,7 @@ def score_into_pool(cands, pool, seen_leads, limit, label):
             seen_leads[lead["email"]] = 1
             n_try += 1
             if s["ok"]:
-                lead.update({"score": round(s["takes_clients"] * s["owner_reads"], 3), "added": iso(), "via": label})
+                lead.update({"score": s.get("score", round(sum(v for k, v in s.items() if k not in ("ok",)) / max(len(s) - 1, 1), 3)), "added": iso(), "via": label})
                 pool.append(lead)
                 n_ok += 1
     return n_try, n_ok
@@ -291,13 +291,14 @@ def refill(pool, seen_leads, sent_all, sup):
     cur = meta.get("harvest_cursor", 0)
     fc = Firecrawl()
     found = []
-    for i in range(HARVEST_PER_RUN):
-        qq, city, state = qs[(cur + i) % len(qs)]
-        res = fc.search(qq)
+    batch = [qs[(cur + i) % len(qs)] for i in range(HARVEST_PER_RUN)]
+    with cf.ThreadPoolExecutor(min(len(batch), 8)) as ex:
+        results = list(ex.map(lambda t: fc.search(t[0]), batch))
+    for (qq, *rest), res in zip(batch, results):
         if res is None:
             info["harvest"] = "firecrawl unavailable"
-            break
-        found += C.leads_from_results(res, city, state)
+            continue
+        found += C.leads_from_results(res, *rest)
     meta["harvest_cursor"] = (cur + HARVEST_PER_RUN) % len(qs)
     found = [l for l in {l["email"]: l for l in found}.values() if l["email"] not in sent_all and l["email"] not in seen_leads and l["email"].split("@")[1] not in sup["domains"]]
     t, ok = score_into_pool(found, pool, seen_leads, SCORE_BATCH, "harvest")
@@ -396,14 +397,21 @@ def main():
         return
     if MODE == "prescore":
         target = int(E("PRESCORE_TARGET", "1500"))
-        while len(pool_unsent(pool, sent_all, sup)) < target:
+        stale = 0
+        while len(pool_unsent(pool, sent_all, sup)) < target and stale < 4:
+            before = len(pool)
             info = refill(pool, seen_leads, sent_all, sup)
             log("prescore step:", json.dumps(info), "pool", len(pool))
-            if not info.get("seed_scored"):
-                break
+            stale = stale + 1 if len(pool) == before else 0
             flush()
     refill_info = refill(pool, seen_leads, sent_all, sup) if MODE != "prescore" else {}
     log("refill:", json.dumps(refill_info))
+    if E("RESET_PAUSE", "") == "1" and not st("meta", {}).get("reset_done"):
+        # One-time reset of the guard state after inboxes were merged with another sender (its bounces were counted here).
+        st("paused", {}).clear()
+        st("bounces", []).clear()
+        st("meta", {})["reset_done"] = iso()
+        log("RESET_PAUSE applied once: cleared paused + bounces state")
     reason = guard(inbox_key, last48, set(sent_state))
     sent_today_total = sum(per_inbox_today.values())
     mine_today = sum(1 for v in sent_state.values() if lday(v["ts"]) == lday(iso()))

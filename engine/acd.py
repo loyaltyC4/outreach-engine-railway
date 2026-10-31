@@ -16,26 +16,26 @@ SITE = "https://agedcaredirect.com.au"
 STATE_NAME = {"NSW": "NSW", "VIC": "Victoria", "QLD": "Queensland", "WA": "Western Australia", "SA": "South Australia",
               "TAS": "Tasmania", "ACT": "the ACT", "NT": "the Northern Territory"}
 
-# ---- copy (v1). Subject and body are plain text on purpose: best deliverability for a cold first touch. ----
-COPY = {
-    "subject": "new client introductions for {name}",
-    "body": (
-        "Hi,\n\n"
-        "I'm Sylvester at Aged Care Direct. We connect Australians who need aged care and disability support with providers, "
-        "and we're building a short list of local providers{where} that we can introduce new clients to.\n\n"
-        "If {name} has capacity for new clients, reply with the areas you cover and the services you offer, and I'll add you to the list. "
-        "Introductions depend on fit and location.\n\n"
-        "If this isn't relevant, reply \"remove\" and you won't hear from me again.\n\n"
-        "Sylvester\nAged Care Direct\n{site}\n{addr}"
-    ),
-}
+# ---- copy (v2, 2026-10-28: cold-email + marketing-psychology pass). Plain text: best deliverability for a cold first touch.
+# Truthful on purpose: no invented demand/urgency, just a specific, low-friction ask (reciprocity: minimal to answer).
+SUBJECTS = ["shortlist question for {name}", "quick one for {name}", "capacity check, {name}"]
+BODY = (
+    "Hi,\n\n"
+    "I'm Sylvester at Aged Care Direct. We introduce people who need aged care or disability support directly to providers, "
+    "and I'm putting together the shortlist{where} now.\n\n"
+    "If {name} has room for new clients, reply with what you cover (services + areas) and I'll add you. That's it, no forms.\n\n"
+    "Reply \"remove\" and you won't hear from me again.\n\n"
+    "Sylvester\nAged Care Direct\n{site}\n{addr}"
+)
 
 
 def render(lead):
-    where = " in " + STATE_NAME[lead["state"]] if lead.get("state") in STATE_NAME else ""
+    import random
+    where = " for " + STATE_NAME[lead["state"]] if lead.get("state") in STATE_NAME else ""
     name = html.unescape(lead["name"])
-    return (COPY["subject"].format(name=name),
-            COPY["body"].format(name=name, where=where, site=SITE, addr=FOOTER_ADDR))
+    subj = random.choice(SUBJECTS).format(name=name)
+    body = BODY.format(name=name, where=where, site=SITE, addr=FOOTER_ADDR)
+    return subj, body
 
 
 # ---- qualification ----
@@ -71,6 +71,7 @@ def score(lead):
     s = jev(st, JEV_Q)
     if not s:
         return None
+    s["score"] = round(s["takes_clients"] * s["owner_reads"], 3)
     s["ok"] = s["takes_clients"] >= MIN_TAKES and s["owner_reads"] >= MIN_READS
     return s
 
