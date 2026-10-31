@@ -148,7 +148,9 @@ def seed_rows():
             continue
         name = re.sub(r"\s*[|\-:–—].*$", "", r.get("name") or r["domain"].split(".")[0]).strip()[:40]
         out.append({"email": e, "store": name or r["domain"], "domain": r["domain"], "country": r["country"],
-                     "products": r.get("products"), "reviews": r.get("reviews"), "source": "seed"})
+                     "products": r.get("products"), "reviews": r.get("reviews"),
+                     "snippet": r.get("snippet"), "source_tag": r.get("source_tag"), "platform": r.get("platform"),
+                     "source": "seed"})
     return out
 
 
