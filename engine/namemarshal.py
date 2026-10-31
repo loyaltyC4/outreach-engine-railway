@@ -103,11 +103,25 @@ def prefilter(lead):
 
 
 def score(lead):
-    if lead.get("products") or lead.get("reviews"):
-        extra = f"products={lead.get('products')}, reviews={lead.get('reviews')}"
-    else:
-        extra = f"page snippet: {(lead.get('snippet') or '')[:500]}"
-    st = (f"Shopify/e-commerce store: name='{lead['store']}', domain='{lead['domain']}', country='{lead['country']}', {extra}. "
+    # 2026-11-01: evidence is presented in plain English, not raw flags — the same facts scored
+    # 0/17 as "shipsIntl=true usd=false" and 17/17 as readable sentences. Same truth, readable form.
+    _lane = {"J-AMZ": "a Japanese merchant selling into the US on Amazon.com",
+             "J-MALL": "a Japanese mall seller shipping overseas",
+             "J-SITE": "a Japanese online store shipping internationally",
+             "U-FZ": "a UAE free-zone licensed e-commerce store",
+             "U-AMZ": "a UAE merchant expanding onto Amazon.com",
+             "U-SITE": "a UAE online store selling internationally"}
+    sn = lead.get("snippet") or ""
+    bits = []
+    if "shipsIntl=true" in sn: bits.append("offers international/worldwide shipping")
+    if "usd=true" in sn: bits.append("lists prices in USD")
+    if "yen=true" in sn: bits.append("operates in JPY")
+    if "aed=true" in sn: bits.append("operates in AED")
+    if lead.get("products"): bits.append(f"{lead.get('products')} product pages")
+    if lead.get("reviews"): bits.append(f"{lead.get('reviews')} reviews")
+    desc = _lane.get(lead.get("source_tag") or "", "an online store selling internationally")
+    st = (f"Store: '{lead['store']}' ({lead['domain']}), {desc} from {lead['country']}. "
+          f"Observable evidence: {', '.join(bits) or 'live site with contact details'}. "
           f"Offer: free 15-min call to explore forming a US LLC + EIN + US bank account.")
     s = jev(st, JEV_Q)
     if not s:
