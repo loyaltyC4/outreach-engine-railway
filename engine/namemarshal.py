@@ -57,18 +57,10 @@ BODY_V3 = (
 )
 
 
-def render(lead):
-    import random
-    store = html.unescape(lead["store"])
-    cn = COUNTRY_NAME.get(lead["country"], lead["country"])
-    use_v3 = int(hashlib.sha1((lead.get("email") or "").lower().encode()).hexdigest()[:8], 16) % 100 < 50
-    if use_v3:
-        subj = random.choice(SUBJECTS_V3).format(store=store)
-        body = BODY_V3.format(store=store, country=cn, pain=PAIN_V3.get(lead["country"], "a non-US payout account gets flagged more often"), site=SITE)
-    else:
-        subj = random.choice(SUBJECTS).format(store=store)
-        body = BODY.format(store=store, country=cn, pain=PAIN.get(lead["country"], "extra friction on every US sale"), site=SITE)
-    return subj, body
+def render(lead, send_index=0):
+    """Delegate to the owner-approved pack (nm_pack.py)."""
+    import nm_pack
+    return nm_pack.render(lead, send_index)
 
 
 # ---- qualification ----

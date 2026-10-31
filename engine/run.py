@@ -72,11 +72,19 @@ def bootstrap():
 
 # ---------------- mailboxes ----------------
 def discover():
+    import re as _re
+    allow = E("INBOX_ALLOW_REGEX", "")
+    rx = _re.compile(allow) if allow else None
     ib = {}
     for k in KEYS:
         c, d = am(k, "GET", "/inboxes?limit=100")
         for x in d.get("inboxes", []) if c == 200 else []:
-            ib[x.get("inbox_id") or x.get("email")] = k
+            iid = x.get("inbox_id") or x.get("email")
+            if rx and not rx.search(iid):
+                continue
+            ib[iid] = k
+    if rx:
+        log(f"inbox allowlist [{allow}]: {len(ib)} inboxes in use")
     return ib
 
 
@@ -166,7 +174,12 @@ def process_inbound(inbox_key, sent_addrs):
                 c2, full = am(k, "GET", f"/inboxes/{q(iid)}/messages/{q(mid)}")
                 txt = " ".join(str(full.get(x) or "") for x in ("text", "extracted_text", "html")) if c2 == 200 else ""
                 orig = (re.search(r"Subject:\s*([^\n\r]{0,160})", txt) or [None, ""])[1]
-                if any(h in orig.lower() for h in C.REPLY_HINTS):
+                _ss = st("sent", {})
+                _cut21 = (now() - dt.timedelta(days=21)).strftime("%Y-%m-%dT%H:%M:%S")
+                _ours_recently = any(
+                    v.get("inbox") == iid and str(v.get("ts", ""))[:19] >= _cut21
+                    for v in _ss.values())
+                if any(h in orig.lower() for h in C.REPLY_HINTS) and _ours_recently:
                     st("paused", {})["complaint"] = {"ts": iso(), "inbox": iid, "original_subject": orig}
                 else:
                     st("foreign_complaints", []).append({"ts": iso(), "inbox": iid, "original_subject": orig})
@@ -291,7 +304,10 @@ def refill(pool, seen_leads, sent_all, sup):
     cur = meta.get("harvest_cursor", 0)
     fc = Firecrawl()
     found = []
-    batch = [qs[(cur + i) % len(qs)] for i in range(HARVEST_PER_RUN)]
+    batch = [qs[(cur + i) % len(qs)] for i in range(HARVEST_PER_RUN)] if HARVEST_PER_RUN > 0 and qs else []
+    if not batch:
+        info["harvest"] = "disabled"
+        return info
     with cf.ThreadPoolExecutor(min(len(batch), 8)) as ex:
         results = list(ex.map(lambda t: fc.search(t[0]), batch))
     for (qq, *rest), res in zip(batch, results):
