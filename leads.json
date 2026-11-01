@@ -464,5 +464,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=55"
+ },
+ {
+  "domain": "hanumanseafood.com",
+  "name": "Seafood Supplier Japan",
+  "country": "JP",
+  "email": "export@hanumanseafood.com",
+  "emails": [
+   "export@hanumanseafood.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 61,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=61"
  }
 ]
