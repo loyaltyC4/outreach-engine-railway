@@ -512,5 +512,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=428"
+ },
+ {
+  "domain": "japaneseteafarm.com",
+  "name": "Customer Service",
+  "country": "JP",
+  "email": "sales@japaneseteafarm.com",
+  "emails": [
+   "sales@japaneseteafarm.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 46,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=46"
  }
 ]
