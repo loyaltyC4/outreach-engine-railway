@@ -656,5 +656,53 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=145"
+ },
+ {
+  "domain": "chefknivestogo.com",
+  "name": "Chef Knives To Go: Japanese Kitchen Knives",
+  "country": "JP",
+  "email": "info@chefknivestogo.com",
+  "emails": [
+   "info@chefknivestogo.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0"
+ },
+ {
+  "domain": "morihata.com",
+  "name": "Wholesale Japanese Products",
+  "country": "JP",
+  "email": "info@morihata.com",
+  "emails": [
+   "info@morihata.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0"
+ },
+ {
+  "domain": "yurimatcha.com",
+  "name": "Ippodo Matcha: 9 Blends & Ratings",
+  "country": "JP",
+  "email": "hello@yurimatcha.com",
+  "emails": [
+   "hello@yurimatcha.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=true catalogue=0"
  }
 ]
