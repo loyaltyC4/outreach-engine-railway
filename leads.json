@@ -352,5 +352,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=113"
+ },
+ {
+  "domain": "toytokyo.com",
+  "name": "TOY TOKYO",
+  "country": "JP",
+  "email": "sales@toytokyo.com",
+  "emails": [
+   "sales@toytokyo.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 117,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=117"
  }
 ]
