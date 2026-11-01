@@ -74,7 +74,9 @@ def bootstrap():
 def discover():
     import re as _re
     allow = E("INBOX_ALLOW_REGEX", "")
+    deny = E("INBOX_DENY_REGEX", "")
     rx = _re.compile(allow) if allow else None
+    rx_deny = _re.compile(deny) if deny else None
     ib = {}
     for k in KEYS:
         c, d = am(k, "GET", "/inboxes?limit=100")
@@ -82,9 +84,11 @@ def discover():
             iid = x.get("inbox_id") or x.get("email")
             if rx and not rx.search(iid):
                 continue
+            if rx_deny and rx_deny.search(iid):
+                continue
             ib[iid] = k
-    if rx:
-        log(f"inbox allowlist [{allow}]: {len(ib)} inboxes in use")
+    if rx or rx_deny:
+        log(f"inbox filter allow=[{allow}] deny=[{deny}]: {len(ib)} inboxes in use")
     return ib
 
 
