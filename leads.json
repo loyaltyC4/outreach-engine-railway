@@ -1,917 +1,340 @@
 [
  {
-  "domain": "dubaionlinecart.ae",
-  "country": "AE",
-  "name": "Dubai Best Online Store",
-  "emails": [
-   "sales@dubaionlinecart.ae"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "noon.com",
-  "country": "AE",
-  "name": "noon Online Shopping UAE",
-  "emails": [
-   "supportcare@noon.com",
-   "care@noon.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=false"
- },
- {
-  "domain": "vaoconceptstore.com",
-  "country": "AE",
-  "name": "VAO",
-  "emails": [
-   "info@vaoconceptstore.com"
-  ],
-  "products": 30,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=true"
- },
- {
-  "domain": "sanddollardubai.com",
-  "country": "AE",
-  "name": "Designer Clothing Delivery Same Day",
-  "emails": [
-   "returns@sanddollardubai.com",
-   "info@sanddollardubai.com"
-  ],
-  "products": 12,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=true"
- },
- {
-  "domain": "meydanfz.ae",
-  "country": "AE",
-  "name": "Ecommerce Business Setup in Dubai",
-  "emails": [
-   "setup@meydanfz.ae"
-  ],
-  "products": 1,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=true"
- },
- {
-  "domain": "shams.ae",
-  "country": "AE",
-  "name": "Starting an E",
-  "emails": [
-   "info@shams.ae"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true jp=false aed=false"
- },
- {
-  "domain": "rakez.com",
-  "country": "AE",
-  "name": "E",
-  "emails": [
-   "info@rakez.com",
-   "customerservice@rakez.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=true"
- },
- {
-  "domain": "dubaifreezonecompany.com",
-  "country": "AE",
-  "name": "Tops Free Zones in UAE for E",
-  "emails": [
-   "enquiry@dubaifreezonecompany.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=false"
- },
- {
-  "domain": "shoppre.com",
-  "country": "AE",
-  "name": "Online Shopping in India Delivery to Dubai",
-  "emails": [
-   "support@shoppre.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "globalshopaholics.com",
-  "country": "AE",
-  "name": "Shop and Ship to UAE",
-  "emails": [
-   "help@globalshopaholics.com",
-   "%20help@globalshopaholics.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "ups.com",
-  "country": "AE",
-  "name": "International Shipping Services",
-  "emails": [
-   "upsexpresscriticallnsidesales@ups.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "uaeitstore.com",
-  "country": "AE",
-  "name": "Shipping and Delivery",
-  "emails": [
-   "info@uaeitstore.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=true"
- },
- {
-  "domain": "shipoutfromusa.com",
-  "country": "AE",
-  "name": "SOFU Free UAE virtual address to shop from top internat",
-  "emails": [
-   "support@shipoutfromusa.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=false"
- },
- {
-  "domain": "sevenseasworldwide.com",
-  "country": "AE",
-  "name": "Shipping to Abu Dhabi from USA",
-  "emails": [
-   "customerservice@sevenseasworldwide.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "emiratespost.ae",
-  "country": "AE",
-  "name": "Contact Us",
-  "emails": [
-   "customer.care@emiratespost.ae",
-   "media@emiratespost.ae"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=false"
- },
- {
-  "domain": "atyabalmarshoud.com",
-  "country": "AE",
-  "name": "Shipping & Delivery",
-  "emails": [
-   "online@atyabalmarshoud.com"
-  ],
-  "products": 34,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=false"
- },
- {
-  "domain": "spcfz.ae",
-  "country": "AE",
-  "name": "Sharjah Publishing City: Business Setup in the UAE",
-  "emails": [
-   "more@spcfz.ae"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=true"
- },
- {
-  "domain": "shamsfz.ae",
-  "country": "AE",
-  "name": "Shams Free Zone: Business Setup in UAE, Fully Online in",
-  "emails": [
-   "info@shamsfz.ae"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=false"
- },
- {
-  "domain": "freezonemarket.ae",
-  "country": "AE",
-  "name": "Contact Us: Talk to a UAE setup advisor",
-  "emails": [
-   "info@freezonemarket.ae"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=false"
- },
- {
-  "domain": "uaefreezones.com",
-  "country": "AE",
-  "name": "Contact UAE Free Zones",
-  "emails": [
-   "info@uaefreezones.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=false"
- },
- {
-  "domain": "theodore.ae",
-  "country": "AE",
-  "name": "Contact Us",
-  "emails": [
-   "customerservice.ae@theodore.ae"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "shopssthelabel.com",
-  "country": "AE",
-  "name": "Contact",
-  "emails": [
-   "info@shopssthelabel.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "velhaya.com",
-  "country": "AE",
-  "name": "Contact Us",
-  "emails": [
-   "info@velhaya.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=true"
- },
- {
-  "domain": "beautytribe.com",
-  "country": "AE",
-  "name": "Beauty Tribe UAE",
-  "emails": [
-   "info@beautytribe.com"
-  ],
-  "products": 96,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=true"
- },
- {
-  "domain": "naomidsouza.com",
-  "country": "AE",
-  "name": "Top 5 online stores in UAE to fulfill all your beauty n",
-  "emails": [
-   "naomi@naomidsouza.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=false"
- },
- {
-  "domain": "watsons.ae",
-  "country": "AE",
-  "name": "Buy Skincare Products Online in UAE",
-  "emails": [
-   "customer.service@watsons.ae"
-  ],
-  "products": 292,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=true"
- },
- {
-  "domain": "chiclefrique.com",
-  "country": "AE",
-  "name": "Shipping & Delivery",
-  "emails": [
-   "info@chiclefrique.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=true"
- },
- {
-  "domain": "mybrunchfit.com",
-  "country": "AE",
-  "name": "Shipping & Delivery",
-  "emails": [
-   "sales@mybrunchfit.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=true"
- },
- {
-  "domain": "coffeesupreme.com",
-  "country": "AE",
-  "name": "Coffee Supreme Online Store (Global)",
-  "emails": [
-   "shopnz@coffeesupreme.com"
-  ],
-  "products": 107,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=false"
- },
- {
-  "domain": "cantata.ae",
-  "country": "AE",
-  "name": "Cantata UAE: Buy Tea and Coffee Online in Dubai",
-  "emails": [
-   "sales@cantata.ae"
-  ],
-  "products": 20,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=true"
- },
- {
-  "domain": "joffreys.com",
-  "country": "AE",
-  "name": "Joffrey's Coffee & Tea Company",
-  "emails": [
-   "%20customerservice@joffreys.com",
-   "customerservice@joffreys.com"
-  ],
-  "products": 118,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true jp=false aed=false"
- },
- {
-  "domain": "amazon.com",
-  "country": "JP",
-  "name": "A",
-  "emails": [
-   "api-services-support@amazon.com"
-  ],
-  "products": 1,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true jp=true aed=false"
- },
- {
-  "domain": "bluebuttonshop.com",
-  "country": "JP",
-  "name": "Blue Button Shop",
-  "emails": [
-   "info@bluebuttonshop.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true jp=false aed=false"
- },
- {
-  "domain": "japan-knifeshop.com",
-  "country": "JP",
-  "name": "Contact Us",
-  "emails": [
-   "info@japan-knifeshop.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "pinkyparadise.com",
-  "country": "JP",
-  "name": "Worldwide Shipping",
-  "emails": [
-   "enquiry@pinkyparadise.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=false"
- },
- {
-  "domain": "japaneseknivesselect.com",
-  "country": "JP",
-  "name": "Contact Japanese Knives Select",
-  "emails": [
-   "info@japaneseknivesselect.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=false jp=false aed=false"
- },
- {
-  "domain": "tokushuknife.com",
-  "country": "JP",
-  "name": "Contact Tokushu Knife",
-  "emails": [
-   "tony@tokushuknife.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true jp=false aed=false"
- },
- {
-  "domain": "zewearsy.com",
-  "country": "JP",
-  "name": "Discover the Best Online Clothing Stores in Japan for U",
-  "emails": [
-   "info@zewearsy.com"
-  ],
-  "products": 154,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "japanesegreenteain.com",
-  "country": "JP",
-  "name": "Shipping and Returns For Green Tea",
-  "emails": [
-   "info@japanesegreenteain.com"
-  ],
-  "products": 1,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=false"
- },
- {
-  "domain": "kagoshimatea.com",
-  "country": "JP",
-  "name": "Shipping and Guarantee",
-  "emails": [
-   "info@kagoshimatea.com"
-  ],
-  "products": 1,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=false"
- },
- {
-  "domain": "japanesegreenteashops.com",
-  "country": "JP",
-  "name": "Contact information",
-  "emails": [
-   "hello@japanesegreenteashops.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true jp=false aed=false"
- },
- {
-  "domain": "samovartea.com",
-  "country": "JP",
-  "name": "FAQ",
-  "emails": [
-   "ellen@samovartea.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=false"
- },
- {
-  "domain": "wakokoro-tea.com",
-  "country": "JP",
-  "name": "Japanese Matcha Wholesale FAQ",
-  "emails": [
-   "info@wakokoro-tea.com"
-  ],
-  "products": 5,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true jp=false aed=false"
- },
- {
-  "domain": "komorebistationery.com",
-  "country": "JP",
-  "name": "Komorebi Stationery",
-  "emails": [
-   "info@komorebistationery.com"
-  ],
-  "products": 32,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true jp=false aed=false"
- },
- {
-  "domain": "jpstationerystore.com",
-  "country": "JP",
-  "name": "Shipping",
-  "emails": [
-   "info@jpstationerystore.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=false"
- },
- {
-  "domain": "musubikiln.com",
-  "country": "JP",
-  "name": "MUSUBI KILN",
-  "emails": [
-   "info@musubikiln.com"
-  ],
-  "products": 96,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true jp=false aed=false"
- },
- {
-  "domain": "kutaniware.com",
-  "country": "JP",
-  "name": "JAPAN KUTANI SHOP",
-  "emails": [
-   "info@kutaniware.com"
-  ],
-  "products": 43,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=false"
- },
- {
-  "domain": "greatzakka.com",
-  "country": "JP",
-  "name": "Japanese Ceramics & Tableware",
-  "emails": [
-   "info@greatzakka.com"
-  ],
-  "products": 53,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true jp=true aed=false"
- },
- {
-  "domain": "japanese-food-craftsman.com",
-  "country": "JP",
-  "name": "Handmade Japanese Pottery",
-  "emails": [
-   "info@japanese-food-craftsman.com"
-  ],
-  "products": 21,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=false aed=false"
- },
- {
-  "domain": "japanesecoffeeco.com",
-  "country": "JP",
-  "name": "Shipping and Returns",
-  "emails": [
-   "iinfo@japanesecoffeeco.com",
-   "info@japanesecoffeeco.com"
-  ],
-  "products": 1,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=true jp=true aed=false"
- },
- {
-  "domain": "espresso-international.com",
-  "country": "JP",
-  "name": "Espresso International",
-  "emails": [
-   "info@espresso-international.com"
-  ],
-  "products": 67,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "ippojapanwatch.com",
-  "country": "JP",
-  "name": "IPPO JAPAN WATCH Buy Online at Retail & Wholesale Rates",
-  "emails": [
-   "shopifyservice@ippojapanwatch.com"
-  ],
-  "products": 290,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "tokyoflash.com",
-  "country": "JP",
-  "name": "Payment & Shipping Options",
-  "emails": [
-   "watches@tokyoflash.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=true usd=false jp=false aed=false"
- },
- {
-  "domain": "sakurawatches.com",
-  "country": "JP",
-  "name": "Casio, Citizen, Orient, Seiko watches from Japan",
-  "emails": [
-   "info@sakurawatches.com"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true jp=false aed=false"
- },
- {
   "domain": "takumijapan.com",
-  "country": "JP",
   "name": "南部鉄器",
+  "country": "JP",
+  "email": "info@takumijapan.com",
   "emails": [
    "info@takumijapan.com"
   ],
+  "source_tag": "J-SITE",
+  "platform": null,
   "products": 224,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=224",
-  "source_tag": "J-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=224"
  },
  {
   "domain": "yummybazaar.com",
-  "country": "JP",
   "name": "Shop Japanese Coffee",
+  "country": "JP",
+  "email": "hello@yummybazaar.com",
   "emails": [
    "hello@yummybazaar.com"
   ],
+  "source_tag": "J-SITE",
+  "platform": null,
   "products": 1205,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=1205",
-  "source_tag": "J-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=1205"
  },
  {
   "domain": "candyjapan.com",
-  "country": "JP",
   "name": "How to Buy Japanese Candy Online",
+  "country": "JP",
+  "email": "bemmu@candyjapan.com",
   "emails": [
    "bemmu@candyjapan.com"
   ],
+  "source_tag": "J-SITE",
+  "platform": null,
   "products": null,
   "reviews": null,
-  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=0",
-  "source_tag": "J-SITE",
-  "platform": null
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=0"
  },
  {
   "domain": "sapphire-online.com",
-  "country": "AE",
   "name": "SAPPHIRE Global Online: Unstitched & Ready to Wear Clot",
+  "country": "AE",
+  "email": "wecare@sapphire-online.com",
   "emails": [
    "wecare@sapphire-online.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": 136,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=136",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=136"
  },
  {
   "domain": "worldofdates.com",
-  "country": "AE",
   "name": "World of Dates: Premium Dates Shop in Dubai",
+  "country": "AE",
+  "email": "partner@worldofdates.com",
   "emails": [
    "partner@worldofdates.com",
    "press@worldofdates.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": 33,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=33",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=33"
  },
  {
   "domain": "uaeshops.com",
-  "country": "AE",
   "name": "BestCosmetic & Beauty Care Shops in Sharjah, UAE",
+  "country": "AE",
+  "email": "info@uaeshops.com",
   "emails": [
    "info@uaeshops.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": 24,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=24 | Apollo: Adel Jewelry (مجوهرات عادل), 74 employees, luxury goods & jewelry, founded 2005, United Arab Emirates",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=24 | Apollo: Adel Jewelry (مجوهرات عادل), 74 employees, luxury goods & jewelry, founded 2005, United Arab Emirates"
  },
  {
   "domain": "kougeishop.com",
-  "country": "JP",
   "name": "Frequently Asked Questions",
+  "country": "JP",
+  "email": "info-s@kougeishop.com",
   "emails": [
    "info-s@kougeishop.com"
   ],
+  "source_tag": "J-SITE",
+  "platform": null,
   "products": 100,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=100",
-  "source_tag": "J-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=100"
  },
  {
   "domain": "master-pista.com",
-  "country": "JP",
   "name": "International orders and shipping terms",
+  "country": "JP",
+  "email": "shop@master-pista.com",
   "emails": [
    "shop@master-pista.com"
   ],
+  "source_tag": "J-SITE",
+  "platform": null,
   "products": 128,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=128",
-  "source_tag": "J-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=128"
  },
  {
   "domain": "omisoya.com",
-  "country": "JP",
   "name": "特定商取引法｜全国の味噌通販「まさきや」",
+  "country": "JP",
+  "email": "info@omisoya.com",
   "emails": [
    "info@omisoya.com"
   ],
+  "source_tag": "J-SITE",
+  "platform": null,
   "products": null,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0",
-  "source_tag": "J-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
  },
  {
   "domain": "frenchfitness.com",
-  "country": "AE",
   "name": "International Sales",
+  "country": "AE",
+  "email": "sales@frenchfitness.com",
   "emails": [
    "sales@frenchfitness.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": null,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0"
  },
  {
   "domain": "yasini.com",
-  "country": "AE",
   "name": "Yasini Jewelers: Luxury Gold & Diamond Jewelry",
+  "country": "AE",
+  "email": "info@yasini.com",
   "emails": [
    "info@yasini.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": null,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0"
  },
  {
   "domain": "azimzadeh.ae",
-  "country": "AE",
   "name": "سجاد فارسي ويدوي في دبي",
+  "country": "AE",
+  "email": "info@azimzadeh.ae",
   "emails": [
    "info@azimzadeh.ae"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": 33,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=33",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=33"
  },
  {
   "domain": "qaenat.com",
-  "country": "AE",
   "name": "اشتري الان زعفران قائنات ايراني أصلي",
+  "country": "AE",
+  "email": "contact@qaenat.com",
   "emails": [
    "contact@qaenat.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": 157,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=157",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=157"
  },
  {
   "domain": "thefeed.com",
-  "country": "AE",
   "name": "Food for Athletes #1 Sports Nutrition Store for perform",
+  "country": "AE",
+  "email": "hello@thefeed.com",
   "emails": [
    "hello@thefeed.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": 57,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=57",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=57"
  },
  {
   "domain": "jp-carparts.com",
-  "country": "JP",
   "name": "JAPANESE GENUINE OEM PARTS CATALOG｜JP",
+  "country": "JP",
+  "email": "info@jp-carparts.com",
   "emails": [
    "info@jp-carparts.com"
   ],
+  "source_tag": "J-SITE",
+  "platform": null,
   "products": null,
   "reviews": null,
-  "snippet": "shipsIntl=true usd=true yen=true aed=false jpText=false catalogue=0",
-  "source_tag": "J-SITE",
-  "platform": null
+  "snippet": "shipsIntl=true usd=true yen=true aed=false jpText=false catalogue=0"
  },
  {
   "domain": "baskilicious.com",
-  "country": "AE",
   "name": "Baskilicious: Gift Hampers Dubai",
+  "country": "AE",
+  "email": "sakina@baskilicious.com",
   "emails": [
    "sakina@baskilicious.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": 38,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=38",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=38"
  },
  {
   "domain": "oudalmeydan.com",
-  "country": "AE",
   "name": "Premium Oud Al Meydan",
+  "country": "AE",
+  "email": "info@oudalmeydan.com",
   "emails": [
    "info@oudalmeydan.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": 78,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=78",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=78"
  },
  {
   "domain": "mattinacoffee.com",
-  "country": "AE",
   "name": "Specialty Coffee Roastery Dubai UAE",
+  "country": "AE",
+  "email": "hello@mattinacoffee.com",
   "emails": [
    "hello@mattinacoffee.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": 31,
   "reviews": null,
-  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=31",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=31"
  },
  {
   "domain": "pacific-cycles.com",
-  "country": "JP",
   "name": "Japan",
+  "country": "JP",
+  "email": "team@pacific-cycles.com",
   "emails": [
    "team@pacific-cycles.com"
   ],
+  "source_tag": "J-SITE",
+  "platform": null,
   "products": 2,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=2 | Apollo: Pacific Cycles Inc., 32 employees, consumer goods, founded n/a, Taiwan",
-  "source_tag": "J-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=2 | Apollo: Pacific Cycles Inc., 32 employees, consumer goods, founded n/a, Taiwan"
  },
  {
   "domain": "kurashicrafts.com",
-  "country": "JP",
   "name": "Kurashi Japanese Crafts: Let's create a lifestyle of li",
+  "country": "JP",
+  "email": "hello@kurashicrafts.com",
   "emails": [
    "hello@kurashicrafts.com"
   ],
+  "source_tag": "J-SITE",
+  "platform": null,
   "products": 54,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=true catalogue=54",
-  "source_tag": "J-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=true catalogue=54"
  },
  {
   "domain": "greensintl.com",
-  "country": "AE",
   "name": "Delivery Policy",
+  "country": "AE",
+  "email": "enquiry@greensintl.com",
   "emails": [
    "enquiry@greensintl.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": 95,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=95",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=95"
  },
  {
   "domain": "bulkairplants.com",
-  "country": "JP",
   "name": "International Tillandsia Air Plant Shipping For Wholesa",
+  "country": "JP",
+  "email": "customerservice@bulkairplants.com",
   "emails": [
    "customerservice@bulkairplants.com"
   ],
+  "source_tag": "J-SITE",
+  "platform": null,
   "products": 146,
   "reviews": null,
-  "snippet": "shipsIntl=true usd=true yen=true aed=false jpText=false catalogue=146",
-  "source_tag": "J-SITE",
-  "platform": null
+  "snippet": "shipsIntl=true usd=true yen=true aed=false jpText=false catalogue=146"
  },
  {
   "domain": "mtckitchen.com",
-  "country": "JP",
   "name": "Japanese Kitchenware, Cookware, Kitchen Supplies & ...",
+  "country": "JP",
+  "email": "info@mtckitchen.com",
   "emails": [
    "info@mtckitchen.com"
   ],
+  "source_tag": "J-SITE",
+  "platform": null,
   "products": 256,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=256",
-  "source_tag": "J-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=256"
  },
  {
   "domain": "dubaisportsuae.com",
-  "country": "AE",
   "name": "Frequently Asked Questions",
+  "country": "AE",
+  "email": "info@dubaisportsuae.com",
   "emails": [
    "info@dubaisportsuae.com",
    "sales@dubaisportsuae.com"
   ],
+  "source_tag": "U-SITE",
+  "platform": null,
   "products": 294,
   "reviews": null,
-  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=294",
-  "source_tag": "U-SITE",
-  "platform": null
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=294"
  }
 ]
