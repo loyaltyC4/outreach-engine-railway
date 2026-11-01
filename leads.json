@@ -592,5 +592,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=94"
+ },
+ {
+  "domain": "serapian.com",
+  "name": "Serapian Boutique Online",
+  "country": "JP",
+  "email": "customercare@onlineboutique.serapian.com",
+  "emails": [
+   "customercare@onlineboutique.serapian.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 110,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=110"
  }
 ]
