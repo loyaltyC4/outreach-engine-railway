@@ -624,5 +624,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
+ },
+ {
+  "domain": "championbungu.com",
+  "name": "Champion Bungu: Premium Japanese Stationery for Global ",
+  "country": "JP",
+  "email": "onpu@championbungu.com",
+  "emails": [
+   "onpu@championbungu.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=0"
  }
 ]
