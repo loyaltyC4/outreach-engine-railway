@@ -808,5 +808,57 @@
   "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=38",
   "source_tag": "U-SITE",
   "platform": null
+ },
+ {
+  "domain": "bulkairplants.com",
+  "country": "JP",
+  "name": "International Tillandsia Air Plant Shipping For Wholesa",
+  "emails": [
+   "customerservice@bulkairplants.com"
+  ],
+  "products": 146,
+  "reviews": null,
+  "snippet": "shipsIntl=true usd=true yen=true aed=false jpText=false catalogue=146",
+  "source_tag": "J-SITE",
+  "platform": null
+ },
+ {
+  "domain": "mattinacoffee.com",
+  "country": "AE",
+  "name": "Specialty Coffee Roastery Dubai UAE",
+  "emails": [
+   "hello@mattinacoffee.com"
+  ],
+  "products": 31,
+  "reviews": null,
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=31",
+  "source_tag": "U-SITE",
+  "platform": null
+ },
+ {
+  "domain": "kurashicrafts.com",
+  "country": "JP",
+  "name": "Kurashi Japanese Crafts: Let's create a lifestyle of li",
+  "emails": [
+   "hello@kurashicrafts.com"
+  ],
+  "products": 54,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=true catalogue=54",
+  "source_tag": "J-SITE",
+  "platform": null
+ },
+ {
+  "domain": "pacific-cycles.com",
+  "country": "JP",
+  "name": "Japan",
+  "emails": [
+   "team@pacific-cycles.com"
+  ],
+  "products": 2,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=2 | Apollo: Pacific Cycles Inc., 32 employees, consumer goods, founded n/a, Taiwan",
+  "source_tag": "J-SITE",
+  "platform": null
  }
 ]
