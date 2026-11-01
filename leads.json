@@ -1257,5 +1257,18 @@
   "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=0 | Apollo: Happy Tails Travel, Inc., 5 employees, leisure, travel & tourism, founded 1995, United States",
   "source_tag": "U-FZ",
   "platform": null
+ },
+ {
+  "domain": "interiorsfurniture.com",
+  "country": "AE",
+  "name": "Interiors: Buy Modern Luxury Furniture & Home Decor Onl",
+  "emails": [
+   "customersupport@interiorsfurniture.com"
+  ],
+  "products": 210,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=210",
+  "source_tag": "U-SITE",
+  "platform": null
  }
 ]
