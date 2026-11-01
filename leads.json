@@ -528,5 +528,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=46"
+ },
+ {
+  "domain": "lancastercastiron.com",
+  "name": "Shipping policy",
+  "country": "JP",
+  "email": "info@lancastercastiron.com",
+  "emails": [
+   "info@lancastercastiron.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 68,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=68"
  }
 ]
