@@ -576,5 +576,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=true yen=true aed=false jpText=false catalogue=84"
+ },
+ {
+  "domain": "nomadcraftsco.com",
+  "name": "About Us",
+  "country": "JP",
+  "email": "hello@nomadcraftsco.com",
+  "emails": [
+   "hello@nomadcraftsco.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 94,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=94"
  }
 ]
