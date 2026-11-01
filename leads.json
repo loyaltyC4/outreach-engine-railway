@@ -432,5 +432,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
+ },
+ {
+  "domain": "bushizo.com",
+  "name": "About this site",
+  "country": "JP",
+  "email": "info@bushizo.com",
+  "emails": [
+   "info@bushizo.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 832,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=true catalogue=832"
  }
 ]
