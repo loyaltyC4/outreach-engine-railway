@@ -496,5 +496,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=69"
+ },
+ {
+  "domain": "goodsofjapan.com",
+  "name": "Genuine Japanese products online store. NMN Supplements",
+  "country": "JP",
+  "email": "info@goodsofjapan.com",
+  "emails": [
+   "info@goodsofjapan.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 428,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=428"
  }
 ]
