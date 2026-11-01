@@ -448,5 +448,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=true catalogue=832"
+ },
+ {
+  "domain": "7thheavenchocolate.com",
+  "name": "7th Heaven Chocolate",
+  "country": "AE",
+  "email": "info@7thheavenchocolate.com",
+  "emails": [
+   "info@7thheavenchocolate.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 55,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=55"
  }
 ]
