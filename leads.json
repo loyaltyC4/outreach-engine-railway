@@ -678,5 +678,70 @@
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=24 | Apollo: Adel Jewelry (مجوهرات عادل), 74 employees, luxury goods & jewelry, founded 2005, United Arab Emirates",
   "source_tag": "U-SITE",
   "platform": null
+ },
+ {
+  "domain": "kougeishop.com",
+  "country": "JP",
+  "name": "Frequently Asked Questions",
+  "emails": [
+   "info-s@kougeishop.com"
+  ],
+  "products": 100,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=100",
+  "source_tag": "J-SITE",
+  "platform": null
+ },
+ {
+  "domain": "master-pista.com",
+  "country": "JP",
+  "name": "International orders and shipping terms",
+  "emails": [
+   "shop@master-pista.com"
+  ],
+  "products": 128,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=128",
+  "source_tag": "J-SITE",
+  "platform": null
+ },
+ {
+  "domain": "omisoya.com",
+  "country": "JP",
+  "name": "特定商取引法｜全国の味噌通販「まさきや」",
+  "emails": [
+   "info@omisoya.com"
+  ],
+  "products": null,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0",
+  "source_tag": "J-SITE",
+  "platform": null
+ },
+ {
+  "domain": "frenchfitness.com",
+  "country": "AE",
+  "name": "International Sales",
+  "emails": [
+   "sales@frenchfitness.com"
+  ],
+  "products": null,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0",
+  "source_tag": "U-SITE",
+  "platform": null
+ },
+ {
+  "domain": "yasini.com",
+  "country": "AE",
+  "name": "Yasini Jewelers: Luxury Gold & Diamond Jewelry",
+  "emails": [
+   "info@yasini.com"
+  ],
+  "products": null,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0",
+  "source_tag": "U-SITE",
+  "platform": null
  }
 ]
