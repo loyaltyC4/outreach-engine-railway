@@ -640,5 +640,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=0"
+ },
+ {
+  "domain": "dubaichocolates.com",
+  "name": "Shipping Info",
+  "country": "AE",
+  "email": "customerservice@dubaichocolates.com",
+  "emails": [
+   "customerservice@dubaichocolates.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 145,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=145"
  }
 ]
