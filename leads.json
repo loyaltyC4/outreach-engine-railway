@@ -899,18 +899,5 @@
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=256",
   "source_tag": "J-SITE",
   "platform": null
- },
- {
-  "domain": "beforward.jp",
-  "country": "JP",
-  "name": "Untitled",
-  "emails": [
-   "top@beforward.jp"
-  ],
-  "products": null,
-  "reviews": null,
-  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=0",
-  "source_tag": "J-SITE",
-  "platform": null
  }
 ]
