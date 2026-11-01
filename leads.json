@@ -384,5 +384,37 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=187"
+ },
+ {
+  "domain": "nushi2001.com",
+  "name": "ZOOM Swamp Crawler",
+  "country": "JP",
+  "email": "info@nushi2001.com",
+  "emails": [
+   "info@nushi2001.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 174,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=174"
+ },
+ {
+  "domain": "orosy.com",
+  "name": "orosy Blog",
+  "country": "JP",
+  "email": "wholesale_shop_api@orosy.com",
+  "emails": [
+   "wholesale_shop_api@orosy.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 120,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=120"
  }
 ]
