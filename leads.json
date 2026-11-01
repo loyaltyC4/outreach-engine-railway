@@ -1189,5 +1189,18 @@
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=54 | Apollo: Liali Jewellery, 140 employees, luxury goods & jewelry, founded 1999, United Arab Emirates",
   "source_tag": "U-FZ",
   "platform": null
+ },
+ {
+  "domain": "microless.com",
+  "country": "AE",
+  "name": "Electronics",
+  "emails": [
+   "subscriber@microless.com"
+  ],
+  "products": 770,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=770",
+  "source_tag": "U-SITE",
+  "platform": null
  }
 ]
