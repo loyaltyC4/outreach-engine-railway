@@ -1270,5 +1270,71 @@
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=210",
   "source_tag": "U-SITE",
   "platform": null
+ },
+ {
+  "domain": "tabisuruwagashi.com",
+  "country": "JP",
+  "name": "【重要】ご注文店舗へのお問い合わせについて",
+  "emails": [
+   "info@tabisuruwagashi.com"
+  ],
+  "products": null,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0",
+  "source_tag": "J-SITE",
+  "platform": null
+ },
+ {
+  "domain": "exoticsnackguys.com",
+  "country": "JP",
+  "name": "Exotic Snack Guys: Exotic Snacks & International Snacks",
+  "emails": [
+   "contact@exoticsnackguys.com"
+  ],
+  "products": 39,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=true yen=false aed=true jpText=false catalogue=39",
+  "source_tag": "J-MALL",
+  "platform": null
+ },
+ {
+  "domain": "wwake.com",
+  "country": "JP",
+  "name": "WWAKE",
+  "emails": [
+   "info@wwake.com",
+   "customerservice@wwake.com"
+  ],
+  "products": 124,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=124",
+  "source_tag": "J-SITE",
+  "platform": null
+ },
+ {
+  "domain": "aashniandco.com",
+  "country": "AE",
+  "name": "AASHNI + CO",
+  "emails": [
+   "customercare@aashniandco.com"
+  ],
+  "products": 23,
+  "reviews": null,
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=23 | Apollo: Aashni + Co, 60 employees, apparel & fashion, founded n/a, United Kingdom",
+  "source_tag": "U-SITE",
+  "platform": null
+ },
+ {
+  "domain": "akbaraslam.com",
+  "country": "AE",
+  "name": "Akbar Aslam",
+  "emails": [
+   "hello@akbaraslam.com"
+  ],
+  "products": 226,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=226 | Apollo: Akbar Aslam, 20 employees, apparel & fashion, founded 2018, Pakistan",
+  "source_tag": "U-FZ",
+  "platform": null
  }
 ]
