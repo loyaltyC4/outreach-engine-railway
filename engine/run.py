@@ -372,7 +372,15 @@ def send_batch(batch, inbox_key, per_inbox_today, sent_state):
             parked.add(inbox_key[ib])
             log("429 parked org", str(d)[:140])
         else:
-            log("ERR", c, ib, lead["email"], str(d)[:140])
+            # 2026-11-01: a failed inbox was retried for every following lead (used[] not bumped).
+            # Park the org for this run AND persist the inbox so future passes skip it.
+            parked.add(inbox_key[ib]); used[ib] += 1
+            _derr = str(d)
+            if c == 403 and ("account_suspended" in _derr or "AccountSuspended" in _derr):
+                _dl = st("dead_inboxes", [])
+                if ib not in _dl:
+                    _dl.append(ib); log("parking suspended inbox:", ib)
+            log("ERR", c, ib, lead["email"], _derr[:140])
         order.sort(key=lambda i: used[i])
         time.sleep(random.uniform(20, 45))
     return sent
