@@ -336,5 +336,21 @@
   "products": 294,
   "reviews": null,
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=294"
+ },
+ {
+  "domain": "rosevariwatches.com",
+  "name": "Rosevari Watches: Seiko Mod Watches",
+  "country": "JP",
+  "email": "contact@rosevariwatches.com",
+  "emails": [
+   "contact@rosevariwatches.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 113,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=113"
  }
 ]
