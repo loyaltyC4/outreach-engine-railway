@@ -137,8 +137,28 @@ def seed_rows():
         raw = json.load(open(SEED_JSON))
     except Exception:
         raw = []
-    # 2026-11-01: live lead feed via env (base64 JSON list) so new leads need no rebuild.
-    import base64 as _b64
+    # 2026-11-01: live lead feed. Primary: LEAD_FEED_URL (a JSON file we update by git push — no
+    # Railway rebuild needed). Fallback: LEADS_EXTRA_B64 env.
+    import base64 as _b64, urllib.request as _ur
+    _url = os.environ.get("LEAD_FEED_URL", "").strip()
+    if _url:
+        try:
+            with _ur.urlopen(_ur.Request(_url, headers={"User-Agent": "nm-engine/1.0"}), timeout=20) as _r:
+                _feed = json.loads(_r.read().decode("utf-8"))
+            if isinstance(_feed, list) and _feed:
+                have = {(r.get("domain") or "").lower() for r in raw if isinstance(r, dict)}
+                added_n = 0
+                for x in _feed:
+                    if not isinstance(x, dict) or not x.get("domain"):
+                        continue
+                    if (x.get("domain") or "").lower() in have:
+                        continue
+                    if not x.get("emails") and x.get("email"):
+                        x["emails"] = [x["email"]]
+                    raw.append(x); have.add((x.get("domain") or "").lower()); added_n += 1
+                print(f"Lead feed URL: +{added_n} (feed {len(_feed)})")
+        except Exception as _e:
+            print("WARN LEAD_FEED_URL:", str(_e)[:120])
     _extra = os.environ.get("LEADS_EXTRA_B64", "").strip()
     if _extra:
         try:
