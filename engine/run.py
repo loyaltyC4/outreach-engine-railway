@@ -462,4 +462,15 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # 2026-11-01: this service has no cron schedule; without a loop the container exits after one
+    # pass and throughput collapses to a handful of sends per deploy. Loop continuously.
+    _interval = int(E("RUN_INTERVAL_SECONDS", "60"))
+    if _interval <= 0:
+        main()
+    else:
+        while True:
+            try:
+                main()
+            except Exception as _e:
+                log("pass crashed:", str(_e)[:300])
+            time.sleep(_interval)
