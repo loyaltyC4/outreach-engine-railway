@@ -743,5 +743,70 @@
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0",
   "source_tag": "U-SITE",
   "platform": null
+ },
+ {
+  "domain": "azimzadeh.ae",
+  "country": "AE",
+  "name": "سجاد فارسي ويدوي في دبي",
+  "emails": [
+   "info@azimzadeh.ae"
+  ],
+  "products": 33,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=33",
+  "source_tag": "U-SITE",
+  "platform": null
+ },
+ {
+  "domain": "qaenat.com",
+  "country": "AE",
+  "name": "اشتري الان زعفران قائنات ايراني أصلي",
+  "emails": [
+   "contact@qaenat.com"
+  ],
+  "products": 157,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=157",
+  "source_tag": "U-SITE",
+  "platform": null
+ },
+ {
+  "domain": "thefeed.com",
+  "country": "AE",
+  "name": "Food for Athletes #1 Sports Nutrition Store for perform",
+  "emails": [
+   "hello@thefeed.com"
+  ],
+  "products": 57,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=57",
+  "source_tag": "U-SITE",
+  "platform": null
+ },
+ {
+  "domain": "jp-carparts.com",
+  "country": "JP",
+  "name": "JAPANESE GENUINE OEM PARTS CATALOG｜JP",
+  "emails": [
+   "info@jp-carparts.com"
+  ],
+  "products": null,
+  "reviews": null,
+  "snippet": "shipsIntl=true usd=true yen=true aed=false jpText=false catalogue=0",
+  "source_tag": "J-SITE",
+  "platform": null
+ },
+ {
+  "domain": "baskilicious.com",
+  "country": "AE",
+  "name": "Baskilicious: Gift Hampers Dubai",
+  "emails": [
+   "sakina@baskilicious.com"
+  ],
+  "products": 38,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=38",
+  "source_tag": "U-SITE",
+  "platform": null
  }
 ]
