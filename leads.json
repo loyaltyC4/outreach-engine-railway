@@ -899,5 +899,19 @@
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=256",
   "source_tag": "J-SITE",
   "platform": null
+ },
+ {
+  "domain": "dubaisportsuae.com",
+  "country": "AE",
+  "name": "Frequently Asked Questions",
+  "emails": [
+   "info@dubaisportsuae.com",
+   "sales@dubaisportsuae.com"
+  ],
+  "products": 294,
+  "reviews": null,
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=294",
+  "source_tag": "U-SITE",
+  "platform": null
  }
 ]
