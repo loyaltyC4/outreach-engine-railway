@@ -1380,5 +1380,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=210"
+ },
+ {
+  "domain": "treasure-kikaku.jp",
+  "name": "Wholesale JP Capsule Toys",
+  "country": "JP",
+  "email": "info@en.treasure-kikaku.jp",
+  "emails": [
+   "info@en.treasure-kikaku.jp"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
  }
 ]
