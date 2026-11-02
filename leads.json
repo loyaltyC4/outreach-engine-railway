@@ -1348,5 +1348,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=85"
+ },
+ {
+  "domain": "novica.com",
+  "name": "NOVICA",
+  "country": "JP",
+  "email": "wholesale@novica.com",
+  "emails": [
+   "wholesale@novica.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=0"
  }
 ]
