@@ -1396,5 +1396,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
+ },
+ {
+  "domain": "snackhawaii.com",
+  "name": "Japanese Candy Store Online",
+  "country": "JP",
+  "email": "sales@snackhawaii.com",
+  "emails": [
+   "sales@snackhawaii.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 311,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=311"
  }
 ]
