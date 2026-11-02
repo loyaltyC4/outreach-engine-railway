@@ -1687,5 +1687,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=100"
+ },
+ {
+  "domain": "japanvillage.com",
+  "name": "Shops at Japan Village",
+  "country": "JP",
+  "email": "info@japanvillage.com",
+  "emails": [
+   "info@japanvillage.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
  }
 ]
