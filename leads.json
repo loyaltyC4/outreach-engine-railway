@@ -818,5 +818,37 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
+ },
+ {
+  "domain": "umami-insider.com",
+  "name": "Umami Insider Online Store & Wholesale",
+  "country": "JP",
+  "email": "store@umami-insider.com",
+  "emails": [
+   "store@umami-insider.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 292,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=292"
+ },
+ {
+  "domain": "blueguitars.jp",
+  "name": "we ship worldwide",
+  "country": "JP",
+  "email": "contact@blueguitars.jp",
+  "emails": [
+   "contact@blueguitars.jp"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 76,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=true catalogue=76"
  }
 ]
