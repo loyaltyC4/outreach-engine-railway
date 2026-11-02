@@ -1220,5 +1220,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=517"
+ },
+ {
+  "domain": "resee.com",
+  "name": "Authentic Japanese Embroidered Kimono",
+  "country": "JP",
+  "email": "contact@resee.com",
+  "emails": [
+   "contact@resee.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 72,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=72"
  }
 ]
