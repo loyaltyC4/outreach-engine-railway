@@ -2125,5 +2125,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=106"
+ },
+ {
+  "domain": "luxurygallery.com",
+  "name": "LUXURY GALLERY",
+  "country": "AE",
+  "email": "customercare@luxurygallery.com",
+  "emails": [
+   "customercare@luxurygallery.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 53,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=53"
  }
 ]
