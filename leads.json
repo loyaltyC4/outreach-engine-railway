@@ -1428,5 +1428,38 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=true catalogue=399"
+ },
+ {
+  "domain": "ekadoya.com",
+  "name": "Crafting High",
+  "country": "JP",
+  "email": "sample@ekadoya.com",
+  "emails": [
+   "sample@ekadoya.com",
+   "recruit@ekadoya.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 644,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=644"
+ },
+ {
+  "domain": "y-2leather.com",
+  "name": "Japanese Leather Jackets Made in Osaka",
+  "country": "JP",
+  "email": "y-2@y-2leather.com",
+  "emails": [
+   "y-2@y-2leather.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 16,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=16"
  }
 ]
