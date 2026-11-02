@@ -1300,5 +1300,53 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=280"
+ },
+ {
+  "domain": "archerscoffee.com",
+  "name": "Archers Coffee: Specialty Coffee & Green Beans",
+  "country": "AE",
+  "email": "hello@archerscoffee.com",
+  "emails": [
+   "hello@archerscoffee.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 32,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=32"
+ },
+ {
+  "domain": "aleatherstore.com",
+  "name": "a leatherstore: European Leather Store",
+  "country": "JP",
+  "email": "andrea@aleatherstore.com",
+  "emails": [
+   "andrea@aleatherstore.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 21,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=21"
+ },
+ {
+  "domain": "gundamplacestore.com",
+  "name": "The Gundam Place Store LLC",
+  "country": "JP",
+  "email": "customerservice@gundamplacestore.com",
+  "emails": [
+   "customerservice@gundamplacestore.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 85,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=85"
  }
 ]
