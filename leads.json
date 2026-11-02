@@ -2287,5 +2287,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=true yen=true aed=false jpText=false catalogue=111"
+ },
+ {
+  "domain": "petworlduae.com",
+  "name": "Pet World",
+  "country": "AE",
+  "email": "customerservice@petworlduae.com",
+  "emails": [
+   "customerservice@petworlduae.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 33,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=33"
  }
 ]
