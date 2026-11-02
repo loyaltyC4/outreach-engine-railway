@@ -898,5 +898,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=254"
+ },
+ {
+  "domain": "aniary.com",
+  "name": "aniary（アニアリ） OFFICIAL WEB STORE [メーカー公式通販]",
+  "country": "JP",
+  "email": "store@aniary.com",
+  "emails": [
+   "store@aniary.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 44,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=44"
  }
 ]
