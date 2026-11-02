@@ -1284,5 +1284,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
+ },
+ {
+  "domain": "japanesenaturalstones.com",
+  "name": "Japanese Natural Stones",
+  "country": "JP",
+  "email": "maks@japanesenaturalstones.com",
+  "emails": [
+   "maks@japanesenaturalstones.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 280,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=280"
  }
 ]
