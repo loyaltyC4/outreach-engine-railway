@@ -2061,5 +2061,37 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=33"
+ },
+ {
+  "domain": "cakesoverseas.com",
+  "name": "Send Cakes and Gifts to Abu dhabi, The UAE",
+  "country": "AE",
+  "email": "info@cakesoverseas.com",
+  "emails": [
+   "info@cakesoverseas.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=true yen=true aed=false jpText=false catalogue=0"
+ },
+ {
+  "domain": "shibui.com",
+  "name": "SHIBUI",
+  "country": "JP",
+  "email": "info@shibui.com",
+  "emails": [
+   "info@shibui.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 24,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=24"
  }
 ]
