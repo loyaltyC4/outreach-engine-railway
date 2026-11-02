@@ -1980,5 +1980,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=111"
+ },
+ {
+  "domain": "winedelight.com",
+  "name": "The Best Sakes",
+  "country": "JP",
+  "email": "cs@winedelight.com",
+  "emails": [
+   "cs@winedelight.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 98,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=98"
  }
 ]
