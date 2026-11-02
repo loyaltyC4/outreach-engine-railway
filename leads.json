@@ -1703,5 +1703,22 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
+ },
+ {
+  "domain": "nishijapan.com",
+  "name": "Miso",
+  "country": "JP",
+  "email": "hello@nishijapan.com",
+  "emails": [
+   "hello@nishijapan.com",
+   "online@nishijapan.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
  }
 ]
