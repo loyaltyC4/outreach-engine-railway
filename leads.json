@@ -16847,5 +16847,20 @@
   "source_tag": "J-LANE3",
   "platform": null,
   "preverified": true
+ },
+ {
+  "domain": "sakae-shop.co.jp",
+  "country": "JP",
+  "name": "Q1:質問、問い合わせをしたいのですが…",
+  "emails": [
+   "info@sakae-shop.co.jp"
+  ],
+  "email": "info@sakae-shop.co.jp",
+  "products": null,
+  "reviews": null,
+  "snippet": "お問い合わせは電話・Eメール・FAXのいずれからでも可能です。 … 【メール】 info@sakae-shop.co.jp 【FAX】 03-3870-3960(受付は24時間承っております。 … FAX 03-3870- ...",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
  }
 ]
