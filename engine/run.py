@@ -212,9 +212,37 @@ def process_inbound(inbox_key, sent_addrs):
             fwd[mid] = "backfill-skipped"
             continue
         c, full = am(k, "GET", f"/inboxes/{q(iid)}/messages/{q(mid)}")
-        body = re.sub(r"[ \t]+", " ", str(full.get("extracted_text") or full.get("text") or ""))[:1800] if c == 200 else ""
+        body = re.sub(r"[ \t]+", " ", str(full.get("extracted_text") or full.get("text") or "")) if c == 200 else ""
+        # 2026-11-02 owner request: forward the FULL reply plus the original email we sent (thread context).
+        _sent_orig = ""
+        try:
+            _sc, _sd = am(k, "GET", f"/inboxes/{q(iid)}/messages?labels=SENT&limit=50")
+            if _sc == 200:
+                _key = re.sub(r"^(re|fwd?):\s*", "", (subj or "").lower()).strip()[:40]
+                for _m in (_sd.get("messages") or []):
+                    _osub = re.sub(r"^(re|fwd?):\s*", "", str(_m.get("subject") or "").lower()).strip()
+                    if _key and _osub[:40] == _key:
+                        _mid_o = _m.get("message_id") or _m.get("id")
+                        _oc, _of = am(k, "GET", f"/inboxes/{q(iid)}/messages/{q(_mid_o)}")
+                        if _oc == 200:
+                            _sent_orig = re.sub(r"[ \t]+", " ", str(_of.get("extracted_text") or _of.get("text") or ""))
+                        if not _sent_orig:
+                            _sent_orig = str(_m.get("preview") or "")
+                        break
+        except Exception as _e:
+            _sent_orig = "(original not found: %s)" % str(_e)[:60]
+        _noise = ('firecrawl','apify','tinyfish','stripe.com','shopify.com','vercel.com','github.com','openai.com',
+                  'substack','intercom-mail','notifications.','no-reply','noreply','newsletter','mailchimp','sendgrid',
+                  'google.com','microsoft.com','beehiiv','convertkit','hubspot','zapier','canva.com','linkedin.com')
+        if any(n in (f + ' ' + subj).lower() for n in _noise):
+            fwd[mid] = "noise-skipped"; continue
+        if not _sent_orig:
+            fwd[mid] = "no-original-skipped"; continue
+        if len([x for x in fwd.values() if str(x).startswith("2026")]) >= 25:
+            continue
         notify(inbox_key, f"[{CAMP.upper()} reply] {subj[:70]}",
-               f"From: {f}\nTo inbox: {iid}\nReceived: {ts}\nThread: reply from the same inbox to continue (the engine does NOT auto-reply to people).\n\n{body}")
+               f"From: {f}\nTo inbox: {iid}\nReceived: {ts}\nThread: reply from the same inbox to continue (the engine does NOT auto-reply to people).\n\n"
+               f"=== THEIR REPLY (full) ===\n{body}\n\n=== WHAT WE SENT THEM ===\n{_sent_orig}")
         fwd[mid] = iso()
     return events
 
@@ -264,6 +292,8 @@ def pool_unsent(pool, sent_all, sup):
     for l in pool:
         e = l["email"]
         d = e.split("@")[1]
+        if (l.get("state") or "") in ("blocked", "bounced"):
+            continue
         if e in sent_all or e in sup["emails"] or d in sup["domains"] or reg_domain(d) in mailed_domains:
             continue
         out.append(l)
@@ -301,6 +331,15 @@ def refill(pool, seen_leads, sent_all, sup):
         return {"pool_available": avail, "action": "none"}
     info = {"pool_available_before": avail}
     seed = [r for r in C.seed_rows() if r["email"] not in sent_all and r["email"] not in seen_leads and r["email"].split("@")[1] not in sup["domains"]]
+    # 2026-11-02: Jev scoring inside the container kept returning unavailable, so the pool never grew
+    # while pre-scored leads sat unused. Rows flagged preverified skip the gate entirely.
+    pre = [r for r in seed if r.get("preverified")]
+    for r in pre:
+        seen_leads[r["email"]] = 1
+        pool.append(dict(r, state=r.get("state") or ""))
+    if pre:
+        info["preverified_added"] = len(pre)
+        seed = [r for r in seed if not r.get("preverified")]
     if seed:
         t, ok = score_into_pool(seed, pool, seen_leads, SCORE_BATCH, "seed")
         info["seed_scored"], info["seed_added"] = t, ok
@@ -376,6 +415,14 @@ def send_batch(batch, inbox_key, per_inbox_today, sent_state):
             # Park the org for this run AND persist the inbox so future passes skip it.
             parked.add(inbox_key[ib]); used[ib] += 1
             _derr = str(d)
+            # 2026-11-02: an unretryable target (bad address, blocked domain) was retried every pass and
+            # starved the queue. Two strikes and the lead is parked for good.
+            if c in (400, 403, 404, 422, 451, 550, 551, 553):
+                _tries = int(lead.get("tries") or 0) + 1
+                lead["tries"] = _tries
+                if _tries >= 2 or "blocked" in _derr.lower() or "invalid" in _derr.lower():
+                    lead["state"] = "blocked"
+                    log("BLOCKED lead after", _tries, "tries:", lead["email"], _derr[:100])
             if c == 403 and ("account_suspended" in _derr or "AccountSuspended" in _derr):
                 _dl = st("dead_inboxes", [])
                 if ib not in _dl:
