@@ -1140,5 +1140,37 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=135"
+ },
+ {
+  "domain": "yokitackle.com",
+  "name": "Contact",
+  "country": "JP",
+  "email": "info@yokitackle.com",
+  "emails": [
+   "info@yokitackle.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 12,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=12"
+ },
+ {
+  "domain": "yanagiknife.com",
+  "name": "Contact Us",
+  "country": "JP",
+  "email": "order@yanagiknife.com",
+  "emails": [
+   "order@yanagiknife.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0"
  }
 ]
