@@ -2141,5 +2141,38 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=53"
+ },
+ {
+  "domain": "bareessentialsdubai.ae",
+  "name": "Contact Us",
+  "country": "AE",
+  "email": "info@bareessentialsdubai.ae",
+  "emails": [
+   "info@bareessentialsdubai.ae"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 271,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=271"
+ },
+ {
+  "domain": "emiratesapparel.com",
+  "name": "Promotional Items Supplier In The UAE",
+  "country": "AE",
+  "email": "sales@emiratesapparel.com",
+  "emails": [
+   "sales@emiratesapparel.com",
+   "adnan@emiratesapparel.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 362,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=362"
  }
 ]
