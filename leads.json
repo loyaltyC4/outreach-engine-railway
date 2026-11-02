@@ -1996,5 +1996,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=98"
+ },
+ {
+  "domain": "vintageandrare.com",
+  "name": "Vintage & Rare Blog",
+  "country": "JP",
+  "email": "info@vintageandrare.com",
+  "emails": [
+   "info@vintageandrare.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 103,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=103"
  }
 ]
