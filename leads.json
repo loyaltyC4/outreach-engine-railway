@@ -752,5 +752,37 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=90"
+ },
+ {
+  "domain": "sakeoni.com",
+  "name": "6 Best Places To Buy Sake or Japanese Wine Online in th",
+  "country": "JP",
+  "email": "info@sakeoni.com",
+  "emails": [
+   "info@sakeoni.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 98,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=98"
+ },
+ {
+  "domain": "jinenstore.com",
+  "name": "Jinen",
+  "country": "JP",
+  "email": "support@jinenstore.com",
+  "emails": [
+   "support@jinenstore.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 240,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=240"
  }
 ]
