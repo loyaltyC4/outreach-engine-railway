@@ -1948,5 +1948,37 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=true aed=false jpText=false catalogue=246"
+ },
+ {
+  "domain": "abayasboutique.com",
+  "name": "Abayas Boutique: Luxury Abayas & Modest Wear in the UK",
+  "country": "AE",
+  "email": "info@abayasboutique.com",
+  "emails": [
+   "info@abayasboutique.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 36,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=36"
+ },
+ {
+  "domain": "kwanpen.com",
+  "name": "KWANPEN Official Online Store",
+  "country": "JP",
+  "email": "vip.customerservice@kwanpen.com",
+  "emails": [
+   "vip.customerservice@kwanpen.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 111,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=111"
  }
 ]
