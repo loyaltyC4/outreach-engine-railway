@@ -2254,5 +2254,22 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=166"
+ },
+ {
+  "domain": "akibahq.com",
+  "name": "Akiba HQ",
+  "country": "JP",
+  "email": "cs@akibahq.com",
+  "emails": [
+   "cs@akibahq.com",
+   "akiba@akibahq.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 1000,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=1000"
  }
 ]
