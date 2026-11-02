@@ -1623,5 +1623,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=112"
+ },
+ {
+  "domain": "leatherunltd.com",
+  "name": "Leather Unlimited",
+  "country": "JP",
+  "email": "service@leatherunltd.com",
+  "emails": [
+   "service@leatherunltd.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 47,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=47"
  }
 ]
