@@ -1752,5 +1752,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=129"
+ },
+ {
+  "domain": "indifash.com",
+  "name": "Frequently Asked Questions (FAQ)",
+  "country": "JP",
+  "email": "info@indifash.com",
+  "emails": [
+   "info@indifash.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 162,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=162"
  }
 ]
