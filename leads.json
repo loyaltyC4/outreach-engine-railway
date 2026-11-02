@@ -2012,5 +2012,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=103"
+ },
+ {
+  "domain": "nadiyadates.com",
+  "name": "Retail",
+  "country": "AE",
+  "email": "info@nadiyadates.com",
+  "emails": [
+   "info@nadiyadates.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 102,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=102"
  }
 ]
