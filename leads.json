@@ -1932,5 +1932,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=55"
+ },
+ {
+  "domain": "blackhawkjapan.com",
+  "name": "About us",
+  "country": "JP",
+  "email": "support@blackhawkjapan.com",
+  "emails": [
+   "support@blackhawkjapan.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 246,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=true aed=false jpText=false catalogue=246"
  }
 ]
