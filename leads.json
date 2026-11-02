@@ -784,5 +784,22 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=240"
+ },
+ {
+  "domain": "nordicknots.com",
+  "name": "Customer Support",
+  "country": "AE",
+  "email": "pro@nordicknots.com",
+  "emails": [
+   "pro@nordicknots.com",
+   "michele@nordicknots.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 128,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=128"
  }
 ]
