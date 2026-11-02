@@ -2222,5 +2222,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=206"
+ },
+ {
+  "domain": "wagasa.com",
+  "name": "Kyo",
+  "country": "JP",
+  "email": "info@wagasa.com",
+  "emails": [
+   "info@wagasa.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 86,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=86"
  }
 ]
