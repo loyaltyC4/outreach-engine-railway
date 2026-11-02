@@ -1364,5 +1364,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=0"
+ },
+ {
+  "domain": "laddstamps.com",
+  "name": "Privacy Policy",
+  "country": "JP",
+  "email": "hello@laddstamps.com",
+  "emails": [
+   "hello@laddstamps.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 210,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=210"
  }
 ]
