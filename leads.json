@@ -1819,5 +1819,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=224"
+ },
+ {
+  "domain": "buttonbird.com",
+  "name": "Japanese Kimono Fabrics. Other Fabrics from Japan.",
+  "country": "JP",
+  "email": "nancy@buttonbird.com",
+  "emails": [
+   "nancy@buttonbird.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 60,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=60"
  }
 ]
