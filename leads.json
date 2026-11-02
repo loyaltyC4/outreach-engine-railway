@@ -1236,5 +1236,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=72"
+ },
+ {
+  "domain": "munekawa.jp",
+  "name": "Information",
+  "country": "JP",
+  "email": "info@munekawa.jp",
+  "emails": [
+   "info@munekawa.jp"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 172,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=172"
  }
 ]
