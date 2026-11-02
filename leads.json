@@ -1172,5 +1172,53 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0"
+ },
+ {
+  "domain": "samurai-craft.com",
+  "name": "International Shipping Guide",
+  "country": "JP",
+  "email": "onlineshop@samurai-craft.com",
+  "emails": [
+   "onlineshop@samurai-craft.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
+ },
+ {
+  "domain": "chunichi-kobo.com",
+  "name": "Japanese Trading Company in Hiroshima",
+  "country": "JP",
+  "email": "info@chunichi-kobo.com",
+  "emails": [
+   "info@chunichi-kobo.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
+ },
+ {
+  "domain": "theroverboutique.com",
+  "name": "The Rover Boutique",
+  "country": "JP",
+  "email": "info@theroverboutique.com",
+  "emails": [
+   "info@theroverboutique.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 517,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=517"
  }
 ]
