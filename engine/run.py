@@ -141,7 +141,7 @@ def classify(m, preview):
 
 def process_inbound(inbox_key, sent_addrs):
     seen = st("inbound_seen", {})
-    sup = st("suppress", {"emails": [], "domains": []})
+    sup = _load_blocklist(st("suppress", {"emails": [], "domains": []}))
     fwd = st("forwarded", {})
     events = collections.Counter()
     new_human = []
@@ -213,6 +213,13 @@ def process_inbound(inbox_key, sent_addrs):
             continue
         c, full = am(k, "GET", f"/inboxes/{q(iid)}/messages/{q(mid)}")
         body = re.sub(r"[ \t]+", " ", str(full.get("extracted_text") or full.get("text") or "")) if c == 200 else ""
+        # 2026-11-02: an Exchange auto-responder with Auto-Submitted: auto-generated and an empty body was
+        # classified as a human reply, forwarded, AND answered — which fed a mail loop every 60 minutes.
+        _hd = {str(a).lower(): str(b).lower() for a, b in ((full.get("headers") or {}) if c == 200 else {}).items()}
+        if _hd.get("auto-submitted", "").startswith("auto") or "x-autoreply" in _hd or "x-autorespond" in _hd:
+            fwd[mid] = "autoresponder-skipped"; continue
+        if not body.strip():
+            fwd[mid] = "empty-body-skipped"; continue
         # 2026-11-02 owner request: forward the FULL reply plus the original email we sent (thread context).
         _sent_orig = ""
         try:
@@ -323,6 +330,20 @@ def score_into_pool(cands, pool, seen_leads, limit, label):
                 pool.append(lead)
                 n_ok += 1
     return n_try, n_ok
+
+
+def _load_blocklist(sup):
+    """Domains that must never be mailed again (loops, legal threats, brand collisions).
+    Lives in the image because state on this volume is ephemeral and got wiped every deploy."""
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "blocked_domains.txt")
+    try:
+        for line in open(p):
+            d = line.split("#")[0].strip().lower()
+            if d and d not in sup["domains"]:
+                sup["domains"].append(d)
+    except Exception:
+        pass
+    return sup
 
 
 def refill(pool, seen_leads, sent_all, sup):
@@ -466,7 +487,7 @@ def main():
     sent_state = st("sent", {})
     sent_all = sent_addrs | set(sent_state) | C.seed_contacted()
     events = process_inbound(inbox_key, sent_addrs)
-    sup = st("suppress", {"emails": [], "domains": []})
+    sup = _load_blocklist(st("suppress", {"emails": [], "domains": []}))
     pool, seen_leads = st("pool", []), st("seen", {})
     if MODE == "status":
         print(json.dumps({"pool": len(pool), "available": len(pool_unsent(pool, sent_all, sup)), "sent_engine": len(sent_state),
