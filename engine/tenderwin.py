@@ -122,10 +122,20 @@ def score(lead):
 
 
 def seed_rows():
+    rows = []
     try:
         rows = json.load(open(SEED_JSON))
     except Exception:
-        return []
+        rows = []
+    # 2026-11-02: live lead feed — a JSON file in the repo updated by git push, so the box never
+    # runs dry while a redeploy is in flight. Rows: {company,email,trade,province,domain}.
+    _url = os.environ.get("LEAD_FEED_URL", "").strip()
+    if _url:
+        try:
+            _j = json.loads(urllib.request.urlopen(urllib.request.Request(_url, headers={"User-Agent": "tw-feed/1.0"}), timeout=15).read())
+            rows = rows + [r for r in _j if "@" in (r.get("email") or "")]
+        except Exception as _e:
+            print("WARN LEAD_FEED_URL:", str(_e)[:120])
     return [{**r, "email": re.sub(r"^(?:%[0-9a-fA-F]{2})+", "", r["email"]).strip().lower(), "source": r.get("source", "seed")}
             for r in rows if "@" in (r.get("email") or "")]
 

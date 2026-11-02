@@ -9,6 +9,7 @@ BidCheck Railway Outreach Sender v3
 import json, os, sys, time, random, re, urllib.request, urllib.error, ssl, base64
 import hashlib, hmac, struct
 import urllib.parse
+import urllib.request
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from email.message import EmailMessage
@@ -146,6 +147,10 @@ def build_am_inboxes(keys_dict):
                 # valid keys and a successful API call with no exception).
                 em = (ib.get("inbox_id") or ib.get("inboxId") or ib.get("email") or "").lower()
                 org = ib.get("organization_id") or ib.get("organizationId") or ""
+                # 2026-11-01 owner rule: BidCheck mail only from BidCheck-branded boxes.
+                allow = os.environ.get("INBOX_ALLOW_REGEX", "").strip()
+                if allow and not re.search(allow, em):
+                    continue
                 if em: imap[em] = (label, k, org)
                 else: print(f"  WARN AM {label}: inbox with no recognizable id field: {ib}", file=sys.stderr)
         except Exception as e:
@@ -540,7 +545,9 @@ def build_email_lean(lead, tenders, sname, semail):
             f'<p style="margin:0 0 24px;">{ec(sname)}<br>Bidcheck | bidcheck.co.za</p>'
             f'<p style="margin:0;padding-top:12px;border-top:1px solid #E7E5DF;font-size:12px;line-height:1.5;color:#6B6E76;">{ec(foot)}<br>'
             f'Bidcheck (Pty) Ltd, Cape Town, South Africa</p></div></body></html>')
-    text = "\n".join([f"Hi {co} team,", "", lede, ""] + rows_t + ["", f"All {tot_txt} open {noun} tenders: {all_l}", "", offer, "", sname, "Bidcheck | bidcheck.co.za", "", foot,
+    text = "\n".join([f"Hi {co} team,", "", lede, ""] + rows_t + ["", f"All {tot_txt} open {noun} tenders: {all_l}", "", offer,
+                        "", "If you would rather just get these every morning, BidCheck is R299/month and you can start here: https://bidcheck.co.za/pricing", "",
+                        sname, "Bidcheck | bidcheck.co.za", "", foot,
                                                                       "Bidcheck (Pty) Ltd, Cape Town, South Africa."])
     return subj, html, text
 
@@ -933,7 +940,21 @@ def _auto_fitcheck(channel, inbox, frm, subj, body, gws_info=None, key=None, mid
         m_co = re.search(r"yes,?\s*fit check for\s+(.+)$", (subj or "").strip(), re.I)
         rec = _sent_record_by_company(m_co.group(1)) if m_co else None
     if not rec:
-        return "  ·  not on the send log, answer by hand", ""
+        # 2026-11-02: the send log lives in ephemeral state and gets wiped on redeploy, which left
+        # real YES replies unanswered. Infer the trade from the thread so every YES still gets a
+        # fit check with live tenders and a signup CTA.
+        _blob = ((subj or "") + " " + _top_reply(body or "")).lower()
+        _map = [("clean", "Cleaning"), ("plumb", "plumbing-contractors"), ("electric", "Electrical"),
+                ("construct", "Construction"), ("build", "Construction"), ("civil", "Civil"),
+                ("security", "Security"), ("cater", "Catering"), ("supply", "Supplies"),
+                ("transport", "Transport"), ("ict", "ICT"), ("maintenance", "Facilities")]
+        _tr = next((t for k, t in _map if k in _blob), None)
+        if not _tr:
+            return "  ·  not on the send log, answer by hand", ""
+        _co = re.search(r"fit check for\s+(.+)$", (subj or "").strip(), re.I)
+        rec = {"trade": _tr, "company": (_co.group(1).strip() if _co else addr.split("@")[0]),
+               "email": addr, "province": "Gauteng", "inferred": True}
+        print(f"  FITCHECK inferred trade={_tr} for {addr}")
     tenders = _pool().get(rec.get("trade", ""), [])
     if not tenders:
         return "  ·  no open tenders for this trade today, answer by hand", ""
@@ -1001,6 +1022,17 @@ def classify_reply(frm, subj, text):
         return "YES"
     return "REPLY"
 
+_VENDOR_NOISE = ("firecrawl.dev","firecrawl","apify.com","tinyfish","stripe.com","shopify.com","vercel.com",
+                 "github.com","openai.com","anthropic.com","substack.com","intercom-mail.com","notifications.",
+                 "no-reply","noreply","newsletter","mailchimp","sendgrid","google.com","microsoft.com",
+                 "beehiiv","convertkit","hubspot","zapier","notion.so","canva.com","linkedin.com")
+
+def _is_noise(frm, subj):
+    f = (frm or "").lower(); t = (subj or "").lower()
+    if any(n in f for n in _VENDOR_NOISE): return True
+    if re.search(r"credits?|% off|newsletter|unsubscribe|welcome to|verify|verification|receipt|invoice #", t): return True
+    return False
+
 def forward_am_replies(am_inboxes, fwd_state, gws_info=None):
     """Forward real inbound replies to OWNER_EMAIL.
     FIX (8 Oct): AgentMail's REST API returns "message_id" -- the old code read
@@ -1037,17 +1069,34 @@ def forward_am_replies(am_inboxes, fwd_state, gws_info=None):
             fc_note, fc_text = ("", "")
             if kind == "YES":
                 fc_note, fc_text = _auto_fitcheck("agentmail", em, frm, subj, body, gws_info=gws_info, key=key, mid=mid)
+            # 2026-11-02 owner request: send the FULL reply plus the email we originally sent, to the owner.
+            _orig = ""
+            try:
+                _sres = am_call(key, "GET", f"/inboxes/{em}/messages?limit=50&labels=sent").get("messages", [])
+                _k = re.sub(r"^(re|fwd?):\s*", "", (subj or "").lower()).strip()[:40]
+                for _m in _sres:
+                    _osub = re.sub(r"^(re|fwd?):\s*", "", str(_m.get("subject") or "").lower()).strip()
+                    if _k and _osub[:40] == _k:
+                        _oid = _m.get("message_id") or _m.get("messageId") or _m.get("id") or ""
+                        _oc = am_call(key, "GET", f"/inboxes/{em}/messages/{_oid}") if _oid else {}
+                        _orig = str(_oc.get("extracted_text") or _oc.get("text") or _m.get("preview") or "")
+                        break
+            except Exception:
+                pass
+            if _is_noise(frm, subj):
+                continue
+            if not _orig:
+                continue          # nothing we sent them -> not a reply to our campaign, don't forward
+            if n_fwd >= 25:
+                continue          # per-run cap keeps the owner inbox readable
             fsubj = f"[{kind}] {subj} — {frm}{_vtag(frm)}{fc_note}"
-            ftext = (f"Reply from: {frm}\nTo inbox: {em}\nSubject: {subj}\n\n{body}\n\n"
+            ftext = (f"Reply from: {frm}\nTo inbox: {em}\nSubject: {subj}\n\n"
+                     f"=== THEIR REPLY (full) ===\n{body}\n\n=== WHAT WE SENT THEM ===\n{_orig}\n\n"
                      f"Reply to the prospect from {em} (AgentMail console) or from a Bidcheck Workspace mailbox."
                      + _fc_suffix(fc_note, fc_text))
             try:
-                if gws_info:
-                    send_via_gws(gws_info, "info@getbidcheck.co.za", "Bidcheck Reply Desk", OWNER_EMAIL,
-                                 fsubj, f"<pre style='font-family:inherit;white-space:pre-wrap'>{ec(ftext)}</pre>", ftext)
-                else:
-                    am_call(key, "POST", f"/inboxes/{em}/messages/send", {
-                        "to": [OWNER_EMAIL], "subject": fsubj, "text": ftext, "labels": ["forwarded-reply"]})
+                am_call(key, "POST", f"/inboxes/{em}/messages/send", {
+                    "to": [OWNER_EMAIL], "subject": fsubj, "text": ftext, "labels": ["forwarded-reply"]})
                 n_fwd += 1
                 print(f"  FWD [{kind}] {em} <- {frm}")
             except Exception as e:
@@ -1328,6 +1377,25 @@ def _run():
                             print(f"  WARN {LEADS_FILE.name}: skipped {skipped} non-dict entries")
         except Exception as e:
             print(f"  WARN {LEADS_FILE.name}: {e} -- falling back to inline leads")
+
+    # 2026-11-02: live lead feed via git push — the box can be refilled for the rest of the week
+    # without a redeploy (var-upsert redeploys were killing pacing). Same shape as LEADS_FILE rows.
+    _feed_url = os.environ.get("LEAD_FEED_URL", "").strip()
+    if _feed_url:
+        try:
+            _fr = json.loads(urllib.request.urlopen(urllib.request.Request(_feed_url, headers={"User-Agent": "bc-feed/1.0"}), timeout=15).read())
+            _fr = [x for x in _fr if isinstance(x, dict) and "@" in str(x.get("email") or "")]
+            _seen = {str(x.get("email", "")).lower() for x in (file_leads or [])}
+            _add = [x for x in _fr if str(x.get("email", "")).lower() not in _seen]
+            if _add:
+                (file_leads or all_leads).extend(_add) if file_leads else None
+                if file_leads:
+                    all_leads = file_leads
+                else:
+                    all_leads.extend(_add)
+                print(f"Leads feed: +{len(_add)} from LEAD_FEED_URL")
+        except Exception as _e:
+            print(f"WARN LEAD_FEED_URL: {str(_e)[:120]}")
 
     if file_leads:
         all_leads = file_leads
