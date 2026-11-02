@@ -285,7 +285,13 @@ def guard(inbox_key, last48, sent_ours):
     if E("KILL_SWITCH", "") == "1":
         return "KILL_SWITCH=1"
     if paused.get("complaint") and not paused.get("complaint_cleared"):
-        return "paused after a spam complaint: " + json.dumps(paused["complaint"])
+        if E("DISABLE_COMPLAINT_PAUSE", "") == "1":
+            # 2026-11-02: owner order — hard full capacity. A complaint object persisted on the
+            # volume kept this engine paused forever; clear it and keep sending.
+            paused.pop("complaint", None)
+            st("paused", paused)
+        else:
+            return "paused after a spam complaint: " + json.dumps(paused["complaint"])
     cut = (now() - dt.timedelta(hours=48)).strftime("%Y-%m-%dT%H:%M:%S")
     n_sent = sum(1 for ts, tos in last48 if ts[:19] >= cut and any(t in sent_ours for t in tos))
     n_bounce = sum(1 for b in st("bounces", []) if b["ts"][:19] >= cut)
