@@ -850,5 +850,53 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=true catalogue=76"
+ },
+ {
+  "domain": "925silverjewelry.com",
+  "name": "Wholesale 925 Silver Jewelry Supplier",
+  "country": "JP",
+  "email": "sales@925silverjewelry.com",
+  "emails": [
+   "sales@925silverjewelry.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 90,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=90"
+ },
+ {
+  "domain": "koji-sake.com",
+  "name": "FAQ",
+  "country": "JP",
+  "email": "sales@koji-sake.com",
+  "emails": [
+   "sales@koji-sake.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 32,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=true jpText=true catalogue=32"
+ },
+ {
+  "domain": "foodservicedirect.com",
+  "name": "Miso Master Organic Traditional Red and Dom Miso Case",
+  "country": "JP",
+  "email": "customerservice@foodservicedirect.com",
+  "emails": [
+   "customerservice@foodservicedirect.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 254,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=254"
  }
 ]
