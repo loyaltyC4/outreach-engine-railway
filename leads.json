@@ -16787,5 +16787,50 @@
   "source_tag": "J-LANE3",
   "platform": null,
   "preverified": true
+ },
+ {
+  "domain": "bankon.co.jp",
+  "country": "JP",
+  "name": "会社案内 | 業務用乾物の専門問屋",
+  "emails": [
+   "admin@bankon.co.jp"
+  ],
+  "email": "admin@bankon.co.jp",
+  "products": null,
+  "reviews": null,
+  "snippet": "広島県広島市西区西観音町12-6. TEL 082-294-4411. FAX 082-294-4401; ホームページ: https://www.bankon.co.jp; E-mail: admin@bankon.co.jp; 営業倉庫: 広島県広島市西区 ...",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
+ },
+ {
+  "domain": "shigemori.co.jp",
+  "country": "JP",
+  "name": "衛生帽子・ヘアネット・サービス帽子・エプロンの専門メーカー",
+  "emails": [
+   "sales1@shigemori.co.jp"
+  ],
+  "email": "sales1@shigemori.co.jp",
+  "products": null,
+  "reviews": null,
+  "snippet": "会社名: シゲモリ株式会社. 所在地: 広島市安芸区船越南1-5-33 〒736-0082. 電話番号: 082-516-7566. FAX番号: 082-824-1404. メールアドレス: sales1@shigemori.co.jp.",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
+ },
+ {
+  "domain": "hat-marutama.jp",
+  "country": "JP",
+  "name": "お問い合わせ | 創業70年以上の帽子問屋 - 丸玉帽子 株式会社",
+  "emails": [
+   "sample@text.com"
+  ],
+  "email": "sample@text.com",
+  "products": null,
+  "reviews": null,
+  "snippet": "... 帽子は広島県福山市を拠点に、帽子 ... メールアドレス. 例：sample@text.com. お問い合わせ種別, 商品に関するお問い合わせ",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
  }
 ]
