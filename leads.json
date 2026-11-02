@@ -2028,5 +2028,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=102"
+ },
+ {
+  "domain": "animeba.com",
+  "name": "Animeba anime products wholesale,Anime distributor,toys",
+  "country": "JP",
+  "email": "business@animeba.com",
+  "emails": [
+   "business@animeba.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0"
  }
 ]
