@@ -1639,5 +1639,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=47"
+ },
+ {
+  "domain": "kaldiscoffee.com",
+  "name": "Kaldi's Coffee",
+  "country": "AE",
+  "email": "info@kaldiscoffee.com",
+  "emails": [
+   "info@kaldiscoffee.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 51,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=51"
  }
 ]
