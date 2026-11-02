@@ -1461,5 +1461,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=16"
+ },
+ {
+  "domain": "bellwethercoffee.com",
+  "name": "Bellwether Launches in Japan: Electric Roasting Goes ..",
+  "country": "JP",
+  "email": "sales@bellwethercoffee.com",
+  "emails": [
+   "sales@bellwethercoffee.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0"
  }
 ]
