@@ -1557,5 +1557,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=0"
+ },
+ {
+  "domain": "heartyceramic.com",
+  "name": "HOT ITEM",
+  "country": "JP",
+  "email": "sales@heartyceramic.com",
+  "emails": [
+   "sales@heartyceramic.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 67,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=67"
  }
 ]
