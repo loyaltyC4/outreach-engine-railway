@@ -2174,5 +2174,37 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=362"
+ },
+ {
+  "domain": "wahgifts.com",
+  "name": "#1 Corporate Gifts Supplier in Dubai, UAE",
+  "country": "AE",
+  "email": "sales@wahgifts.com",
+  "emails": [
+   "sales@wahgifts.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 40,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=40"
+ },
+ {
+  "domain": "knshobby.com",
+  "name": "KANOUSEI HOBBY",
+  "country": "JP",
+  "email": "sale@knshobby.com",
+  "emails": [
+   "sale@knshobby.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 516,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=516"
  }
 ]
