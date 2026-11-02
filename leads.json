@@ -1509,5 +1509,37 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=701"
+ },
+ {
+  "domain": "gendaiguitar.com",
+  "name": "Shop Profile",
+  "country": "JP",
+  "email": "shop@gendaiguitar.com",
+  "emails": [
+   "shop@gendaiguitar.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
+ },
+ {
+  "domain": "niconico-guitars.com",
+  "name": "Contact Us",
+  "country": "JP",
+  "email": "niconicoweb@niconico-guitars.com",
+  "emails": [
+   "niconicoweb@niconico-guitars.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 678,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=true aed=false jpText=true catalogue=678"
  }
 ]
