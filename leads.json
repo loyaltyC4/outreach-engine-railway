@@ -1541,5 +1541,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=true aed=false jpText=true catalogue=678"
+ },
+ {
+  "domain": "dubaiflorists.com",
+  "name": "Flowers",
+  "country": "AE",
+  "email": "customerservice@dubaiflorists.com",
+  "emails": [
+   "customerservice@dubaiflorists.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=0"
  }
 ]
