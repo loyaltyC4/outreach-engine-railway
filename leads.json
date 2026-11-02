@@ -1477,5 +1477,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0"
+ },
+ {
+  "domain": "stfubike.com",
+  "name": "Partners",
+  "country": "JP",
+  "email": "info@stfubike.com",
+  "emails": [
+   "info@stfubike.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 35,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=35"
  }
 ]
