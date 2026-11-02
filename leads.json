@@ -2238,5 +2238,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=86"
+ },
+ {
+  "domain": "frypan-village.com",
+  "name": "FUJITA KINZOKU Official Online Store",
+  "country": "JP",
+  "email": "info@frypan-village.com",
+  "emails": [
+   "info@frypan-village.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 166,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=166"
  }
 ]
