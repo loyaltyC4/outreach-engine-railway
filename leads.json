@@ -1851,5 +1851,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=173"
+ },
+ {
+  "domain": "kikusui-sake.com",
+  "name": "菊水酒造｜新潟県新発田市の酒蔵（1881年創業）",
+  "country": "JP",
+  "email": "customer@kikusui-sake.com",
+  "emails": [
+   "customer@kikusui-sake.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 23,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=23"
  }
 ]
