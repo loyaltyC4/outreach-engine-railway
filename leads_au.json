@@ -2875,5 +2875,705 @@
   "trade": "waste",
   "province": "WA",
   "domain": "gov.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "recruitment.nsw@allied-security.com.au",
+  "trade": "security",
+  "province": "NSW",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@riskprotectsecurity.com.au",
+  "trade": "security",
+  "province": "NSW",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "admin@kellyscleaningservice.com.au",
+  "trade": "cleaning",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "enquiries@kleancleaning.com.au",
+  "trade": "cleaning",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@scsgroup.com.au",
+  "trade": "cleaning",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Contact Our Cleaning Company",
+  "email": "info@alligatorcleaning.com.au",
+  "trade": "cleaning",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Commercial Cleaning Cost? (2026 Price Estimates)",
+  "email": "office@specservices.com.au",
+  "trade": "cleaning",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "hello@clean4you.com.au",
+  "trade": "cleaning",
+  "province": "NSW",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@starcleaner.com.au",
+  "trade": "cleaning",
+  "province": "NSW",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@cleannation.com.au",
+  "trade": "cleaning",
+  "province": "NSW",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "jen@jenscleaning.com.au",
+  "trade": "cleaning",
+  "province": "NSW",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@servicingsa.com.au",
+  "trade": "cleaning",
+  "province": "SA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Contact SA Commercial Cleaning Adelaide",
+  "email": "sales@sacommercialcleaning.com.au",
+  "trade": "cleaning",
+  "province": "SA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Professional Cleaning",
+  "email": "contact@sasunshineservices.com.au",
+  "trade": "cleaning",
+  "province": "SA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Contact Elite Cleaning Service SA",
+  "email": "enquiries@elitecleaningservicesa.com.au",
+  "trade": "cleaning",
+  "province": "SA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "sales.vic@airchange.com.au",
+  "trade": "HVAC",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "service@aireverywherevic.com.au",
+  "trade": "HVAC",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "SK AIR (VIC) Pty Ltd",
+  "email": "service@skair.com.au",
+  "trade": "HVAC",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "contact@advantageair.com.au",
+  "trade": "HVAC",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "sydney@fdcbuilding.com.au",
+  "trade": "construction",
+  "province": "NSW",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "reception@johnslyng.com.au",
+  "trade": "construction",
+  "province": "NSW",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "enquiries@masterbuilders.com.au",
+  "trade": "construction",
+  "province": "NSW",
+  "domain": "com.au"
+ },
+ {
+  "company": "Painters' registration",
+  "email": "be.licensingenquiries@lgirs.wa.gov.au",
+  "trade": "painting",
+  "province": "WA",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Visibuild Pty Ltd",
+  "email": "hello@visibuild.com",
+  "trade": "construction",
+  "province": "NSW",
+  "domain": "visibuild.com"
+ },
+ {
+  "company": "Waste Management Services Hobart",
+  "email": "operations.adelaide@jjswaste.com.au",
+  "trade": "waste",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "International Agents",
+  "email": "enquiries@friends.tas.edu.au",
+  "trade": "professional services",
+  "province": "TAS",
+  "domain": "edu.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "admin@collectiveconsulting.com.au",
+  "trade": "professional services",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "Gov Pty Ltd",
+  "email": "ask@business.tas.gov.au",
+  "trade": "professional services",
+  "province": "TAS",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Org Pty Ltd",
+  "email": "national@aca.org.au",
+  "trade": "professional services",
+  "province": "TAS",
+  "domain": "org.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "sales@ftgf.com.au",
+  "trade": "catering",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "MEMBER LIST Effective 18 April 2017",
+  "email": "info@cpff.com.au",
+  "trade": "catering",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "Managing the Work Environment and Facilities Code of Practic",
+  "email": "ntworksafe@nt.gov.au",
+  "trade": "facilities",
+  "province": "NT",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Power Lines Tas",
+  "email": "staff@powerlinestas.com.au",
+  "trade": "electrical",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "bookings@temptationscatering.com.au",
+  "trade": "catering",
+  "province": "WA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@cateringinstitute.com.au",
+  "trade": "catering",
+  "province": "WA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "careers@compass-group.com.au",
+  "trade": "catering",
+  "province": "WA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Waste Management Hobart",
+  "email": "seq@jjshealthandhygiene.com.au",
+  "trade": "waste",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "Waste Management Services Hobart",
+  "email": "accounts.tasmania@jjswaste.com.au",
+  "trade": "waste",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "McRobies Gully Waste Management Centre (The Tip)",
+  "email": "ceo@hobartcity.com.au",
+  "trade": "waste",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@swtwa.com.au",
+  "trade": "traffic management",
+  "province": "WA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Get in touch",
+  "email": "info@lgctraffic.com.au",
+  "trade": "traffic management",
+  "province": "WA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Traffic Force Customer Support",
+  "email": "info@trafficforce.com.au",
+  "trade": "traffic management",
+  "province": "WA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Contact Highways Traffic for Premium Traffic Solutions in WA",
+  "email": "enquiries@highwaystraffic.com.au",
+  "trade": "traffic management",
+  "province": "WA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "reception@unitednt.com.au",
+  "trade": "HVAC",
+  "province": "NT",
+  "domain": "com.au"
+ },
+ {
+  "company": "Email contacts for commercial service solutions",
+  "email": "sa.service@carrier.com",
+  "trade": "HVAC",
+  "province": "NT",
+  "domain": "carrier.com"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "enquiries@vicgrid.com.au",
+  "trade": "ICT",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Food Service Enquiry",
+  "email": "hello@countrychef.com.au",
+  "trade": "catering",
+  "province": "QLD",
+  "domain": "com.au"
+ },
+ {
+  "company": "Contact Venues and Catering",
+  "email": "venues@usc.edu.au",
+  "trade": "catering",
+  "province": "QLD",
+  "domain": "edu.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "qldsales@moffat.com.au",
+  "trade": "catering",
+  "province": "QLD",
+  "domain": "com.au"
+ },
+ {
+  "company": "Food regulatory agencies",
+  "email": "info@safefood.qld.gov.au",
+  "trade": "catering",
+  "province": "QLD",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Contacts for Procurement NT",
+  "email": "accountspayable@nt.gov.au",
+  "trade": "supplies",
+  "province": "NT",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "news@ntnews.com.au",
+  "trade": "supplies",
+  "province": "NT",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "contact@foodsa.com.au",
+  "trade": "catering",
+  "province": "SA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Org Pty Ltd",
+  "email": "info@mealsonwheelssa.org.au",
+  "trade": "catering",
+  "province": "SA",
+  "domain": "org.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@ttcaustralia.com.au",
+  "trade": "traffic management",
+  "province": "ACT",
+  "domain": "com.au"
+ },
+ {
+  "company": "privacy policy",
+  "email": "sales@eastcoasttrafficcontrol.com.au",
+  "trade": "traffic management",
+  "province": "ACT",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "service@multicrew.com.au",
+  "trade": "traffic management",
+  "province": "ACT",
+  "domain": "com.au"
+ },
+ {
+  "company": "Road Traffic Controller Stats 2024",
+  "email": "training@upskillinstitute.com.au",
+  "trade": "traffic management",
+  "province": "ACT",
+  "domain": "com.au"
+ },
+ {
+  "company": "Westate Pest Control Perth, Termite and Cockroach Removal ..",
+  "email": "info@westatepest.com.au",
+  "trade": "pest control",
+  "province": "WA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Food regulatory agencies",
+  "email": "envirohealth@nt.gov.au",
+  "trade": "catering",
+  "province": "NT",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Remote Catering Solutions",
+  "email": "hello@remotecateringsolutions.com.au",
+  "trade": "catering",
+  "province": "NT",
+  "domain": "com.au"
+ },
+ {
+  "company": "Zenpestcontrol Pty Ltd",
+  "email": "info@zenpestcontrol.au",
+  "trade": "pest control",
+  "province": "VIC",
+  "domain": "zenpestcontrol.au"
+ },
+ {
+  "company": "Privacy Policy",
+  "email": "adams@countrypestcontrol.com.au",
+  "trade": "pest control",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@onel.com.au",
+  "trade": "professional services",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Investing in Australia's waste and recycling infrastructure",
+  "email": "info@dwer.wa.gov.au",
+  "trade": "waste",
+  "province": "WA",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "admin@minewaste.com.au",
+  "trade": "waste",
+  "province": "WA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Waste Management",
+  "email": "info@audit.wa.gov.au",
+  "trade": "waste",
+  "province": "WA",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@canberraplumbingandgas.com.au",
+  "trade": "plumbing",
+  "province": "ACT",
+  "domain": "com.au"
+ },
+ {
+  "company": "Aussie Plumbing Services",
+  "email": "sam@aussieplumbingservices.com.au",
+  "trade": "plumbing",
+  "province": "ACT",
+  "domain": "com.au"
+ },
+ {
+  "company": "Do You Need a Plumbing Licence in the ACT?",
+  "email": "info@rplit.com.au",
+  "trade": "plumbing",
+  "province": "ACT",
+  "domain": "com.au"
+ },
+ {
+  "company": "Maintenance enquiries for government employee housing",
+  "email": "dit.gehhelpdesk@sa.gov.au",
+  "trade": "facilities",
+  "province": "SA",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@pristinesa.com.au",
+  "trade": "facilities",
+  "province": "SA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Customer Request for Maintenance",
+  "email": "admin@portaugusta.sa.gov.au",
+  "trade": "facilities",
+  "province": "SA",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "admin@kayafm.com.au",
+  "trade": "facilities",
+  "province": "SA",
+  "domain": "com.au"
+ },
+ {
+  "company": "Hobart Pest Control",
+  "email": "hobart@flick.com.au",
+  "trade": "pest control",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "Airbnb 1",
+  "email": "contact@corepest.com.au",
+  "trade": "pest control",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@pestkonnect.com.au",
+  "trade": "pest control",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "mail@acewaste.com.au",
+  "trade": "waste",
+  "province": "QLD",
+  "domain": "com.au"
+ },
+ {
+  "company": "Waste Recycling Contact",
+  "email": "enquiries@waster.com.au",
+  "trade": "waste",
+  "province": "QLD",
+  "domain": "com.au"
+ },
+ {
+  "company": "Waste Management Services Australia",
+  "email": "admin.nerang@jjswaste.com.au",
+  "trade": "waste",
+  "province": "QLD",
+  "domain": "com.au"
+ },
+ {
+  "company": "REthink Speciality Services QLD // REMONDIS Australia",
+  "email": "chinchilla-operationsnospam@remondis.com.au",
+  "trade": "waste",
+  "province": "QLD",
+  "domain": "com.au"
+ },
+ {
+  "company": "Plumbing trades",
+  "email": "otr.pid@sa.gov.au",
+  "trade": "plumbing",
+  "province": "SA",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Commercial Cleaning NT",
+  "email": "info@silvans.com.au",
+  "trade": "cleaning",
+  "province": "NT",
+  "domain": "com.au"
+ },
+ {
+  "company": "Gov Pty Ltd",
+  "email": "ntepa@nt.gov.au",
+  "trade": "waste",
+  "province": "NT",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Shoal Bay Waste Management Facility",
+  "email": "darwin@darwin.nt.gov.au",
+  "trade": "waste",
+  "province": "NT",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Privacy & Photo Upload Policy",
+  "email": "288admin@wasteawaynt.com.au",
+  "trade": "waste",
+  "province": "NT",
+  "domain": "com.au"
+ },
+ {
+  "company": "Sanctuary Cove Security Services Pty Ltd",
+  "email": "mike.telea@scove.com.au",
+  "trade": "security",
+  "province": "QLD",
+  "domain": "com.au"
+ },
+ {
+  "company": "Painter Per Hour Rate 2026, $60",
+  "email": "info@brushworks.com.au",
+  "trade": "painting",
+  "province": "NSW",
+  "domain": "com.au"
+ },
+ {
+  "company": "Contact Page",
+  "email": "security.services@cogitogroup.net",
+  "trade": "security",
+  "province": "ACT",
+  "domain": "cogitogroup.net"
+ },
+ {
+  "company": "Australia's Strategy for Protecting Crowded Places from ...",
+  "email": "srct@police.tas.gov.au",
+  "trade": "security",
+  "province": "TAS",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Gov Pty Ltd",
+  "email": "clearances@dpac.tas.gov.au",
+  "trade": "security",
+  "province": "TAS",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Plumbing Standard",
+  "email": "otr.ecoc@sa.gov.au",
+  "trade": "plumbing",
+  "province": "SA",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Form Landscaping",
+  "email": "info@formlandscaping.com.au",
+  "trade": "landscaping",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@forge.com.au",
+  "trade": "landscaping",
+  "province": "VIC",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@mbplumbingco.com.au",
+  "trade": "plumbing",
+  "province": "QLD",
+  "domain": "com.au"
+ },
+ {
+  "company": "Millarsplumbing Pty Ltd",
+  "email": "info@millarsplumbing.com",
+  "trade": "plumbing",
+  "province": "QLD",
+  "domain": "millarsplumbing.com"
+ },
+ {
+  "company": "JOIN OUR TEAM",
+  "email": "info@amatrayplumbingservices.com.au",
+  "trade": "plumbing",
+  "province": "QLD",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "bookings@plumbcall.com.au",
+  "trade": "plumbing",
+  "province": "QLD",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "service@nwacservice.com.au",
+  "trade": "HVAC",
+  "province": "TAS",
+  "domain": "com.au"
+ },
+ {
+  "company": "Construction licences",
+  "email": "cwpl@act.gov.au",
+  "trade": "electrical",
+  "province": "ACT",
+  "domain": "gov.au"
  }
 ]
