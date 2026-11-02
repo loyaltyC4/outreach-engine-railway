@@ -2271,5 +2271,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=1000"
+ },
+ {
+  "domain": "lucky-japan.com",
+  "name": "Contact information",
+  "country": "JP",
+  "email": "support@lucky-japan.com",
+  "emails": [
+   "support@lucky-japan.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 111,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=true yen=true aed=false jpText=false catalogue=111"
  }
 ]
