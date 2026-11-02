@@ -914,5 +914,37 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=44"
+ },
+ {
+  "domain": "indoorcyclepros.com",
+  "name": "Stages Bottom Bracket 000",
+  "country": "JP",
+  "email": "sales@indoorcyclepros.com",
+  "emails": [
+   "sales@indoorcyclepros.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 24,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=24"
+ },
+ {
+  "domain": "faraboutique.com",
+  "name": "FAQ + T&Cs",
+  "country": "JP",
+  "email": "customercare@faraboutique.com",
+  "emails": [
+   "customercare@faraboutique.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 180,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=180"
  }
 ]
