@@ -994,5 +994,135 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=81"
+ },
+ {
+  "domain": "nipponfigures.com",
+  "name": "Wholesale",
+  "country": "JP",
+  "email": "info@nipponfigures.com",
+  "emails": [
+   "info@nipponfigures.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 156,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=156"
+ },
+ {
+  "domain": "isekaidistribution.com",
+  "name": "Wholesale Japanese Anime Merchandise for the USA",
+  "country": "JP",
+  "email": "office@isekaidistribution.com",
+  "emails": [
+   "office@isekaidistribution.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 165,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=165"
+ },
+ {
+  "domain": "airplanthub.com",
+  "name": "INTERNATIONAL & HAWAII SHIPPING INFORMATION",
+  "country": "JP",
+  "email": "customerservice@airplanthub.com",
+  "emails": [
+   "customerservice@airplanthub.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 184,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=184"
+ },
+ {
+  "domain": "samurai-store.com",
+  "name": "SAMURAI STORE",
+  "country": "JP",
+  "email": "info@samurai-store.com",
+  "emails": [
+   "info@samurai-store.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 104,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=104"
+ },
+ {
+  "domain": "dazrocosmetics.com",
+  "name": "Contact DAZRO Cosmetics UAE",
+  "country": "AE",
+  "email": "info@dazrocosmetics.com",
+  "emails": [
+   "info@dazrocosmetics.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 52,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=52"
+ },
+ {
+  "domain": "wafuu.com",
+  "name": "Magu Roll: Japanese Tuna Paper Explained (2026 Guide)",
+  "country": "JP",
+  "email": "support@wafuu.com",
+  "emails": [
+   "support@wafuu.com",
+   "info@wafuu.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 443,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=443"
+ },
+ {
+  "domain": "hansatoystore.com",
+  "name": "Hansa Toys Hansa Creations International Shipping",
+  "country": "JP",
+  "email": "cs@hansatoystore.com",
+  "emails": [
+   "cs@hansatoystore.com",
+   "info@hansatoystore.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 14,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=14"
+ },
+ {
+  "domain": "shiptokyo.com",
+  "name": "ShipTokyo",
+  "country": "JP",
+  "email": "support@shiptokyo.com",
+  "emails": [
+   "support@shiptokyo.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=0"
  }
 ]
