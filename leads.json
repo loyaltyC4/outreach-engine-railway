@@ -1268,5 +1268,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=213"
+ },
+ {
+  "domain": "akagisan.com",
+  "name": "kondo shuzo co., ltd",
+  "country": "JP",
+  "email": "info@akagisan.com",
+  "emails": [
+   "info@akagisan.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": null,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=0"
  }
 ]
