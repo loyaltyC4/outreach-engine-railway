@@ -184,7 +184,13 @@ def process_inbound(inbox_key, sent_addrs):
                     v.get("inbox") == iid and str(v.get("ts", ""))[:19] >= _cut21
                     for v in _ss.values())
                 if any(h in orig.lower() for h in C.REPLY_HINTS) and _ours_recently:
-                    st("paused", {})["complaint"] = {"ts": iso(), "inbox": iid, "original_subject": orig}
+                    # 2026-11-02 owner order — hard full capacity, no self-holds: an old complaint
+                    # sitting in the inbox re-paused the engine on every single pass. Only pause
+                    # when the owner has not switched the kill-switch off for this service.
+                    if E("DISABLE_COMPLAINT_PAUSE", "") == "1":
+                        st("foreign_complaints", []).append({"ts": iso(), "inbox": iid, "original_subject": orig, "note": "pause disabled by env"})
+                    else:
+                        st("paused", {})["complaint"] = {"ts": iso(), "inbox": iid, "original_subject": orig}
                 else:
                     st("foreign_complaints", []).append({"ts": iso(), "inbox": iid, "original_subject": orig})
                     # 2026-10-31: alert only FRESH foreign complaints (<24h) — redeployed containers otherwise
