@@ -1124,5 +1124,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=0"
+ },
+ {
+  "domain": "shobido-honten.com",
+  "name": "FAQ｜有田焼なら賞美堂本店オンラインショップ",
+  "country": "JP",
+  "email": "mail@shobido-honten.com",
+  "emails": [
+   "mail@shobido-honten.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 135,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=135"
  }
 ]
