@@ -2303,5 +2303,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=33"
+ },
+ {
+  "domain": "kanetsuneusa.com",
+  "name": "Kanetsune USA Distributor",
+  "country": "JP",
+  "email": "contact@kanetsuneusa.com",
+  "emails": [
+   "contact@kanetsuneusa.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 44,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=44"
  }
 ]
