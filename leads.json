@@ -1655,5 +1655,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=51"
+ },
+ {
+  "domain": "kevinscatalog.com",
+  "name": "Frequently Asked Questions",
+  "country": "JP",
+  "email": "customerservice@kevinscatalog.com",
+  "emails": [
+   "customerservice@kevinscatalog.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 66,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=66"
  }
 ]
