@@ -1802,5 +1802,22 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=0"
+ },
+ {
+  "domain": "prioritybicycles.com",
+  "name": "Priority Bicycles",
+  "country": "JP",
+  "email": "info@prioritybicycles.com",
+  "emails": [
+   "info@prioritybicycles.com",
+   "prioritybicycles1@prioritybicycles.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 224,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=224"
  }
 ]
