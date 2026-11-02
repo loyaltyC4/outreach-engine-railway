@@ -978,5 +978,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=88"
+ },
+ {
+  "domain": "bokksuboutique.com",
+  "name": "Bokksu Boutique",
+  "country": "JP",
+  "email": "care@bokksuboutique.com",
+  "emails": [
+   "care@bokksuboutique.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 81,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=81"
  }
 ]
