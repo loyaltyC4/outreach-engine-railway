@@ -946,5 +946,37 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=true aed=false jpText=false catalogue=180"
+ },
+ {
+  "domain": "coolstuffjapan.com",
+  "name": "Buy Japanese coffee online",
+  "country": "JP",
+  "email": "support@coolstuffjapan.com",
+  "emails": [
+   "support@coolstuffjapan.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 122,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=122"
+ },
+ {
+  "domain": "e-fish.com",
+  "name": "E",
+  "country": "JP",
+  "email": "hello@e-fish.com",
+  "emails": [
+   "hello@e-fish.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 88,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=88"
  }
 ]
