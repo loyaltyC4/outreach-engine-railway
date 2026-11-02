@@ -226,16 +226,26 @@ def process_inbound(inbox_key, sent_addrs):
             _sc, _sd = am(k, "GET", f"/inboxes/{q(iid)}/messages?labels=SENT&limit=50")
             if _sc == 200:
                 _key = re.sub(r"^(re|fwd?):\s*", "", (subj or "").lower()).strip()[:40]
+                _claimed = False
                 for _m in (_sd.get("messages") or []):
                     _osub = re.sub(r"^(re|fwd?):\s*", "", str(_m.get("subject") or "").lower()).strip()
-                    if _key and _osub[:40] == _key:
+                    # 2026-11-02: fleet inboxes are shared by two campaigns — the first engine to forward
+                    # a thread owns it. A forward is a SENT message to the owner tagged "[X reply] <base>";
+                    # if one already exists for this base subject, this engine stays silent.
+                    if _m2 := re.match(r"^\[\w[\w ]*\s+reply\]\s+(.+)$", str(_m.get("subject") or ""), re.I):
+                        if _key and re.sub(r"^(re|fwd?):\s*", "", _m2.group(1)).lower().strip()[:40] == _key:
+                            fwd[mid] = "claimed-by-other-campaign"
+                            _claimed = True
+                            break
+                    if _key and _osub[:40] == _key and not _sent_orig:
                         _mid_o = _m.get("message_id") or _m.get("id")
                         _oc, _of = am(k, "GET", f"/inboxes/{q(iid)}/messages/{q(_mid_o)}")
                         if _oc == 200:
                             _sent_orig = re.sub(r"[ \t]+", " ", str(_of.get("extracted_text") or _of.get("text") or ""))
                         if not _sent_orig:
                             _sent_orig = str(_m.get("preview") or "")
-                        break
+                if _claimed:
+                    continue
         except Exception as _e:
             _sent_orig = "(original not found: %s)" % str(_e)[:60]
         _noise = ('firecrawl','apify','tinyfish','stripe.com','shopify.com','vercel.com','github.com','openai.com',
