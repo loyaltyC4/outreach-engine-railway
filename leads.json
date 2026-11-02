@@ -1835,5 +1835,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=true usd=true yen=false aed=false jpText=false catalogue=60"
+ },
+ {
+  "domain": "heyrooted.com",
+  "name": "Hey Rooted: Online Plant Subscription and Delivery",
+  "country": "JP",
+  "email": "hello@heyrooted.com",
+  "emails": [
+   "hello@heyrooted.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 173,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=173"
  }
 ]
