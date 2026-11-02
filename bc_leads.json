@@ -1,1 +1,968 @@
-[]
+[
+ {
+  "company": "Apex Paving and Civils",
+  "email": "info@apexpavingandcivils.com",
+  "trade": "Paving",
+  "province": "Eastern Cape",
+  "domain": "apexpavingandcivils.com"
+ },
+ {
+  "company": "Contact Paving Contractors Centurion & Pretoria",
+  "email": "admin@pretoriapaving.co.za",
+  "trade": "Paving",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Contact Pebble Paving",
+  "email": "info@pebblepavinginternational.co.za",
+  "trade": "Paving",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "South African Consulate General in Los Angeles, USA",
+  "email": "consular.ny@dirco.gov.za",
+  "trade": "Civil",
+  "province": "North West",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Get In Touch with African Services to Give or Receive Help",
+  "email": "info@africanservices.org",
+  "trade": "Civil",
+  "province": "North West",
+  "domain": "africanservices.org"
+ },
+ {
+  "company": "Gov",
+  "email": "davashang@opsc.gov.za",
+  "trade": "Civil",
+  "province": "North West",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Co",
+  "email": "enquiries@advcs.co.za",
+  "trade": "Cleaning",
+  "province": "North West",
+  "domain": "co.za"
+ },
+ {
+  "company": "Fidelity Cleaning Services",
+  "email": "litigation-legal@fidelity-services.com",
+  "trade": "Cleaning",
+  "province": "North West",
+  "domain": "fidelity-services.com"
+ },
+ {
+  "company": "Cleaning Contact",
+  "email": "cleaning@csggroup.co.za",
+  "trade": "Cleaning",
+  "province": "North West",
+  "domain": "co.za"
+ },
+ {
+  "company": "Elelwani Catering Services",
+  "email": "info@elelwani.com",
+  "trade": "Catering",
+  "province": "Eastern Cape",
+  "domain": "elelwani.com"
+ },
+ {
+  "company": "Co",
+  "email": "safive@safive.co.za",
+  "trade": "Welding",
+  "province": "Western Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "enquiries@ptswelding.co.za",
+  "trade": "Welding",
+  "province": "Western Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Painting Solutions",
+  "email": "sales@paintingsolutions.co.za",
+  "trade": "Painting",
+  "province": "Western Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "info@airproducts.co.za",
+  "trade": "Supplies",
+  "province": "KwaZulu-Natal",
+  "domain": "co.za"
+ },
+ {
+  "company": "KwaZulu Natal",
+  "email": "enquiries@primecs.co.za",
+  "trade": "Supplies",
+  "province": "KwaZulu-Natal",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "karin.pienaar@hafele.co.za",
+  "trade": "Supplies",
+  "province": "KwaZulu-Natal",
+  "domain": "co.za"
+ },
+ {
+  "company": "Gov",
+  "email": "transportministry@dot.gov.za",
+  "trade": "Transport",
+  "province": "Eastern Cape",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Eastern Shipping and Transport",
+  "email": "info@easternshipping.co.za",
+  "trade": "Transport",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Give Us Transport Solutions",
+  "email": "info@giveustransportsolutions.com",
+  "trade": "Transport",
+  "province": "Eastern Cape",
+  "domain": "giveustransportsolutions.com"
+ },
+ {
+  "company": "Gov",
+  "email": "communication@safetyec.gov.za",
+  "trade": "Transport",
+  "province": "Eastern Cape",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Cleaning Services Polokwane",
+  "email": "admin@cleaningpolokwane.co.za",
+  "trade": "Cleaning",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "PAINTING SERVICES",
+  "email": "admin@pcrcontractors.co.za",
+  "trade": "Painting",
+  "province": "Northern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Reliable Painting Contractors in Cape Town",
+  "email": "admin@elite-painters.co.za",
+  "trade": "Painting",
+  "province": "Western Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Contact Vulcan for support today",
+  "email": "ctsales@vulcan.co.za",
+  "trade": "Catering",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "info@revsa.co.za",
+  "trade": "ICT",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "IT Support Gauteng",
+  "email": "info@globalict.co.za",
+  "trade": "ICT",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "ICASA contact details.",
+  "email": "info@icasa.org.za",
+  "trade": "ICT",
+  "province": "Gauteng",
+  "domain": "org.za"
+ },
+ {
+  "company": "ICT Solutions & Connectivity South Africa",
+  "email": "sales@dreamict.co.za",
+  "trade": "ICT",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Information Centre",
+  "email": "enquiries@gems.gov.za",
+  "trade": "ICT",
+  "province": "Gauteng",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Co",
+  "email": "gateway@bennettread.co.za",
+  "trade": "Supplies",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "sales@partstoreafrica.co.za",
+  "trade": "Supplies",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "Contact Construction Company in Limpopo",
+  "email": "info@nhluvukisisupply.co.za",
+  "trade": "Supplies",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "Contact Information for South Africa",
+  "email": "info.africa@intertek.com",
+  "trade": "Supplies",
+  "province": "Limpopo",
+  "domain": "intertek.com"
+ },
+ {
+  "company": "Our offices",
+  "email": "zaalza-hcr-orders@airliquide.com",
+  "trade": "Supplies",
+  "province": "Limpopo",
+  "domain": "airliquide.com"
+ },
+ {
+  "company": "Limpopo Division",
+  "email": "randallj@sizabantu.com",
+  "trade": "Supplies",
+  "province": "Limpopo",
+  "domain": "sizabantu.com"
+ },
+ {
+  "company": "Sweet Lemon Catering",
+  "email": "info@sweetlemoncatering.co.za",
+  "trade": "Catering",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Catering Company",
+  "email": "genevieve@norma-vilma.co.za",
+  "trade": "Catering",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "neil@allpainting.co.za",
+  "trade": "Painting",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "SS Painting • Painting that you can trust",
+  "email": "info@sspainting.co.za",
+  "trade": "Painting",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "kathleen@dpfcontractors.co.za",
+  "trade": "Painting",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Gov",
+  "email": "power@capetown.gov.za",
+  "trade": "Supplies",
+  "province": "Western Cape",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Supplier Databases",
+  "email": "wcseb@westerncape.gov.za",
+  "trade": "Supplies",
+  "province": "Western Cape",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Professionalsupplysource",
+  "email": "sales@professionalsupplysource.com",
+  "trade": "Supplies",
+  "province": "Western Cape",
+  "domain": "professionalsupplysource.com"
+ },
+ {
+  "company": "The Sethakga Group",
+  "email": "emailquote@thesethakgagroup.co.za",
+  "trade": "Cleaning",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "Transport [ Department of ]",
+  "email": "info@dot.gov.za",
+  "trade": "Transport",
+  "province": "Gauteng",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Flysaa",
+  "email": "apoioaocliente@flysaa.com",
+  "trade": "Transport",
+  "province": "Gauteng",
+  "domain": "flysaa.com"
+ },
+ {
+  "company": "Co",
+  "email": "info@hopedtrans.co.za",
+  "trade": "Transport",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Africa Transport Solutions",
+  "email": "adele@atstransport.co.za",
+  "trade": "Transport",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Online enquiry",
+  "email": "info@twincities.co.za",
+  "trade": "Transport",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "LG Protection Services",
+  "email": "info@lgprotectionservices.co.za",
+  "trade": "Security",
+  "province": "Northern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "info@mtshokosecurity.co.za",
+  "trade": "Security",
+  "province": "Northern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "NATIVAH ENERGY GROUP PTY (Ltd)",
+  "email": "info@nativah.co.za",
+  "trade": "Security",
+  "province": "Northern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Electroteches",
+  "email": "bevan@electroteches.com",
+  "trade": "Electrical",
+  "province": "North West",
+  "domain": "electroteches.com"
+ },
+ {
+  "company": "Sadcgov",
+  "email": "info@sadcgov.com",
+  "trade": "ICT",
+  "province": "Mpumalanga",
+  "domain": "sadcgov.com"
+ },
+ {
+  "company": "IT Master (Pty) Ltd",
+  "email": "sales@procureactiv.co.za",
+  "trade": "ICT",
+  "province": "Mpumalanga",
+  "domain": "co.za"
+ },
+ {
+  "company": "Contact SARS by email/online",
+  "email": "pcc@sars.gov.za",
+  "trade": "Maintenance",
+  "province": "Northern Cape",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Justice/Contacts General",
+  "email": "expungements@justice.gov.za",
+  "trade": "Maintenance",
+  "province": "Northern Cape",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Gov",
+  "email": "contact.us@capetown.gov.za",
+  "trade": "Maintenance",
+  "province": "Northern Cape",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Co",
+  "email": "neochaba@africalegato.co.za",
+  "trade": "Construction",
+  "province": "Free State",
+  "domain": "co.za"
+ },
+ {
+  "company": "Gov",
+  "email": "musom@fsworks.gov.za",
+  "trade": "Construction",
+  "province": "Free State",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Co",
+  "email": "info@stanfordsecurityservices.co.za",
+  "trade": "Security",
+  "province": "Western Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Pay Centre Name Vision",
+  "email": "mufarat@salteb.co.za",
+  "trade": "Security",
+  "province": "Western Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Western Cape Members",
+  "email": "reception@abcsecurity.co.za",
+  "trade": "Security",
+  "province": "Western Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Building Service Centre Contact Numbers",
+  "email": "info@lastbuilders.com",
+  "trade": "Construction",
+  "province": "Gauteng",
+  "domain": "lastbuilders.com"
+ },
+ {
+  "company": "Construction Company",
+  "email": "erik@cpmprojects.co.za",
+  "trade": "Construction",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "ivan@bscbuilding.co.za",
+  "trade": "Construction",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "info@pavecorp.co.za",
+  "trade": "Paving",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "SA Paving",
+  "email": "info@sapaving.co.za",
+  "trade": "Paving",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Cleaning Services Durban",
+  "email": "enquiries@cleaningspecialists.co.za",
+  "trade": "Cleaning",
+  "province": "KwaZulu-Natal",
+  "domain": "co.za"
+ },
+ {
+  "company": "CLiCK KZN South Coast",
+  "email": "feedback@clickcleaning.co.za",
+  "trade": "Cleaning",
+  "province": "KwaZulu-Natal",
+  "domain": "co.za"
+ },
+ {
+  "company": "Contact Our Branches",
+  "email": "sales@wsfafrica.com",
+  "trade": "Fencing",
+  "province": "North West",
+  "domain": "wsfafrica.com"
+ },
+ {
+  "company": "Contact Capstone Fencing",
+  "email": "admin@capstonefencing.co.za",
+  "trade": "Fencing",
+  "province": "North West",
+  "domain": "co.za"
+ },
+ {
+  "company": "Brilliant Fencing",
+  "email": "jaco@brilliantfencing.co.za",
+  "trade": "Fencing",
+  "province": "North West",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "info@royalplumbing.co.za",
+  "trade": "Plumbing",
+  "province": "Mpumalanga",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "info@drainsurgeon.co.za",
+  "trade": "Plumbing",
+  "province": "Mpumalanga",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "info@tmltransport.co.za",
+  "trade": "Transport",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "irral@limpopo.co.za",
+  "trade": "Transport",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "Contact Information",
+  "email": "info@ldtcs.gov.za",
+  "trade": "Transport",
+  "province": "Limpopo",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Transport Services",
+  "email": "jpb@absamail.co.za",
+  "trade": "Transport",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "Contact the IEC South Africa",
+  "email": "info@elections.org.za",
+  "trade": "Electrical",
+  "province": "North West",
+  "domain": "org.za"
+ },
+ {
+  "company": "Power Curbers South Africa",
+  "email": "jesusfumado@powercurbers.com",
+  "trade": "Paving",
+  "province": "Limpopo",
+  "domain": "powercurbers.com"
+ },
+ {
+  "company": "Gov",
+  "email": "ndpwquotations@dpw.gov.za",
+  "trade": "Maintenance",
+  "province": "Eastern Cape",
+  "domain": "gov.za"
+ },
+ {
+  "company": "South African Post Office",
+  "email": "customer.services@postoffice.co.za",
+  "trade": "Maintenance",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Service provider for general building maintenance",
+  "email": "s.zondi@sanbi.org",
+  "trade": "Maintenance",
+  "province": "Eastern Cape",
+  "domain": "sanbi.org"
+ },
+ {
+  "company": "Contract Catering Services South Africa",
+  "email": "info@csggroup.co.za",
+  "trade": "Catering",
+  "province": "Mpumalanga",
+  "domain": "co.za"
+ },
+ {
+  "company": "Gov",
+  "email": "service@westerncape.gov.za",
+  "trade": "Maintenance",
+  "province": "Northern Cape",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Government call centres and help lines",
+  "email": "president@presidency.gov.za",
+  "trade": "Maintenance",
+  "province": "Northern Cape",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Contact Information",
+  "email": "webmaster@eskom.co.za",
+  "trade": "Maintenance",
+  "province": "Northern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "info@surbemagroup.co.za",
+  "trade": "Security",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "Security Services",
+  "email": "silusm@webmail.co.za",
+  "trade": "Security",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "MAINTENANCE AND REPAIR SERVICES",
+  "email": "sales@akura.co.za",
+  "trade": "Maintenance",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "sales@safefencing.co.za",
+  "trade": "Fencing",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Shipping from South Africa to the United States",
+  "email": "info@gettransport.com",
+  "trade": "Transport",
+  "province": "Eastern Cape",
+  "domain": "gettransport.com"
+ },
+ {
+  "company": "South Africa",
+  "email": "info@sa-construction.co.za",
+  "trade": "Construction",
+  "province": "Western Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Contact Atuba Construction",
+  "email": "info@atuba.co.za",
+  "trade": "Construction",
+  "province": "Western Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Contact Our Branches",
+  "email": "wcsales1@wsfafrica.com",
+  "trade": "Fencing",
+  "province": "KwaZulu-Natal",
+  "domain": "wsfafrica.com"
+ },
+ {
+  "company": "Clearvu Fence Installers",
+  "email": "sales@diamondfencing.co.za",
+  "trade": "Fencing",
+  "province": "KwaZulu-Natal",
+  "domain": "co.za"
+ },
+ {
+  "company": "Focus Fencing",
+  "email": "info@focusfencing.co.za",
+  "trade": "Fencing",
+  "province": "KwaZulu-Natal",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "info@mekshuttleandtransfer.co.za",
+  "trade": "Transport",
+  "province": "Mpumalanga",
+  "domain": "co.za"
+ },
+ {
+  "company": "Transport [ Department of ]",
+  "email": "electronic@gcis.gov.za",
+  "trade": "Transport",
+  "province": "Mpumalanga",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Construction Companies",
+  "email": "info@nonkolisa.co.za",
+  "trade": "Construction",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "USEFUL CONTACTS",
+  "email": "info@saiw.co.za",
+  "trade": "Construction",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "lucas@mafate.co.za",
+  "trade": "Supplies",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "Org",
+  "email": "nwcomplaints@sahrc.org.za",
+  "trade": "Civil",
+  "province": "KwaZulu-Natal",
+  "domain": "org.za"
+ },
+ {
+  "company": "Contact Details",
+  "email": "gabriel.blose@kznworks.gov.za",
+  "trade": "Civil",
+  "province": "KwaZulu-Natal",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Gov",
+  "email": "nobuthom@statssa.gov.za",
+  "trade": "Civil",
+  "province": "KwaZulu-Natal",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Gov",
+  "email": "sandile.bhengu@kznhealth.gov.za",
+  "trade": "Civil",
+  "province": "KwaZulu-Natal",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Co",
+  "email": "sales@sensfence.co.za",
+  "trade": "Fencing",
+  "province": "Free State",
+  "domain": "co.za"
+ },
+ {
+  "company": "Org",
+  "email": "melisac@serviceseta.org.za",
+  "trade": "Supplies",
+  "province": "KwaZulu-Natal",
+  "domain": "org.za"
+ },
+ {
+  "company": "KC Plumbing",
+  "email": "info@kcplumbing.co.za",
+  "trade": "Plumbing",
+  "province": "KwaZulu-Natal",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "andrew@aquafix.co.za",
+  "trade": "Plumbing",
+  "province": "KwaZulu-Natal",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "gauteng@itsglobal.co.za",
+  "trade": "Transport",
+  "province": "Western Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "durban@valuefencing.co.za",
+  "trade": "Fencing",
+  "province": "KwaZulu-Natal",
+  "domain": "co.za"
+ },
+ {
+  "company": "Forest Fencing",
+  "email": "info@forestfencing.co.za",
+  "trade": "Fencing",
+  "province": "KwaZulu-Natal",
+  "domain": "co.za"
+ },
+ {
+  "company": "Get in Touch",
+  "email": "info@phangisagroup.co.za",
+  "trade": "Maintenance",
+  "province": "Mpumalanga",
+  "domain": "co.za"
+ },
+ {
+  "company": "Rand Construction",
+  "email": "info@randc.co.za",
+  "trade": "Construction",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Inyati Construction",
+  "email": "info@inyaticonstruction.co.za",
+  "trade": "Construction",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "ndani@max-weziecbc.co.za",
+  "trade": "Construction",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Our Family",
+  "email": "barnie@capitolcaterers.co.za",
+  "trade": "Catering",
+  "province": "Northern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Thiabe Catering Kimberley",
+  "email": "elphia@thiabecatering.co.za",
+  "trade": "Catering",
+  "province": "Northern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "quinton@atlantissez.co.za",
+  "trade": "Supplies",
+  "province": "Northern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Contact KAEFER South Africa",
+  "email": "info@kaefer.co.za",
+  "trade": "Construction",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "wbhoho@wbho.co.za",
+  "trade": "Construction",
+  "province": "Gauteng",
+  "domain": "co.za"
+ },
+ {
+  "company": "Pay Centre Name Vision",
+  "email": "ntozinib@salteb.co.za",
+  "trade": "Security",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "M Security Services",
+  "email": "info@msecurityservices.co.za",
+  "trade": "Security",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Eastern Cape Public Works",
+  "email": "thembisile.dadlana@ecdpw.ecape.gov.za",
+  "trade": "Security",
+  "province": "Eastern Cape",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Security Services",
+  "email": "blmreception@excellentsecurity.co.za",
+  "trade": "Security",
+  "province": "Eastern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Community Safety, Roads and Transport",
+  "email": "hugos@freetrans.gov.za",
+  "trade": "Transport",
+  "province": "Free State",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Gov",
+  "email": "ndabezinhle.sibiya@kzntransport.gov.za",
+  "trade": "Transport",
+  "province": "Free State",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Co",
+  "email": "info@cmttransport.co.za",
+  "trade": "Transport",
+  "province": "Free State",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "admin@kimex.co.za",
+  "trade": "Transport",
+  "province": "Free State",
+  "domain": "co.za"
+ },
+ {
+  "company": "Gov",
+  "email": "mokitimit@freetrans.gov.za",
+  "trade": "Transport",
+  "province": "Free State",
+  "domain": "gov.za"
+ },
+ {
+  "company": "Insideafricanart",
+  "email": "todd@insideafricanart.com",
+  "trade": "Painting",
+  "province": "Eastern Cape",
+  "domain": "insideafricanart.com"
+ },
+ {
+  "company": "Co",
+  "email": "info@ictallin.co.za",
+  "trade": "ICT",
+  "province": "Mpumalanga",
+  "domain": "co.za"
+ },
+ {
+  "company": "Managed IT Support Across South Africa",
+  "email": "support@atlasict.co.za",
+  "trade": "ICT",
+  "province": "Mpumalanga",
+  "domain": "co.za"
+ },
+ {
+  "company": "MK8 Security",
+  "email": "admin@mk8.co.za",
+  "trade": "Security",
+  "province": "Northern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "Security Contact",
+  "email": "info@csgsecurity.co.za",
+  "trade": "Security",
+  "province": "Northern Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "[PDF] salteb",
+  "email": "mngenin@salteb.co.za",
+  "trade": "Security",
+  "province": "Northern Cape",
+  "domain": "co.za"
+ }
+]
