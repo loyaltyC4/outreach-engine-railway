@@ -2206,5 +2206,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=false yen=false aed=false jpText=true catalogue=516"
+ },
+ {
+  "domain": "musearia.com",
+  "name": "About Muse Aria",
+  "country": "JP",
+  "email": "support@musearia.com",
+  "emails": [
+   "support@musearia.com"
+  ],
+  "source_tag": "J-SITE",
+  "platform": null,
+  "products": 206,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=true usd=false yen=false aed=false jpText=false catalogue=206"
  }
 ]
