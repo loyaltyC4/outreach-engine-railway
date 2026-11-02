@@ -1671,5 +1671,21 @@
   "province": "",
   "trade": "",
   "snippet": "shipsIntl=false usd=true yen=false aed=false jpText=false catalogue=66"
+ },
+ {
+  "domain": "homeandsouldubai.com",
+  "name": "Contact Us",
+  "country": "AE",
+  "email": "info@homeandsouldubai.com",
+  "emails": [
+   "info@homeandsouldubai.com"
+  ],
+  "source_tag": "U-SITE",
+  "platform": null,
+  "products": 100,
+  "reviews": null,
+  "province": "",
+  "trade": "",
+  "snippet": "shipsIntl=false usd=false yen=false aed=true jpText=false catalogue=100"
  }
 ]
