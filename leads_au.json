@@ -64069,5 +64069,19 @@
   "trade": "ICT",
   "province": "Albury",
   "domain": "com.au"
+ },
+ {
+  "company": "Milestone Project Management",
+  "email": "nick@milestonepm.com.au",
+  "trade": "professional services",
+  "province": "Adelaide",
+  "domain": "com.au"
+ },
+ {
+  "company": "Yattee Farms",
+  "email": "peter@yattee.com",
+  "trade": "landscaping supplies",
+  "province": "Cairns",
+  "domain": "yattee.com"
  }
 ]
