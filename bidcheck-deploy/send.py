@@ -1501,7 +1501,10 @@ def _run():
     # Adaptive pacing: spread the day's batch over ~6h. Per-inbox spacing is the
     # global gap x number of inboxes, so even the 10s floor leaves every mailbox
     # minutes between its own sends. Small batches keep the old 30-80s rhythm.
-    _gap = min(80.0, max(10.0, 6 * 3600 / max(1, len(to_send))))
+    # 2026-11-03: spread window env-tunable (PACING_HOURS) — owner wants today > yesterday, and the
+    # real governor is AgentMail's org/inbox caps, not this timer. 6h default, 3.5h under full-send.
+    _ph = float(os.environ.get("PACING_HOURS", "6"))
+    _gap = min(80.0, max(8.0, _ph * 3600 / max(1, len(to_send))))
     print(f"Pacing: {_gap*0.6:.0f}-{_gap:.0f}s between sends")
     ok = failed = 0
     by_v = {}
