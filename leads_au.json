@@ -63495,5 +63495,47 @@
   "trade": "traffic management",
   "province": "Gold Coast",
   "domain": "airservicesaustralia.com"
+ },
+ {
+  "company": "Teacher of Bricklaying",
+  "email": "brenden.hepper@tafensw.edu.au",
+  "trade": "bricklaying",
+  "province": "Wollongong",
+  "domain": "edu.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@ozpaintingservices.com.au",
+  "trade": "painting",
+  "province": "Geelong",
+  "domain": "com.au"
+ },
+ {
+  "company": "Excellence in Construction",
+  "email": "asmar@abc.org",
+  "trade": "joinery",
+  "province": "Bendigo",
+  "domain": "abc.org"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "emailinfo@mcguireselectricalcontractors.com.au",
+  "trade": "electrical",
+  "province": "Perth",
+  "domain": "com.au"
+ },
+ {
+  "company": "Plumber Geelong",
+  "email": "info@ssplumbingco.au",
+  "trade": "plumbing",
+  "province": "Geelong",
+  "domain": "ssplumbingco.au"
+ },
+ {
+  "company": "Instant Green Nursery",
+  "email": "sales@instantgreennursery.com.au",
+  "trade": "landscaping supplies",
+  "province": "Cairns",
+  "domain": "com.au"
  }
 ]
