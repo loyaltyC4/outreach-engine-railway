@@ -64090,5 +64090,12 @@
   "trade": "printing",
   "province": "Bendigo",
   "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@abelia.com.au",
+  "trade": "landscaping",
+  "province": "Melbourne",
+  "domain": "com.au"
  }
 ]
