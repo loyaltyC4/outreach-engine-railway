@@ -64020,5 +64020,33 @@
   "trade": "hiring equipment",
   "province": "Perth",
   "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "service@synergyfs.com.au",
+  "trade": "fire protection",
+  "province": "Sydney",
+  "domain": "com.au"
+ },
+ {
+  "company": "Equipment Hire Ballarat, Palmer Hire",
+  "email": "6300admin@palmerhire.com.au",
+  "trade": "hiring equipment",
+  "province": "Ballarat",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "ballarat@kennards.com.au",
+  "trade": "hiring equipment",
+  "province": "Ballarat",
+  "domain": "com.au"
+ },
+ {
+  "company": "Privacy Policy",
+  "email": "info@keytoindependence.com.au",
+  "trade": "hiring equipment",
+  "province": "Ballarat",
+  "domain": "com.au"
  }
 ]
