@@ -27332,5 +27332,35 @@
   "source_tag": "J-LANE3",
   "platform": null,
   "preverified": true
+ },
+ {
+  "domain": "shop.masahiro.co.jp",
+  "country": "JP",
+  "name": "【公式】オンラインショップ|泡盛まさひろ蔵元通販",
+  "emails": [
+   "awamori@masahiro.co.jp"
+  ],
+  "email": "awamori@masahiro.co.jp",
+  "products": null,
+  "reviews": null,
+  "snippet": "ご注文内容・お支払い案内・ 発送 連絡など重要な メール が確実に届くよう、; 必ず「awamori@masahiro.co.jp」を受信許可（迷惑 メール 除外設定）に; ご登録いただきますよう ... Read more",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
+ },
+ {
+  "domain": "locondo.jp",
+  "country": "JP",
+  "name": "特定商取引法に基づく表示・古物営業法に基づく表記 - ロコンド",
+  "emails": [
+   "no-reply@locondo.jp"
+  ],
+  "email": "no-reply@locondo.jp",
+  "products": null,
+  "reviews": null,
+  "snippet": "お問い合わせ先 電話:03-5656-9456 メールマガジン配信アドレス no-reply@locondo.jp ※このメールアドレスは配信専用です。ご連絡いただいてもご返信できかねますのでご了 ...",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
  }
 ]
