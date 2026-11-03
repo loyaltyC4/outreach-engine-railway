@@ -20081,5 +20081,33 @@
   "trade": "Cleaning Supplies",
   "province": "Bloemfontein",
   "domain": "co.za"
+ },
+ {
+  "company": "Contact Logistics Company Durban",
+  "email": "saajida@fmplogistics.co.za",
+  "trade": "Transport",
+  "province": "Durban",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "sandton@chemdry.co.za",
+  "trade": "Cleaning Supplies",
+  "province": "Sandton",
+  "domain": "co.za"
+ },
+ {
+  "company": "Paving Contractors Cape Town",
+  "email": "given@givewaycontractors.co.za",
+  "trade": "Paving",
+  "province": "Western Cape",
+  "domain": "co.za"
+ },
+ {
+  "company": "United Paving Cape Town Contractor Since 1983",
+  "email": "info@unitedpaving.co.za",
+  "trade": "Paving",
+  "province": "Western Cape",
+  "domain": "co.za"
  }
 ]
