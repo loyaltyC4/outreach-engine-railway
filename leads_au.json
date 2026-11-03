@@ -64083,5 +64083,12 @@
   "trade": "landscaping supplies",
   "province": "Cairns",
   "domain": "yattee.com"
+ },
+ {
+  "company": "Bart `N' Print",
+  "email": "info@bartnprint.com.au",
+  "trade": "printing",
+  "province": "Bendigo",
+  "domain": "com.au"
  }
 ]
