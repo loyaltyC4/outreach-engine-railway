@@ -63537,5 +63537,96 @@
   "trade": "landscaping supplies",
   "province": "Cairns",
   "domain": "com.au"
+ },
+ {
+  "company": "Concreters Gold Coast",
+  "email": "admin@eliteconcretesolutions.net.au",
+  "trade": "concreting",
+  "province": "Gold Coast",
+  "domain": "net.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "geelong@apbi.com.au",
+  "trade": "pest inspection",
+  "province": "Geelong",
+  "domain": "com.au"
+ },
+ {
+  "company": "Industrial Electrical Contractors Melbourne",
+  "email": "well@araelec.com.au",
+  "trade": "electrical",
+  "province": "Melbourne",
+  "domain": "com.au"
+ },
+ {
+  "company": "Electrician Melbourne",
+  "email": "service@electricalguru.com.au",
+  "trade": "electrical",
+  "province": "Melbourne",
+  "domain": "com.au"
+ },
+ {
+  "company": "Smbittechs Pty Ltd",
+  "email": "service@smbittechs.com",
+  "trade": "ICT",
+  "province": "Albury",
+  "domain": "smbittechs.com"
+ },
+ {
+  "company": "Lions Den Timber Joinery",
+  "email": "timber.joinery@lionsdenenterprises.com.au",
+  "trade": "joinery",
+  "province": "Perth",
+  "domain": "com.au"
+ },
+ {
+  "company": "Alarm Systems Hampton",
+  "email": "sales@smartersecurity.com.au",
+  "trade": "security systems",
+  "province": "Melbourne",
+  "domain": "com.au"
+ },
+ {
+  "company": "Alarm System Installation Melbourne",
+  "email": "sales@ninjasecurity.com.au",
+  "trade": "security systems",
+  "province": "Melbourne",
+  "domain": "com.au"
+ },
+ {
+  "company": "Locate a MyAlarm Registered Installer",
+  "email": "enquiry@dalzottoelectrics.com.au",
+  "trade": "security systems",
+  "province": "Melbourne",
+  "domain": "com.au"
+ },
+ {
+  "company": "Technical Support",
+  "email": "technicalsupport@darwinchambers.com",
+  "trade": "facilities",
+  "province": "Darwin",
+  "domain": "darwinchambers.com"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "mailbox@capitalcountrypools.com.au",
+  "trade": "swimming pools",
+  "province": "Canberra",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@ckpaintingandtiling.com.au",
+  "trade": "painting",
+  "province": "Hobart",
+  "domain": "com.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "admin@acsurveyors.com.au",
+  "trade": "land surveying",
+  "province": "Townsville",
+  "domain": "com.au"
  }
 ]
