@@ -64006,5 +64006,19 @@
   "trade": "bricklaying",
   "province": "Canberra",
   "domain": "com.au"
+ },
+ {
+  "company": "Contact ID Rent",
+  "email": "info@idrent.au",
+  "trade": "hiring equipment",
+  "province": "Perth",
+  "domain": "idrent.au"
+ },
+ {
+  "company": "Com Pty Ltd",
+  "email": "info@tbhire.com.au",
+  "trade": "hiring equipment",
+  "province": "Perth",
+  "domain": "com.au"
  }
 ]
