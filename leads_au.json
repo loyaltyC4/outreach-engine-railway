@@ -63922,5 +63922,54 @@
   "trade": "bricklaying",
   "province": "Perth",
   "domain": "jennythekelpiebricklaying.au"
+ },
+ {
+  "company": "Hardscaping, Paving & Custom Steps Gold Coast",
+  "email": "admin@cleanscapes.com.au",
+  "trade": "paving contractor",
+  "province": "Gold Coast",
+  "domain": "com.au"
+ },
+ {
+  "company": "Driveway Construction on the Gold Coast",
+  "email": "045info@ap-constructions.com.au",
+  "trade": "paving contractor",
+  "province": "Gold Coast",
+  "domain": "com.au"
+ },
+ {
+  "company": "Contact DIS Fire",
+  "email": "sales@disfire.com.au",
+  "trade": "fire protection",
+  "province": "Hobart",
+  "domain": "com.au"
+ },
+ {
+  "company": "Glenelg Air",
+  "email": "enquiries@glenelgair.com.au",
+  "trade": "HVAC",
+  "province": "Adelaide",
+  "domain": "com.au"
+ },
+ {
+  "company": "Contact AFA Air in the Adelaide CBD",
+  "email": "sales@afaair.com.au",
+  "trade": "HVAC",
+  "province": "Adelaide",
+  "domain": "com.au"
+ },
+ {
+  "company": "Yackandandah Valley Nursery",
+  "email": "robert@yackvalleynursery.com",
+  "trade": "landscaping supplies",
+  "province": "Canberra",
+  "domain": "yackvalleynursery.com"
+ },
+ {
+  "company": "Plant nursery",
+  "email": "rob@phillipslandscapes.com.au",
+  "trade": "landscaping supplies",
+  "province": "Canberra",
+  "domain": "com.au"
  }
 ]
