@@ -26567,5 +26567,65 @@
   "source_tag": "J-LANE3",
   "platform": null,
   "preverified": true
+ },
+ {
+  "domain": "inspice.jp",
+  "country": "JP",
+  "name": "特定商取引法に基づく表記 - Inspice",
+  "emails": [
+   "info@inspice.jp"
+  ],
+  "email": "info@inspice.jp",
+  "products": null,
+  "reviews": null,
+  "snippet": "金沢・東山 直営店 … 石川県金沢市三口町火294番地1 電話番号 076-254-6024 … メールアドレス info@inspice.jp",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
+ },
+ {
+  "domain": "tochigi-leather.co.jp",
+  "country": "JP",
+  "name": "お問い合わせ - 栃木レザー",
+  "emails": [
+   "abcd@xxxx.co.jp"
+  ],
+  "email": "abcd@xxxx.co.jp",
+  "products": null,
+  "reviews": null,
+  "snippet": "【ご案内】 ; お名前 ; 電話番号 · 「半角数字」「-」のみ（例）0282-24-0666 ; メールアドレス · 「半角英数字」「-.@」のみ（例）abcd@xxxx.co.jp ; お問い合わせ内容 · 400文字 ... Missing:  専門  | Show results with:",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
+ },
+ {
+  "domain": "harima-seimen.jp",
+  "country": "JP",
+  "name": "会社案内 | そうめん うどん、乾麺のはりま製麺",
+  "emails": [
+   "satoyori@harima-seimen.jp"
+  ],
+  "email": "satoyori@harima-seimen.jp",
+  "products": null,
+  "reviews": null,
+  "snippet": "通販専用お問い合わせ先. はりまの郷より. フリーダイヤル：0120-75-0623 e- mail ：satoyori@harima-seimen.jp. はりま製麺 ネット通販 のご案内. 全国にその名を知られる手延 ... Read more",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
+ },
+ {
+  "domain": "todashoji.jp",
+  "country": "JP",
+  "name": "特定商取引法に基づく表記 - 聚楽第 純米大吟醸酒 「正論」",
+  "emails": [
+   "shop-info@todashoji.jp"
+  ],
+  "email": "shop-info@todashoji.jp",
+  "products": null,
+  "reviews": null,
+  "snippet": "特定商取引法に基づく表記 ; 東京都千代田区神田錦町1-14-11 · 03-5282-1265 · shop-info@todashoji.jp · https://todashoji.jp · 基本送料無料ただし以下地域は1本ごとに別途 ...",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
  }
 ]
