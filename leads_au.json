@@ -63915,5 +63915,12 @@
   "trade": "ICT",
   "province": "Cairns",
   "domain": "com.au"
+ },
+ {
+  "company": "Jenny The Kelpie Bricklaying",
+  "email": "info@jennythekelpiebricklaying.au",
+  "trade": "bricklaying",
+  "province": "Perth",
+  "domain": "jennythekelpiebricklaying.au"
  }
 ]
