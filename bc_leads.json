@@ -20060,5 +20060,26 @@
   "trade": "Steelwork",
   "province": "Benoni",
   "domain": "co.za"
+ },
+ {
+  "company": "Contact CED South Africa",
+  "email": "vnaidu@cesam.co.za",
+  "trade": "Electrical Supplies",
+  "province": "Durban",
+  "domain": "co.za"
+ },
+ {
+  "company": "Rubble Removal Experts",
+  "email": "emailinfo@rubbleremovalexperts.co.zawebsiterubbleremovalexperts.co.za",
+  "trade": "Rubble Removal",
+  "province": "Limpopo",
+  "domain": "co.za"
+ },
+ {
+  "company": "Co",
+  "email": "derek@dynachem.co.za",
+  "trade": "Cleaning Supplies",
+  "province": "Bloemfontein",
+  "domain": "co.za"
  }
 ]
