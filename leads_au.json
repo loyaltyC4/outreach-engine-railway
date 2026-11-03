@@ -63789,5 +63789,54 @@
   "trade": "swimming pools",
   "province": "Canberra",
   "domain": "com.au"
+ },
+ {
+  "company": "Fencing information for registered owners",
+  "email": "contact@melton.vic.gov.au",
+  "trade": "fencing contractor",
+  "province": "Melbourne",
+  "domain": "gov.au"
+ },
+ {
+  "company": "Sunshine Built",
+  "email": "info@sunshinebuilt.com.au",
+  "trade": "construction",
+  "province": "Sunshine Coast",
+  "domain": "com.au"
+ },
+ {
+  "company": "Independent Building Group",
+  "email": "admin@ibgsc.com.au",
+  "trade": "construction",
+  "province": "Sunshine Coast",
+  "domain": "com.au"
+ },
+ {
+  "company": "Bidscape Pty Ltd",
+  "email": "sales@bidscape.com",
+  "trade": "landscaping supplies",
+  "province": "Darwin",
+  "domain": "bidscape.com"
+ },
+ {
+  "company": "General Painting Contractors Pty Ltd",
+  "email": "info@generalpaintingcontractors.com.au",
+  "trade": "painting",
+  "province": "Sydney",
+  "domain": "com.au"
+ },
+ {
+  "company": "Industrial & Warehouse Cleaning Services",
+  "email": "info@cleancorp.com",
+  "trade": "cleaning equipment",
+  "province": "Brisbane",
+  "domain": "cleancorp.com"
+ },
+ {
+  "company": "Harrellsnursery Pty Ltd",
+  "email": "chloe@harrellsnursery.net",
+  "trade": "landscaping supplies",
+  "province": "Sunshine Coast",
+  "domain": "harrellsnursery.net"
  }
 ]
