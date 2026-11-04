@@ -869,48 +869,91 @@ def build_fitcheck(rec, tenders, details, sname, arm="A"):
     def link(ocid, i):
         return f"https://bidcheck.co.za/tender/{ocid}?{utm}_t{i}"
 
+    # 2026-11-04 rework: lead with the closing-date countdown of THEIR matched tender (urgency is real, not fake),
+    # anchor Starter's R299 against the contract value, and offer a reply-for-walkthrough as the low-friction
+    # alternative to paying. All three arms share the countdown + anchor + walkthrough; they differ in how they
+    # push the next step (direct pack, pick a route, pick-your-path).
+    def _countdown(d_meta, closes_fallback):
+        """'closes in 7 days (14 Nov)' when we have a real date, else just the string we had."""
+        closes_raw = (d_meta or {}).get("closes") or closes_fallback or ""
+        when_s = _when(closes_raw) or closes_raw
+        try:
+            m = re.search(r"(\d{4})-(\d{2})-(\d{2})", str(closes_raw))
+            if m:
+                import datetime as _dt
+                days = (_dt.date(int(m.group(1)), int(m.group(2)), int(m.group(3))) - _dt.date.today()).days
+                if days >= 0:
+                    return f"closes in {days} day{'s' if days != 1 else ''} ({when_s})"
+        except Exception:
+            pass
+        return f"closes {when_s}"
+
+    def _anchor(d_meta):
+        """R299 vs a real contract figure when the feed gives us one, else a generic frame."""
+        try:
+            v = (d_meta or {}).get("value") or 0
+            v = float(v)
+            if v >= 50000:
+                import math
+                k = int(round(v / 1000.0))
+                r = f"R{k:,}k".replace(",", " ")
+                return f"R299 a month is about 0.15% of the {r} on this one."
+        except Exception:
+            pass
+        return "R299 a month is less than most bidders spend on a single site visit."
+
+    walkthrough_line = ('Not sure which way to go? Reply "walk me through this bid" and I\'ll do the first pass with you '
+                        'on the one that closes first — no account, no charge for that one call.')
+
     if arm == "A":
         title, buyer, closes, ocid = rows[0]
         d = details.get(ocid) or {}
         top = "\n".join([title, buyer + (f", ref {d['ref']}" if d.get("ref") else ""),
-                         f"Closes: {_when(d.get('closes')) or closes}"] + _tender_lines(d))
+                         _countdown(d, closes).capitalize()] + _tender_lines(d))
         more = len(rows) - 1
         parts = [
             greet,
-            "You said yes, so here's the tender closing first:",
+            f"You said yes. The {noun} tender closing first for you — {_countdown(d, closes)}:",
             top,
             f"{more} more open {noun} tender{'s' if more != 1 else ''} in the free search: {search}" if more else "",
             papers,
-            "Open this one to see the full pack and what you still need for it: " + link(ocid, 1),
+            "The full pack and what's still missing for this one: " + link(ocid, 1),
+            f"After this one, {_anchor(d)} Starter is R299/mo (R10/day) and tracks every new {noun} tender on National "
+            f"Treasury eTenders for your CSD profile automatically: {pricing}",
+            walkthrough_line,
             TRUST, sig, foot,
         ]
     else:
         listing = "\n\n".join(
-            f"{i}. {t[0]}\n   {t[1]}, closes {_when((details.get(t[3]) or {}).get('closes')) or t[2]}\n   {link(t[3], i)}"
+            f"{i}. {t[0]}\n   {t[1]}, {_countdown(details.get(t[3]) or {}, t[2])}\n   {link(t[3], i)}"
             for i, t in enumerate(rows[:3], 1))
         more = len(rows) - 3
         list_block = listing + (f"\n\n{more} more in the free search: {search}" if more > 0 else "")
+        d0 = details.get(rows[0][3]) or {}
         if arm == "B":
             parts = [
                 greet,
-                f"You said yes. Here are the open {noun} tenders closing soonest:",
+                f"You said yes. Here are the {noun} tenders closing soonest, with the clock on each:",
                 list_block,
-                "There are two ways to get a first bid ready, so you can pick the one that fits.",
-                "Done for you: the Starter Compliance Pack, R2,500 once-off. CSD registration, the B-BBEE affidavit, "
-                f"your tax compliance PIN and the rest of a first bid's papers, handled by our team. {services}",
-                "Do it yourself: Starter, R299 a month (about R10 a day), cancel in one click with no contract. It gives you "
-                "payment-risk checks on every buyer, the compliance document vault and pre-filled SBD forms. Pay yearly and it's "
-                f"R2,690 for the full year. {pricing}",
+                f"Two ways in, pick the one that fits.\n\n"
+                f"1. Done for you: Starter Compliance Pack, R2,500 once-off — CSD, B-BBEE affidavit, tax PIN and the "
+                f"first bid's papers, handled by our team. {services}\n\n"
+                f"2. Do it yourself: Starter, R299/mo (R10/day), cancel in one click. Payment-risk checks on every "
+                f"buyer, the compliance vault and pre-filled SBD forms. Yearly R2,690. {pricing}",
+                _anchor(d0),
+                walkthrough_line,
                 TRUST, sig, foot,
             ]
         else:
             parts = [
                 greet,
-                f"Here's your fit check. These are the open {noun} tenders closing soonest:",
+                f"Your fit check — the {noun} tenders closing soonest, with how long you have on each:",
                 list_block,
-                "One question so I point you at the right next step: do you already have a CSD supplier number?",
-                f"Yes, I have one: see what Starter adds for your bids. {pricing}",
-                f"No, I don't: CSD registration is R950 and we do it for you. {services}",
+                "To point you at the right next step in one question: do you already have a CSD supplier number?",
+                f"Yes, I have one: see what Starter adds for your bids (R299/mo, cancel in one click). {pricing}",
+                f"No, I don't: CSD registration is R950 and we handle it. {services}",
+                _anchor(d0),
+                walkthrough_line,
                 TRUST, sig, foot,
             ]
     text = "\n\n".join(p for p in parts if p)
@@ -918,6 +961,9 @@ def build_fitcheck(rec, tenders, details, sname, arm="A"):
 
 def _auto_fitcheck(channel, inbox, frm, subj, body, gws_info=None, key=None, mid=None, msgid_hdr=None, thread_id=None):
     """Send the fit check for a YES reply. Returns (note for the owner's forward subject, fit check text or '').
+    2026-11-03 owner order: auto replies OFF. Set AUTO_FITCHECK=1 to turn them back on.
+    if os.environ.get("AUTO_FITCHECK", "0") != "1":
+        return "  ·  auto-replies disabled by owner", ""
     Guards: a lead we emailed (send log), a short reply or the reply-button subject, once per address, open tenders exist."""
     m = re.search(r"[\w.+\-]+@[\w.\-]+", frm or "")
     addr = m.group(0).lower() if m else ""
