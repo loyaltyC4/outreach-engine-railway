@@ -1,10 +1,19 @@
 """Aged Care Direct: partner-invitation campaign. Everything campaign-specific lives here:
-who qualifies, how new leads are found, and the email copy (edit COPY when the wording changes)."""
-import csv, html, os, re
+who qualifies, how new leads are found, and the email copy (edit COPY when the wording changes).
+
+Arms (2026-11-04): A = shortlist-no-forms (the live control, best reply-bait at ~0.9%).
+                   B = capacity question first (lower-friction opener; lands as a yes/no).
+                   C = fees-first (answers the real objection up-front; commission model).
+                   D = 3-option reply (name three services and say "reply A/B/C"; speeds the sort).
+Arm picked by stable sha1(email) % 100 against ACD_ARM_WEIGHTS (default A=40,B=20,C=30,D=10).
+Owner confirmed commercial model 2026-11-04: commission (default 10% of first month, override in code)."""
+import csv, hashlib, html, os, re
 from util import FREE_MAIL, EMAIL_RX, reg_domain, has_mx, jev
 
 NAME = "acd"
-REPLY_HINTS = ("new client introductions", "equipment quotes", "same-day equipment")
+REPLY_HINTS = ("new client introductions", "equipment quotes", "same-day equipment",
+               "services:", "areas covered:", "taking new clients", "what are the terms", "what are your terms",
+               "any fees", "commission", "how does this work", "add us", "add me")
 SEED_DIR = os.environ.get("SEED_DIR") or os.path.join(os.path.dirname(os.path.abspath(__file__)), "seed")
 SEED_CSV = os.path.join(SEED_DIR, "acd_leads.csv")
 SEED_CONTACTED = os.path.join(SEED_DIR, "acd_contacted.csv")
@@ -16,25 +25,96 @@ SITE = "https://agedcaredirect.com.au"
 STATE_NAME = {"NSW": "NSW", "VIC": "Victoria", "QLD": "Queensland", "WA": "Western Australia", "SA": "South Australia",
               "TAS": "Tasmania", "ACT": "the ACT", "NT": "the Northern Territory"}
 
-# ---- copy (v2, 2026-10-28: cold-email + marketing-psychology pass). Plain text: best deliverability for a cold first touch.
-# Truthful on purpose: no invented demand/urgency, just a specific, low-friction ask (reciprocity: minimal to answer).
-SUBJECTS = ["shortlist question for {name}", "quick one for {name}", "capacity check, {name}"]
-BODY = (
-    "Hi,\n\n"
-    "I'm Sylvester at Aged Care Direct. We introduce people who need aged care or disability support directly to providers, "
-    "and I'm putting together the shortlist{where} now.\n\n"
-    "If {name} has room for new clients, reply with what you cover (services + areas) and I'll add you. That's it, no forms.\n\n"
-    "Reply \"remove\" and you won't hear from me again.\n\n"
-    "Sylvester\nAged Care Direct\n{site}\n{addr}"
-)
+# ---- copy (v3, 2026-11-04: four arms with fees-answer A/B pass). Plain text, no forms, "Sylvester" sign-off stays.
+# Owner-confirmed commercial model: commission. Default phrasing: "10% of the first month if we introduce a paying client."
+# Override by editing FEES_LINE in one place.
+FEES_LINE = ("No upfront cost. We only earn a small commission (10% of the first month) if we actually "
+             "introduce someone who becomes a client, otherwise it's free.")
+
+SUBJECTS = {
+    "A": ["shortlist question for {name}", "quick one for {name}", "capacity check, {name}"],
+    "B": ["room for new clients, {name}?", "quick yes/no for {name}", "{name} intake"],
+    "C": ["about the commission, {name}", "how it works for {name}", "{name} shortlist + fees"],
+    "D": ["which of these does {name} cover?", "three options, {name}", "shortlist tick, {name}"],
+}
+BODY = {
+    "A": ("Hi,\n\n"
+          "I'm Sylvester at Aged Care Direct. We introduce people who need aged care or disability support directly to providers, "
+          "and I'm putting together the shortlist{where} now.\n\n"
+          "If {name} has room for new clients, reply with what you cover (services + areas) and I'll add you. That's it, no forms.\n\n"
+          + FEES_LINE + "\n\n"
+          "Reply \"remove\" and you won't hear from me again.\n\n"
+          "Sylvester\nAged Care Direct\n{site}\n{addr}"),
+    "B": ("Hi,\n\n"
+          "Quick one: does {name} have room for new clients this month?\n\n"
+          "I'm Sylvester at Aged Care Direct. We introduce people who need aged care or disability support to providers, "
+          "and I'm sorting the shortlist{where}. One line back is enough: yes/no, plus the services and areas you cover.\n\n"
+          + FEES_LINE + "\n\n"
+          "Reply \"remove\" if it's not for you.\n\n"
+          "Sylvester\nAged Care Direct\n{site}\n{addr}"),
+    "C": ("Hi,\n\n"
+          "Before you ask (three providers did this week): " + FEES_LINE + "\n\n"
+          "I'm Sylvester at Aged Care Direct. We introduce people needing aged care or disability support directly to providers, "
+          "and I'm putting together the shortlist{where} now.\n\n"
+          "If {name} takes new clients, reply with what you cover (services + areas) and I'll add you. No forms.\n\n"
+          "Reply \"remove\" and you won't hear from me again.\n\n"
+          "Sylvester\nAged Care Direct\n{site}\n{addr}"),
+    "D": ("Hi,\n\n"
+          "I'm Sylvester at Aged Care Direct. We introduce people who need aged care or disability support directly to providers. "
+          "Putting together the shortlist{where} now.\n\n"
+          "To make this quick, does {name} cover any of these?\n"
+          "  A. In-home aged care / Home Care Package\n"
+          "  B. NDIS / disability support\n"
+          "  C. Support at Home\n\n"
+          "Reply with the letters that fit plus the suburbs or regions you cover, and I'll add you.\n\n"
+          + FEES_LINE + "\n\n"
+          "Reply \"remove\" if it's not for you.\n\n"
+          "Sylvester\nAged Care Direct\n{site}\n{addr}"),
+}
+
+# Arm weights: percent chance per lead. Must sum to 100. Override via ACD_ARM_WEIGHTS="A:40,B:20,C:30,D:10".
+_DEFAULT_ARM_WEIGHTS = {"A": 40, "B": 20, "C": 30, "D": 10}
+
+
+def _arm_weights():
+    raw = os.environ.get("ACD_ARM_WEIGHTS", "")
+    if not raw:
+        return _DEFAULT_ARM_WEIGHTS
+    out = {}
+    for piece in raw.split(","):
+        k, _, v = piece.strip().partition(":")
+        if k in "ABCD" and v.isdigit():
+            out[k] = int(v)
+    if sum(out.values()) != 100 or set(out) != set("ABCD"):
+        return _DEFAULT_ARM_WEIGHTS
+    return out
+
+
+def _arm_for(email):
+    """Stable arm per address per the configured weights."""
+    bucket = int(hashlib.sha1((email or "").lower().encode()).hexdigest()[:8], 16) % 100
+    cum = 0
+    for arm in "ABCD":
+        cum += _arm_weights()[arm]
+        if bucket < cum:
+            return arm
+    return "A"
+
+
+def _subject(arm, name, email):
+    """Rotate through the arm's subjects deterministically so measurement isolates subject from body."""
+    subs = SUBJECTS[arm]
+    idx = int(hashlib.sha1(("subj|" + (email or "")).lower().encode()).hexdigest()[:8], 16) % len(subs)
+    return subs[idx].format(name=name)
 
 
 def render(lead):
-    import random
     where = " for " + STATE_NAME[lead["state"]] if lead.get("state") in STATE_NAME else ""
     name = html.unescape(lead["name"])
-    subj = random.choice(SUBJECTS).format(name=name)
-    body = BODY.format(name=name, where=where, site=SITE, addr=FOOTER_ADDR)
+    arm = _arm_for(lead.get("email") or "")
+    subj = _subject(arm, name, lead.get("email") or "")
+    body = BODY[arm].format(name=name, where=where, site=SITE, addr=FOOTER_ADDR)
+    lead["_arm"] = arm  # run.py picks this up for the arm-log
     return subj, body
 
 

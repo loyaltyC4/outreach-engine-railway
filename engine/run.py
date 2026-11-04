@@ -448,8 +448,15 @@ def send_batch(batch, inbox_key, per_inbox_today, sent_state):
         if c in (200, 201):
             sent += 1
             used[ib] += 1
-            sent_state[lead["email"]] = {"inbox": ib, "ts": iso(), "state": lead.get("state")}
-            log("SENT", ib, "->", lead["email"])
+            sent_state[lead["email"]] = {"inbox": ib, "ts": iso(), "state": lead.get("state"), "arm": lead.get("_arm")}
+            # Arm log: append-only JSONL, one row per send, so arm rates can be read back without the API.
+            try:
+                with open(P("arm_log.jsonl"), "a") as _f:
+                    _f.write(json.dumps({"ts": iso(), "em": lead["email"], "arm": lead.get("_arm"),
+                                         "subj": subj[:120], "inbox": ib}) + "\n")
+            except Exception:
+                pass
+            log("SENT", ib, "->", lead["email"], "arm=" + (lead.get("_arm") or "?"))
         elif c == 429:
             parked.add(inbox_key[ib])
             log("429 parked org", str(d)[:140])
