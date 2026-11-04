@@ -15,10 +15,14 @@ CTA = {
     "R": 'Reply "yes" and I will send a link to a 15-minute call, no charge, to see what it would look like for {store}.',
 }
 
+# 2026-11-04: added a payments-pain-first subject variant per owner brief (BuyandShip chased us twice on this hook).
+# Arm A keeps the money question up-front; arm B leads with the physical "where does the money land" angle; arm C is
+# the three-things angle. First slot in each list is the payments-pain lead; later slots rotate on send_index so the
+# subject-line test is a within-arm comparison (payments-pain vs structural vs curiosity).
 SUBJECTS = {
-    "A": ["{store}'s US payouts", "US LLC for {store}?", "quick question, {store}"],
-    "B": ["where {store}'s US payments land", "US LLC for {store}?", "quick question, {store}"],
-    "C": ["US LLC for {store}?", "{store}'s US payouts", "quick question, {store}"],
+    "A": ["where {store}'s US money gets stuck", "{store}'s US payouts", "US LLC for {store}?", "quick question, {store}"],
+    "B": ["where {store}'s US payments land", "a hop in {store}'s US payouts", "US LLC for {store}?", "quick question, {store}"],
+    "C": ["your US payouts, from {country}", "US LLC for {store}?", "{store}'s US payouts", "quick question, {store}"],
 }
 
 E1 = {
@@ -27,7 +31,7 @@ E1 = {
     "C": "{greeting}\n\n{observation}\n\nSelling into the US from {country} usually comes down to three things: a US LLC, an EIN (non-residents do not need an SSN) and a US bank account behind your payouts.\n\nWhether that is worth doing depends on how much {store} sells in the US. {cta} No pitch either way.\n\n" + OPTOUT + "\n\n" + SIGN,
 }
 
-SUBJECTS_JA = ["{store}様の米国向け入金について", "{store}様のUS LLCについて", "{store}様の米国売上について"]
+SUBJECTS_JA = ["{store}様、米国からの入金はどちらの銀行口座へ？", "{store}様の米国向け入金について", "{store}様のUS LLCについて", "{store}様の米国売上について"]
 E1_JA = "{greeting_ja}\n\n{observation_ja}\n\n米国向けのStripeアカウントは、米国のLLC、EIN、米国の銀行口座の3つを前提にしています。StripeやShopifyは、WiseやPayoneerのような口座への入金を、実在する米国の銀行口座への入金よりも慎重に確認する傾向があります。\n\n非居住者はSSNなしでEINを取得できます。{store}様の場合に具体的にどうなるか、15分のオンライン通話（無料）でご説明します：{link}\n\n" + OPTOUT_JA + "\n\n{sender}\nNameMarshal | namemarshal.com"
 
 # observation lines by source_tag (use only when the signal is true; source_tag is set by the harvest)
