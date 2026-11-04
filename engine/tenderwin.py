@@ -78,19 +78,42 @@ def _award_line(lead):
     return f"Came across {co} while looking at who wins {lead.get('trade') or 'government'} work in Australia."
 
 
+def _concrete_tender_line(tenders):
+    """Build a specific first-line 'biggest is X by BUYER, closes DAY' phrase from the live match list.
+    Owner brief 2026-11-04: variants that lead with a specific buyer+date earn more replies than counts alone."""
+    if not tenders:
+        return ""
+    t = tenders[0]
+    buyer = t.get("buyer", "").split(" - ")[0][:40].strip(" ,-")
+    title = (t.get("title") or "")[:60].strip()
+    return f"soonest is \"{title}\" ({buyer}), closes {t['closes']}"
+
+
 def render(lead):
     f, trade, co = _first(lead), lead.get("trade") or "your trade", lead.get("company") or "your business"
     total, tenders = live_for(lead.get("trade"), 3, lead.get("state"))
     v = variant_for(lead)
-    if v == "C" and total:
-        body = (f"{_award_line(lead)}\n\n{total} {trade} tenders are open across Australia right now. "
+    lead["_arm"] = v  # picked up by run.py for the arm-log
+
+    # Hard guard: never send a zero-match email with a "0 open ... matched" subject. If nothing is open in
+    # their trade right now, route via the Award/Awareness arm (variant C-style) which does not list tenders.
+    if not total:
+        body = (f"{_award_line(lead)}\n\nQuick question: who on your team watches for the next {trade} tender?\n\n"
+                f"TenderWin emails the ones that fit your ABN each morning, free. {trade.title()} tenders open "
+                f"every week across AusTender and the state portals.\n\n"
+                f"Want me to switch it on for {co}? Reply \"yes\" and I'll set it up.")
+        return f"{co} + government work", f"Hi {f},\n\n{body}\n\n{OPT}\n\n{SIGN}"
+
+    concrete = _concrete_tender_line(tenders)
+    if v == "C":
+        body = (f"{_award_line(lead)}\n\n{total} {trade} tenders are open across Australia right now — {concrete}.\n\n"
                 f"I can send you the three that fit {co} before the day is out. Want them?\n\nJust reply \"yes\".")
         return f"{co}: next contract", f"Hi {f},\n\n{body}\n\n{OPT}\n\n{SIGN}"
-    if v == "B" or not tenders:
-        n = f"{total} {trade} tenders are open" if total else f"{trade} tenders open every week"
+    if v == "B":
         body = (f"{_award_line(lead)}\n\nQuick question: who on your team watches for the next one?\n\n"
-                f"Right now {n} across AusTender and the state portals. TenderWin emails the ones that fit your ABN "
-                f"each morning, free.\n\nWant me to switch it on for {co}? Reply \"yes\" and I'll set it up.")
+                f"Right now {total} {trade} tenders are open across AusTender and the state portals — {concrete}. "
+                f"TenderWin emails the ones that fit your ABN each morning, free.\n\n"
+                f"Want me to switch it on for {co}? Reply \"yes\" and I'll set it up.")
         return f"{co} + government work", f"Hi {f},\n\n{body}\n\n{OPT}\n\n{SIGN}"
     lines = "\n".join(f"- {x['title'][:70]} ({x['buyer'].split(' - ')[0][:35]}{', ' + x['state'] if x['state'] else ''}), closes {x['closes']}\n  {x['url']}" for x in tenders)
     body = (f"{_award_line(lead)}\n\n{total} {trade} tenders are open right now. These close soonest:\n\n{lines}\n\n"
