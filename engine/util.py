@@ -93,16 +93,35 @@ def has_mx(domain):
 
 
 # ---------- Jev (typesafe systemone) ----------
+# 2026-11-04: added key-pool rotation (TYPESAFE_API_KEYS, comma-separated) so the scoring step can go 3x
+# faster when the scraping agent floods the engine with fresh leads. Falls back to the legacy single key.
+_JEV = {"i": 0, "dead": set()}
+
+
+def _jev_keys():
+    pool = [k.strip() for k in os.environ.get("TYPESAFE_API_KEYS", "").split(",") if k.strip()]
+    legacy = os.environ.get("TYPESAFE_API_KEY", "").strip()
+    if legacy and legacy not in pool:
+        pool.insert(0, legacy)
+    return pool
+
+
 def jev(state, questions):
-    key = os.environ.get("TYPESAFE_API_KEY", "")
-    if not key:
+    keys = _jev_keys()
+    if not keys:
         return None
-    for _ in range(3):
+    for attempt in range(min(3, len(keys) * 2)):
+        key = keys[_JEV["i"] % len(keys)]
+        _JEV["i"] += 1
+        if key in _JEV["dead"]:
+            continue
         c, d = http("POST", "https://api.typesafe.ai/v1/systemone",
                     {"model": "jev-latest", "state": state, "questions": questions},
                     {"Authorization": "Bearer " + key}, timeout=90)
         if c == 200 and "answers" in d:
             return {k: round(v["noul"], 3) for k, v in d["answers"].items()}
+        if c in (401, 403):
+            _JEV["dead"].add(key)
         time.sleep(1.5)
     return None
 
