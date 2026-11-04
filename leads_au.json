@@ -64125,5 +64125,30 @@
   "trade": "landscaping supplies",
   "province": "Hobart",
   "domain": "pleasantrunnursery.com"
+ },
+ {
+  "company": "Spark Clean Australia",
+  "email": "info@sparkcleanaustralia.com.au",
+  "emails": [
+   "info@sparkcleanaustralia.com.au"
+  ],
+  "trade": "cleaning services",
+  "province": "Sydney",
+  "domain": "sparkcleanaustralia.com.au",
+  "country": "AU",
+  "preverified": true
+ },
+ {
+  "company": "catered by matt",
+  "email": "matt@cateredbymatt.com",
+  "emails": [
+   "matt@cateredbymatt.com",
+   "info@cateredbymatt.com"
+  ],
+  "trade": "catering services",
+  "province": "Sydney",
+  "domain": "cateredbymatt.com",
+  "country": "AU",
+  "preverified": true
  }
 ]
