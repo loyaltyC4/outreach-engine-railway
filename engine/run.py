@@ -463,7 +463,9 @@ def send_batch(batch, inbox_key, per_inbox_today, sent_state):
             if c in (400, 403, 404, 422, 451, 550, 551, 553):
                 _tries = int(lead.get("tries") or 0) + 1
                 lead["tries"] = _tries
-                if _tries >= 2 or "blocked" in _derr.lower() or "invalid" in _derr.lower():
+                # 2026-11-04: "Recipient(s) blocked" is ORG-specific — the same address often sends
+                # fine from another org. Never insta-block on it; let the normal 2-strike rule decide.
+                if _tries >= 2:
                     lead["state"] = "blocked"
                     log("BLOCKED lead after", _tries, "tries:", lead["email"], _derr[:100])
             if c == 403 and ("account_suspended" in _derr or "AccountSuspended" in _derr):
