@@ -164,15 +164,23 @@ def seed_rows():
     except Exception:
         return []
     rows = [r for r in rows if r.get("campaign") in pri and "@" in (r.get("email") or "")]
-    # 2026-11-05: live feed from the lead-mint bridge (Jev-ranked rows only reach here)
-    try:
-        import json as _json, os as _os
-        _f = _os.path.join(SEED_DIR, "seed_acd_feed.json")
-        if _os.path.exists(_f):
-            _feed = _json.load(open(_f))
+    # 2026-11-05: live feed from the lead-mint bridge (Jev-ranked rows only reach here).
+    # URL feed first (live, no redeploy), then the image-baked copy as fallback.
+    import json as _json, os as _os
+    for _src in (_os.environ.get("LEAD_FEED_URL", "").strip(), _os.path.join(SEED_DIR, "seed_acd_feed.json")):
+        if not _src:
+            continue
+        try:
+            if _src.startswith("http"):
+                import urllib.request as _ur
+                _feed = _json.loads(_ur.urlopen(_ur.Request(_src, headers={"User-Agent": "acd-feed/1.0"}), timeout=15).read())
+            else:
+                if not _os.path.exists(_src):
+                    continue
+                _feed = _json.load(open(_src))
             rows = rows + [dict(r, campaign=r.get("campaign") or "disability_providers") for r in _feed if "@" in str(r.get("email") or "")]
-    except Exception:
-        pass
+        except Exception as _e:
+            print("WARN acd feed:", str(_e)[:100])
     rows.sort(key=lambda r: pri[r["campaign"]])
     return [{"email": r["email"].strip().lower(), "company": r["company"], "name": clean_name(r["company"]),
              "city": r.get("city", ""), "state": r.get("state", ""), "source": r.get("source", "seed")} for r in rows]
