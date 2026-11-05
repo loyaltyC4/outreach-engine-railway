@@ -40757,5 +40757,50 @@
   "source_tag": "J-LANE3",
   "platform": null,
   "preverified": true
+ },
+ {
+  "domain": "fumido.co.jp",
+  "country": "JP",
+  "name": "特定商取引法に基づく表記",
+  "emails": [
+   "order@fumido.co.jp"
+  ],
+  "email": "order@fumido.co.jp",
+  "products": null,
+  "reviews": null,
+  "snippet": "メールアドレス: order@fumido.co.jp. URL: https://fumido.co.jp/. 商品代金 ... 期間限定商品 栗かの子, ちび栗かの子, 栗庵もなか, ハローキティもなか, アルクマ栗 ...",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
+ },
+ {
+  "domain": "tokiwado.jp",
+  "country": "JP",
+  "name": "御菓子司 常盤堂 | 神戸の和菓子店",
+  "emails": [
+   "shopmaster@tokiwado.jp"
+  ],
+  "email": "shopmaster@tokiwado.jp",
+  "products": null,
+  "reviews": null,
+  "snippet": "電話番号, 078-851-4677 ; FAX番号, 078-851-4680 ; メールアドレス, shopmaster@tokiwado.jp ; ホームページ, https://tokiwado.jp/ ; 取扱商品, 和菓子製造、販売. Read more",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
+ },
+ {
+  "domain": "fujiwara-chaho.co.jp",
+  "country": "JP",
+  "name": "茶道具通販｜藤原茶舗茶道具店",
+  "emails": [
+   "fujiwara.chaho@nifty.com"
+  ],
+  "email": "fujiwara.chaho@nifty.com",
+  "products": null,
+  "reviews": null,
+  "snippet": "店舗情報 ; 722-0035 広島県 尾道市 土堂 1-1-13 · 0848-22-4815 · 0848-25-4815 · fujiwara.chaho@nifty.com · http://fujiwara-chaho.co.jp/. Read more",
+  "source_tag": "J-LANE3",
+  "platform": null,
+  "preverified": true
  }
 ]
