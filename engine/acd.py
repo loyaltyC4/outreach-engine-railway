@@ -164,6 +164,15 @@ def seed_rows():
     except Exception:
         return []
     rows = [r for r in rows if r.get("campaign") in pri and "@" in (r.get("email") or "")]
+    # 2026-11-05: live feed from the lead-mint bridge (Jev-ranked rows only reach here)
+    try:
+        import json as _json, os as _os
+        _f = _os.path.join(SEED_DIR, "seed_acd_feed.json")
+        if _os.path.exists(_f):
+            _feed = _json.load(open(_f))
+            rows = rows + [dict(r, campaign=r.get("campaign") or "disability_providers") for r in _feed if "@" in str(r.get("email") or "")]
+    except Exception:
+        pass
     rows.sort(key=lambda r: pri[r["campaign"]])
     return [{"email": r["email"].strip().lower(), "company": r["company"], "name": clean_name(r["company"]),
              "city": r.get("city", ""), "state": r.get("state", ""), "source": r.get("source", "seed")} for r in rows]
