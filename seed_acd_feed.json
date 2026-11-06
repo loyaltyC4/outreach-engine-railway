@@ -976,5 +976,49 @@
   "scraped_at": "2026-11-06T03:40:17Z",
   "jev_score": 0.76,
   "jev_ok": true
+ },
+ {
+  "email": "info@capacitylinx.org",
+  "domain": "capacitylinx.org",
+  "name": "Support Coordination Services",
+  "country": "AU",
+  "trade": "daily personal activities",
+  "state": "QLD",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-06",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-06T04:43:02Z",
+  "jev_score": 0.78,
+  "jev_ok": true
+ },
+ {
+  "email": "info@supportcentralco.com",
+  "domain": "supportcentralco.com",
+  "name": "Contact Support Central Co",
+  "country": "AU",
+  "trade": "daily personal activities",
+  "state": "SA",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-06",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-06T04:43:21Z",
+  "jev_score": 0.77,
+  "jev_ok": true
  }
 ]
