@@ -606,5 +606,27 @@
   "scraped_at": "2026-11-06T05:41:53Z",
   "jev_score": 0.77,
   "jev_ok": true
+ },
+ {
+  "email": "info@adcs.au",
+  "domain": "adcs.au",
+  "name": "NDIS Community Participation Sydney",
+  "country": "AU",
+  "trade": "household tasks",
+  "state": "ACT",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-06",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-06T06:32:54Z",
+  "jev_score": 0.75,
+  "jev_ok": true
  }
 ]
