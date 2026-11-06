@@ -1470,7 +1470,11 @@ def _run():
     unsent = [l for l in all_leads
               if l.get("email") and l["email"].lower() not in sent_set
               and valid.match(l["email"].lower())
-              and l.get("trade") in tpool]
+              and l.get("trade") in tpool
+              and (l.get("not_before") or "") <= datetime.now(timezone.utc).strftime("%Y-%m-%d")
+              and (not os.environ.get("HOLD_LEGACY_UNTIL", "").strip()
+                   or datetime.now(timezone.utc).strftime("%Y-%m-%d") >= os.environ["HOLD_LEGACY_UNTIL"].strip()
+                   or l.get("batch"))]
 
     # Dead-domain filter (DNS-over-HTTPS MX lookup). 36% of AgentMail bounces were
     # domains that no longer exist / have no MX; each one dents sender reputation.

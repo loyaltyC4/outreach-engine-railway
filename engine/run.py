@@ -314,6 +314,10 @@ def in_window():
 
 
 # ---------------- pool ----------------
+def today_utc():
+    return dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
+
+
 def pool_unsent(pool, sent_all, sup):
     """Leads we may still mail: not sent, not suppressed, and no address at the same organisation already mailed."""
     mailed_domains = {reg_domain(a.split("@")[1]) for a in sent_all if "@" in a}
@@ -322,6 +326,13 @@ def pool_unsent(pool, sent_all, sup):
         e = l["email"]
         d = e.split("@")[1]
         if (l.get("state") or "") in ("blocked", "bounced"):
+            continue
+        if (l.get("not_before") or "") > today_utc():      # held lead: released on its date (YYYY-MM-DD)
+            continue
+        # 2026-11-06: owner's call. Freshly minted, Jev-ranked leads carry a "batch" tag and go first; everything that
+        # was already in the pool is held until HOLD_LEGACY_UNTIL (YYYY-MM-DD, UTC), then released automatically.
+        _hold = os.environ.get("HOLD_LEGACY_UNTIL", "").strip()
+        if _hold and today_utc() < _hold and not l.get("batch"):
             continue
         if e in sent_all or e in sup["emails"] or d in sup["domains"] or reg_domain(d) in mailed_domains:
             continue
