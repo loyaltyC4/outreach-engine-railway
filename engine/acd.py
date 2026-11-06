@@ -181,9 +181,23 @@ def seed_rows():
             rows = rows + [dict(r, campaign=r.get("campaign") or "disability_providers") for r in _feed if "@" in str(r.get("email") or "")]
         except Exception as _e:
             print("WARN acd feed:", str(_e)[:100])
+    import re as _re
+    # 2026-11-06: a feed row without a company, or with an address that has no real domain, crashed every pass
+    # ("pass crashed: 'company'"). Skip malformed rows instead of dying; keep batch/preverified/score through.
+    _ok = _re.compile(r"^[a-z0-9._+\-]+@[a-z0-9\-]+(\.[a-z0-9\-]+)*\.[a-z]{2,}$")
+    rows = [r for r in rows if (r.get("company") or r.get("name")) and _ok.match(str(r.get("email") or "").strip().lower())
+            and r.get("campaign") in pri]
     rows.sort(key=lambda r: pri[r["campaign"]])
-    return [{"email": r["email"].strip().lower(), "company": r["company"], "name": clean_name(r["company"]),
-             "city": r.get("city", ""), "state": r.get("state", ""), "source": r.get("source", "seed")} for r in rows]
+    out = []
+    for r in rows:
+        co = r.get("company") or r.get("name")
+        row = {"email": r["email"].strip().lower(), "company": co, "name": clean_name(co),
+               "city": r.get("city", ""), "state": r.get("state", ""), "source": r.get("source", "seed")}
+        for k in ("batch", "preverified", "score", "not_before"):
+            if r.get(k) not in (None, ""):
+                row[k] = r[k]
+        out.append(row)
+    return out
 
 
 def seed_contacted():
