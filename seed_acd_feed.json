@@ -932,5 +932,27 @@
   "scraped_at": "2026-11-06T02:51:15Z",
   "jev_score": 0.77,
   "jev_ok": true
+ },
+ {
+  "email": "info@interchangeau.org",
+  "domain": "interchangeau.org",
+  "name": "Support Coordination",
+  "country": "AU",
+  "trade": "therapeutic supports",
+  "state": "NT",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-06",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-06T03:35:33Z",
+  "jev_score": 0.78,
+  "jev_ok": true
  }
 ]
