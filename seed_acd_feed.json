@@ -650,5 +650,27 @@
   "scraped_at": "2026-11-06T08:18:41Z",
   "jev_score": 0.78,
   "jev_ok": true
+ },
+ {
+  "email": "admin@infinitycoordination.com",
+  "domain": "infinitycoordination.com",
+  "name": "Contact Us",
+  "country": "AU",
+  "trade": "daily personal activities",
+  "state": "NSW",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-06",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-06T09:27:26Z",
+  "jev_score": 0.76,
+  "jev_ok": true
  }
 ]
