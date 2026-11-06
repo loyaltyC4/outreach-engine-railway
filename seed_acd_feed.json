@@ -628,5 +628,27 @@
   "scraped_at": "2026-11-06T06:32:54Z",
   "jev_score": 0.75,
   "jev_ok": true
+ },
+ {
+  "email": "admin@support-collective.com",
+  "domain": "support-collective.com",
+  "name": "NDIS Support Coordination",
+  "country": "AU",
+  "trade": "development of daily living skills",
+  "state": "WA",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-06",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-06T08:18:41Z",
+  "jev_score": 0.78,
+  "jev_ok": true
  }
 ]
