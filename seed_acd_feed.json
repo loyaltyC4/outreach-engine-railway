@@ -584,5 +584,27 @@
   "scraped_at": "2026-11-06T05:02:27Z",
   "jev_score": 0.76,
   "jev_ok": true
+ },
+ {
+  "email": "info@interchangeau.org",
+  "domain": "interchangeau.org",
+  "name": "Support Coordination",
+  "country": "AU",
+  "trade": "assistance with social participation",
+  "state": "SA",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-06",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-06T05:41:53Z",
+  "jev_score": 0.77,
+  "jev_ok": true
  }
 ]
