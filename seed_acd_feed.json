@@ -760,5 +760,27 @@
   "scraped_at": "2026-11-06T18:39:23Z",
   "jev_score": 0.72,
   "jev_ok": true
+ },
+ {
+  "email": "info@resilienthealthgroup.au",
+  "domain": "resilienthealthgroup.au",
+  "name": "NDIS Home Maintenance Adelaide",
+  "country": "AU",
+  "trade": "community participation",
+  "state": "NSW",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-06",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-06T19:09:20Z",
+  "jev_score": 0.7,
+  "jev_ok": true
  }
 ]
