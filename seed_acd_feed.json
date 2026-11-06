@@ -1,522 +1,566 @@
 [
-{
-"company": "Areability",
-"name": "Areability",
-"email": "adam@areability.com.au",
-"emails": [
-"adam@areability.com.au"
-],
-"domain": "areability.com.au",
-"country": "AU",
-"snippet": "Areability, Your Destination for Central Coast NSW 1-on-1 disability support services, tailored to your needs, available 24/7",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.695,
-"jev_score": 0.695,
-"trade": "disability_providers",
-"province": "NSW",
-"state": "NSW",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "P Homecare",
-"name": "P Homecare",
-"email": "ndis@phomecare.com.au",
-"emails": [
-"ndis@phomecare.com.au"
-],
-"domain": "phomecare.com.au",
-"country": "AU",
-"snippet": "P Home care is a Registered NDIS Provider Sydney, NSW SDA, SIL & Respite provider for disability, Home Nursing support & NDIS services.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.692,
-"jev_score": 0.692,
-"trade": "hcp_providers",
-"province": "NSW",
-"state": "NSW",
-"campaign": "hcp_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Positive Moods",
-"name": "Positive Moods",
-"email": "ndis@positivemoods.com.au",
-"emails": [
-"ndis@positivemoods.com.au"
-],
-"domain": "positivemoods.com.au",
-"country": "AU",
-"snippet": "NDIS-registered positive behaviour support, behaviour support plans and functional behaviour assessments across QLD and SA. Call 1300 001 470.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.652,
-"jev_score": 0.652,
-"trade": "disability_providers",
-"province": "QLD",
-"state": "QLD",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Active Lifestyle Supports",
-"name": "Active Lifestyle Supports",
-"email": "greg@activelifestylesupports.com.au",
-"emails": [
-"greg@activelifestylesupports.com.au"
-],
-"domain": "activelifestylesupports.com.au",
-"country": "AU",
-"snippet": "At Active Lifestyle Supports, we offer NDIS services & domestic assistance for people living with disabilities in the Illawarra region. Call 0436 293 366.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.651,
-"jev_score": 0.651,
-"trade": "disability_providers",
-"province": "NSW",
-"state": "NSW",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "St Louis Care at Home",
-"name": "St Louis Care at Home",
-"email": "homecare@stlouiscareathome.com.au",
-"emails": [
-"homecare@stlouiscareathome.com.au"
-],
-"domain": "stlouiscareathome.com.au",
-"country": "AU",
-"snippet": "Simply Better Care",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.642,
-"jev_score": 0.642,
-"trade": "hcp_providers",
-"province": "WA",
-"state": "WA",
-"campaign": "hcp_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Claremont Care",
-"name": "Claremont Care",
-"email": "john@claremontcare.com.au",
-"emails": [
-"john@claremontcare.com.au"
-],
-"domain": "claremontcare.com.au",
-"country": "AU",
-"snippet": "Claremont Care is an NDIS provider in Sydney. We registered and have skilled workers who provide high-quality support services for disabled people. Call at 0416873319.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.634,
-"jev_score": 0.634,
-"trade": "disability_providers",
-"province": "NSW",
-"state": "NSW",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "My Support Services",
-"name": "My Support Services",
-"email": "intake@mysupportservices.com.au",
-"emails": [
-"intake@mysupportservices.com.au"
-],
-"domain": "mysupportservices.com.au",
-"country": "AU",
-"snippet": "Explore SIL, personal care, respite and community support in Melbourne and Sydney with a registered NDIS provider. Talk to our team or make a referral.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.6339,
-"jev_score": 0.6339,
-"trade": "disability_providers",
-"province": "VIC",
-"state": "VIC",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Better Access",
-"name": "Better Access",
-"email": "adrian@betteraccessqld.com.au",
-"emails": [
-"adrian@betteraccessqld.com.au"
-],
-"domain": "betteraccessqld.com.au",
-"country": "AU",
-"snippet": "Local disability support in Toowoomba and surrounds: support coordination, SIL, personal care and community participation. Call 0435 957 909.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.625,
-"jev_score": 0.625,
-"trade": "disability_providers",
-"province": "QLD",
-"state": "QLD",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Sublime Care",
-"name": "Sublime Care",
-"email": "ndis.rosters@sublimecare.com.au",
-"emails": [
-"ndis.rosters@sublimecare.com.au"
-],
-"domain": "sublimecare.com.au",
-"country": "AU",
-"snippet": "Experience personalised NDIS disability and aged care services across NSW. Supporting independence, comfort, and quality of life. Contact Sublime Care today.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.6,
-"jev_score": 0.6,
-"trade": "disability_providers",
-"province": "NSW",
-"state": "NSW",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Melba Support Services",
-"name": "Melba Support Services",
-"email": "melba@melbasupport.com.au",
-"emails": [
-"melba@melbasupport.com.au"
-],
-"domain": "melbasupport.com.au",
-"country": "AU",
-"snippet": "Melba is a fully registered provider offering disability support services. One-to-one support for you to live the life you choose.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.598,
-"jev_score": 0.598,
-"trade": "disability_providers",
-"province": "VIC",
-"state": "VIC",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "SASScare Support Services",
-"name": "SASScare Support Services",
-"email": "trin.miller@sasscare.com.au",
-"emails": [
-"trin.miller@sasscare.com.au"
-],
-"domain": "sasscare.com.au",
-"country": "AU",
-"snippet": "SASScare is a Bendigo-based NDIS disability support provider delivering services across Bendigo, Melbourne and Regional Victoria. We support NDIS participants with choice and control, independence, co",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.576,
-"jev_score": 0.576,
-"trade": "disability_providers",
-"province": "VIC",
-"state": "VIC",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Support In Home",
-"name": "Support In Home",
-"email": "kam@supportinhome.au",
-"emails": [
-"kam@supportinhome.au"
-],
-"domain": "supportinhome.au",
-"country": "AU",
-"snippet": "Sih Aged Care In Your Home We deliver the intent of the government in the Support At Home program, in compliance with The Aged Care Quality Standards. Read More Call Us 0408 397 972 Make Us A Call Ema",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.571,
-"jev_score": 0.571,
-"trade": "hcp_providers",
-"province": "QLD",
-"state": "QLD",
-"campaign": "hcp_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Limestone Coast Ability",
-"name": "Limestone Coast Ability",
-"email": "enquiries@limestonecoastability.com.au",
-"emails": [
-"enquiries@limestonecoastability.com.au"
-],
-"domain": "limestonecoastability.com.au",
-"country": "AU",
-"snippet": "",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.5394,
-"jev_score": 0.5394,
-"trade": "disability_providers",
-"province": "SA",
-"state": "SA",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Gentle Grid",
-"name": "Gentle Grid",
-"email": "contact@gentlegrid.com.au",
-"emails": [
-"contact@gentlegrid.com.au"
-],
-"domain": "gentlegrid.com.au",
-"country": "AU",
-"snippet": "Gentle Grid is a locally owned NDIS provider in Ballarat offering 14 registration groups \u2014 personal care, nursing, SIL, support coordination and more. Contact us today.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.5148,
-"jev_score": 0.5148,
-"trade": "disability_providers",
-"province": "VIC",
-"state": "VIC",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Yes. Support For Everyone Pty Ltd",
-"name": "Yes. Support For Everyone Pty Ltd",
-"email": "admin@supportforeveryone.com.au",
-"emails": [
-"admin@supportforeveryone.com.au"
-],
-"domain": "supportforeveryone.com.au",
-"country": "AU",
-"snippet": "Registered NDIS provider in Brisbane, Logan and Ipswich. Person-centred, multilingual disability support, with support workers we employ and check, booked in our app at NDIS prices with no platform fe",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.5099,
-"jev_score": 0.5099,
-"trade": "disability_providers",
-"province": "QLD",
-"state": "QLD",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Good Company Disability Services",
-"name": "Good Company Disability Services",
-"email": "hello@goodcompanyds.com.au",
-"emails": [
-"hello@goodcompanyds.com.au"
-],
-"domain": "goodcompanyds.com.au",
-"country": "AU",
-"snippet": "We support NDIS participants in Perth & Melbourne through mentoring, employment, and community services, helping you build independence and confidence.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.4938,
-"jev_score": 0.4938,
-"trade": "disability_providers",
-"province": "VIC",
-"state": "VIC",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Toowoomba Aged Care Residence",
-"name": "Toowoomba Aged Care Residence",
-"email": "bayviewacr@tricare.com.au",
-"emails": [
-"bayviewacr@tricare.com.au"
-],
-"domain": "tricare.com.au",
-"country": "AU",
-"snippet": "TriCare is one of the leading providers of Retirement Living and Aged Care in Australia, as well as family-owned and operated.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.492,
-"jev_score": 0.492,
-"trade": "hcp_providers",
-"province": "QLD",
-"state": "QLD",
-"campaign": "hcp_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "The Avoca Group",
-"name": "The Avoca Group",
-"email": "info@avocagroup.com.au",
-"emails": [
-"info@avocagroup.com.au"
-],
-"domain": "avocagroup.com.au",
-"country": "AU",
-"snippet": "Local NDIS provider offering safe, personalised disability support across Adelaide Hills. Experienced team delivering care, housing, and community access.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.491,
-"jev_score": 0.491,
-"trade": "disability_providers",
-"province": "SA",
-"state": "SA",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Care Alliance Newcastle",
-"name": "Care Alliance Newcastle",
-"email": "info@carealliance.com.au",
-"emails": [
-"info@carealliance.com.au"
-],
-"domain": "carealliance.com.au",
-"country": "AU",
-"snippet": "Psychologist-led NDIS and disability support in Newcastle and the Hunter: psychology, community nursing, behaviour support, SIL and 24/7 care. 1300 206 309.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.4833,
-"jev_score": 0.4833,
-"trade": "hcp_providers",
-"province": "NSW",
-"state": "NSW",
-"campaign": "hcp_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Essential Care, Always There",
-"name": "Essential Care, Always There",
-"email": "info@essentialcare.net.au",
-"emails": [
-"info@essentialcare.net.au"
-],
-"domain": "essentialcare.net.au",
-"country": "AU",
-"snippet": "At Essential Care our mission is to support people across the Illawarra and Shoalhaven to stay home and remain independent as long as possible. Through NDIS, Aged Care and Veteran Care we are able to ",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.4584,
-"jev_score": 0.4584,
-"trade": "hcp_providers",
-"province": "NSW",
-"state": "NSW",
-"campaign": "hcp_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Intentional Connections",
-"name": "Intentional Connections",
-"email": "info@intentionalconnections.com.au",
-"emails": [
-"info@intentionalconnections.com.au"
-],
-"domain": "intentionalconnections.com.au",
-"country": "AU",
-"snippet": "NDIS Support Coordination and Specialist Support Coordination - Central Coast NSW. Registered provider.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.4577,
-"jev_score": 0.4577,
-"trade": "disability_providers",
-"province": "NSW",
-"state": "NSW",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Respect Aged Care",
-"name": "Respect Aged Care",
-"email": "michael.griffin@respect.com.au",
-"emails": [
-"michael.griffin@respect.com.au"
-],
-"domain": "respect.com.au",
-"country": "AU",
-"snippet": "",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.443,
-"jev_score": 0.443,
-"trade": "hcp_providers",
-"province": "NSW",
-"state": "NSW",
-"campaign": "hcp_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "you Healthcare",
-"name": "you Healthcare",
-"email": "admin@aboutyouhealthcare.com.au",
-"emails": [
-"admin@aboutyouhealthcare.com.au"
-],
-"domain": "aboutyouhealthcare.com.au",
-"country": "AU",
-"snippet": "About you Healthcare\nWe are a family owned NDIS  care and nursing  provider that offers old fashioned care to our clients",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.4409,
-"jev_score": 0.4409,
-"trade": "hcp_providers",
-"province": "QLD",
-"state": "QLD",
-"campaign": "hcp_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Life's Good",
-"name": "Life's Good",
-"email": "admin@lifesgoodservices.com.au",
-"emails": [
-"admin@lifesgoodservices.com.au"
-],
-"domain": "lifesgoodservices.com.au",
-"country": "AU",
-"snippet": "Warm, reliable and genuinely personal support at home and in the community across Victoria and South Australia.",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.4381,
-"jev_score": 0.4381,
-"trade": "hcp_providers",
-"province": "VIC",
-"state": "VIC",
-"campaign": "hcp_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Live Well Care And Support",
-"name": "Live Well Care And Support",
-"email": "admin@livewellsupport.com.au",
-"emails": [
-"admin@livewellsupport.com.au"
-],
-"domain": "livewellsupport.com.au",
-"country": "AU",
-"snippet": "",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.4108,
-"jev_score": 0.4108,
-"trade": "hcp_providers",
-"province": "NT",
-"state": "NT",
-"campaign": "hcp_providers",
-"batch": "mint-20261105"
-},
-{
-"company": "Ready Enable",
-"name": "Ready Enable",
-"email": "info@readyenable.com.au",
-"emails": [
-"info@readyenable.com.au"
-],
-"domain": "readyenable.com.au",
-"country": "AU",
-"snippet": "Ready Enable empowers individuals with disabilities & mental health needs in Australia. Get expert support, personalized plans & a brighter future. Contact us today!",
-"source_tag": "mint_20261105",
-"preverified": true,
-"score": 0.3772,
-"jev_score": 0.3772,
-"trade": "disability_providers",
-"province": "NSW",
-"state": "NSW",
-"campaign": "disability_providers",
-"batch": "mint-20261105"
-}
+ {
+  "company": "Areability",
+  "name": "Areability",
+  "email": "adam@areability.com.au",
+  "emails": [
+   "adam@areability.com.au"
+  ],
+  "domain": "areability.com.au",
+  "country": "AU",
+  "snippet": "Areability, Your Destination for Central Coast NSW 1-on-1 disability support services, tailored to your needs, available 24/7",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.695,
+  "jev_score": 0.695,
+  "trade": "disability_providers",
+  "province": "NSW",
+  "state": "NSW",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "P Homecare",
+  "name": "P Homecare",
+  "email": "ndis@phomecare.com.au",
+  "emails": [
+   "ndis@phomecare.com.au"
+  ],
+  "domain": "phomecare.com.au",
+  "country": "AU",
+  "snippet": "P Home care is a Registered NDIS Provider Sydney, NSW SDA, SIL & Respite provider for disability, Home Nursing support & NDIS services.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.692,
+  "jev_score": 0.692,
+  "trade": "hcp_providers",
+  "province": "NSW",
+  "state": "NSW",
+  "campaign": "hcp_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Positive Moods",
+  "name": "Positive Moods",
+  "email": "ndis@positivemoods.com.au",
+  "emails": [
+   "ndis@positivemoods.com.au"
+  ],
+  "domain": "positivemoods.com.au",
+  "country": "AU",
+  "snippet": "NDIS-registered positive behaviour support, behaviour support plans and functional behaviour assessments across QLD and SA. Call 1300 001 470.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.652,
+  "jev_score": 0.652,
+  "trade": "disability_providers",
+  "province": "QLD",
+  "state": "QLD",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Active Lifestyle Supports",
+  "name": "Active Lifestyle Supports",
+  "email": "greg@activelifestylesupports.com.au",
+  "emails": [
+   "greg@activelifestylesupports.com.au"
+  ],
+  "domain": "activelifestylesupports.com.au",
+  "country": "AU",
+  "snippet": "At Active Lifestyle Supports, we offer NDIS services & domestic assistance for people living with disabilities in the Illawarra region. Call 0436 293 366.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.651,
+  "jev_score": 0.651,
+  "trade": "disability_providers",
+  "province": "NSW",
+  "state": "NSW",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "St Louis Care at Home",
+  "name": "St Louis Care at Home",
+  "email": "homecare@stlouiscareathome.com.au",
+  "emails": [
+   "homecare@stlouiscareathome.com.au"
+  ],
+  "domain": "stlouiscareathome.com.au",
+  "country": "AU",
+  "snippet": "Simply Better Care",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.642,
+  "jev_score": 0.642,
+  "trade": "hcp_providers",
+  "province": "WA",
+  "state": "WA",
+  "campaign": "hcp_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Claremont Care",
+  "name": "Claremont Care",
+  "email": "john@claremontcare.com.au",
+  "emails": [
+   "john@claremontcare.com.au"
+  ],
+  "domain": "claremontcare.com.au",
+  "country": "AU",
+  "snippet": "Claremont Care is an NDIS provider in Sydney. We registered and have skilled workers who provide high-quality support services for disabled people. Call at 0416873319.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.634,
+  "jev_score": 0.634,
+  "trade": "disability_providers",
+  "province": "NSW",
+  "state": "NSW",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "My Support Services",
+  "name": "My Support Services",
+  "email": "intake@mysupportservices.com.au",
+  "emails": [
+   "intake@mysupportservices.com.au"
+  ],
+  "domain": "mysupportservices.com.au",
+  "country": "AU",
+  "snippet": "Explore SIL, personal care, respite and community support in Melbourne and Sydney with a registered NDIS provider. Talk to our team or make a referral.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.6339,
+  "jev_score": 0.6339,
+  "trade": "disability_providers",
+  "province": "VIC",
+  "state": "VIC",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Better Access",
+  "name": "Better Access",
+  "email": "adrian@betteraccessqld.com.au",
+  "emails": [
+   "adrian@betteraccessqld.com.au"
+  ],
+  "domain": "betteraccessqld.com.au",
+  "country": "AU",
+  "snippet": "Local disability support in Toowoomba and surrounds: support coordination, SIL, personal care and community participation. Call 0435 957 909.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.625,
+  "jev_score": 0.625,
+  "trade": "disability_providers",
+  "province": "QLD",
+  "state": "QLD",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Sublime Care",
+  "name": "Sublime Care",
+  "email": "ndis.rosters@sublimecare.com.au",
+  "emails": [
+   "ndis.rosters@sublimecare.com.au"
+  ],
+  "domain": "sublimecare.com.au",
+  "country": "AU",
+  "snippet": "Experience personalised NDIS disability and aged care services across NSW. Supporting independence, comfort, and quality of life. Contact Sublime Care today.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.6,
+  "jev_score": 0.6,
+  "trade": "disability_providers",
+  "province": "NSW",
+  "state": "NSW",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Melba Support Services",
+  "name": "Melba Support Services",
+  "email": "melba@melbasupport.com.au",
+  "emails": [
+   "melba@melbasupport.com.au"
+  ],
+  "domain": "melbasupport.com.au",
+  "country": "AU",
+  "snippet": "Melba is a fully registered provider offering disability support services. One-to-one support for you to live the life you choose.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.598,
+  "jev_score": 0.598,
+  "trade": "disability_providers",
+  "province": "VIC",
+  "state": "VIC",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "SASScare Support Services",
+  "name": "SASScare Support Services",
+  "email": "trin.miller@sasscare.com.au",
+  "emails": [
+   "trin.miller@sasscare.com.au"
+  ],
+  "domain": "sasscare.com.au",
+  "country": "AU",
+  "snippet": "SASScare is a Bendigo-based NDIS disability support provider delivering services across Bendigo, Melbourne and Regional Victoria. We support NDIS participants with choice and control, independence, co",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.576,
+  "jev_score": 0.576,
+  "trade": "disability_providers",
+  "province": "VIC",
+  "state": "VIC",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Support In Home",
+  "name": "Support In Home",
+  "email": "kam@supportinhome.au",
+  "emails": [
+   "kam@supportinhome.au"
+  ],
+  "domain": "supportinhome.au",
+  "country": "AU",
+  "snippet": "Sih Aged Care In Your Home We deliver the intent of the government in the Support At Home program, in compliance with The Aged Care Quality Standards. Read More Call Us 0408 397 972 Make Us A Call Ema",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.571,
+  "jev_score": 0.571,
+  "trade": "hcp_providers",
+  "province": "QLD",
+  "state": "QLD",
+  "campaign": "hcp_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Limestone Coast Ability",
+  "name": "Limestone Coast Ability",
+  "email": "enquiries@limestonecoastability.com.au",
+  "emails": [
+   "enquiries@limestonecoastability.com.au"
+  ],
+  "domain": "limestonecoastability.com.au",
+  "country": "AU",
+  "snippet": "",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.5394,
+  "jev_score": 0.5394,
+  "trade": "disability_providers",
+  "province": "SA",
+  "state": "SA",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Gentle Grid",
+  "name": "Gentle Grid",
+  "email": "contact@gentlegrid.com.au",
+  "emails": [
+   "contact@gentlegrid.com.au"
+  ],
+  "domain": "gentlegrid.com.au",
+  "country": "AU",
+  "snippet": "Gentle Grid is a locally owned NDIS provider in Ballarat offering 14 registration groups — personal care, nursing, SIL, support coordination and more. Contact us today.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.5148,
+  "jev_score": 0.5148,
+  "trade": "disability_providers",
+  "province": "VIC",
+  "state": "VIC",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Yes. Support For Everyone Pty Ltd",
+  "name": "Yes. Support For Everyone Pty Ltd",
+  "email": "admin@supportforeveryone.com.au",
+  "emails": [
+   "admin@supportforeveryone.com.au"
+  ],
+  "domain": "supportforeveryone.com.au",
+  "country": "AU",
+  "snippet": "Registered NDIS provider in Brisbane, Logan and Ipswich. Person-centred, multilingual disability support, with support workers we employ and check, booked in our app at NDIS prices with no platform fe",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.5099,
+  "jev_score": 0.5099,
+  "trade": "disability_providers",
+  "province": "QLD",
+  "state": "QLD",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Good Company Disability Services",
+  "name": "Good Company Disability Services",
+  "email": "hello@goodcompanyds.com.au",
+  "emails": [
+   "hello@goodcompanyds.com.au"
+  ],
+  "domain": "goodcompanyds.com.au",
+  "country": "AU",
+  "snippet": "We support NDIS participants in Perth & Melbourne through mentoring, employment, and community services, helping you build independence and confidence.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.4938,
+  "jev_score": 0.4938,
+  "trade": "disability_providers",
+  "province": "VIC",
+  "state": "VIC",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Toowoomba Aged Care Residence",
+  "name": "Toowoomba Aged Care Residence",
+  "email": "bayviewacr@tricare.com.au",
+  "emails": [
+   "bayviewacr@tricare.com.au"
+  ],
+  "domain": "tricare.com.au",
+  "country": "AU",
+  "snippet": "TriCare is one of the leading providers of Retirement Living and Aged Care in Australia, as well as family-owned and operated.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.492,
+  "jev_score": 0.492,
+  "trade": "hcp_providers",
+  "province": "QLD",
+  "state": "QLD",
+  "campaign": "hcp_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "The Avoca Group",
+  "name": "The Avoca Group",
+  "email": "info@avocagroup.com.au",
+  "emails": [
+   "info@avocagroup.com.au"
+  ],
+  "domain": "avocagroup.com.au",
+  "country": "AU",
+  "snippet": "Local NDIS provider offering safe, personalised disability support across Adelaide Hills. Experienced team delivering care, housing, and community access.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.491,
+  "jev_score": 0.491,
+  "trade": "disability_providers",
+  "province": "SA",
+  "state": "SA",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Care Alliance Newcastle",
+  "name": "Care Alliance Newcastle",
+  "email": "info@carealliance.com.au",
+  "emails": [
+   "info@carealliance.com.au"
+  ],
+  "domain": "carealliance.com.au",
+  "country": "AU",
+  "snippet": "Psychologist-led NDIS and disability support in Newcastle and the Hunter: psychology, community nursing, behaviour support, SIL and 24/7 care. 1300 206 309.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.4833,
+  "jev_score": 0.4833,
+  "trade": "hcp_providers",
+  "province": "NSW",
+  "state": "NSW",
+  "campaign": "hcp_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Essential Care, Always There",
+  "name": "Essential Care, Always There",
+  "email": "info@essentialcare.net.au",
+  "emails": [
+   "info@essentialcare.net.au"
+  ],
+  "domain": "essentialcare.net.au",
+  "country": "AU",
+  "snippet": "At Essential Care our mission is to support people across the Illawarra and Shoalhaven to stay home and remain independent as long as possible. Through NDIS, Aged Care and Veteran Care we are able to ",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.4584,
+  "jev_score": 0.4584,
+  "trade": "hcp_providers",
+  "province": "NSW",
+  "state": "NSW",
+  "campaign": "hcp_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Intentional Connections",
+  "name": "Intentional Connections",
+  "email": "info@intentionalconnections.com.au",
+  "emails": [
+   "info@intentionalconnections.com.au"
+  ],
+  "domain": "intentionalconnections.com.au",
+  "country": "AU",
+  "snippet": "NDIS Support Coordination and Specialist Support Coordination - Central Coast NSW. Registered provider.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.4577,
+  "jev_score": 0.4577,
+  "trade": "disability_providers",
+  "province": "NSW",
+  "state": "NSW",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Respect Aged Care",
+  "name": "Respect Aged Care",
+  "email": "michael.griffin@respect.com.au",
+  "emails": [
+   "michael.griffin@respect.com.au"
+  ],
+  "domain": "respect.com.au",
+  "country": "AU",
+  "snippet": "",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.443,
+  "jev_score": 0.443,
+  "trade": "hcp_providers",
+  "province": "NSW",
+  "state": "NSW",
+  "campaign": "hcp_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "you Healthcare",
+  "name": "you Healthcare",
+  "email": "admin@aboutyouhealthcare.com.au",
+  "emails": [
+   "admin@aboutyouhealthcare.com.au"
+  ],
+  "domain": "aboutyouhealthcare.com.au",
+  "country": "AU",
+  "snippet": "About you Healthcare\nWe are a family owned NDIS  care and nursing  provider that offers old fashioned care to our clients",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.4409,
+  "jev_score": 0.4409,
+  "trade": "hcp_providers",
+  "province": "QLD",
+  "state": "QLD",
+  "campaign": "hcp_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Life's Good",
+  "name": "Life's Good",
+  "email": "admin@lifesgoodservices.com.au",
+  "emails": [
+   "admin@lifesgoodservices.com.au"
+  ],
+  "domain": "lifesgoodservices.com.au",
+  "country": "AU",
+  "snippet": "Warm, reliable and genuinely personal support at home and in the community across Victoria and South Australia.",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.4381,
+  "jev_score": 0.4381,
+  "trade": "hcp_providers",
+  "province": "VIC",
+  "state": "VIC",
+  "campaign": "hcp_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Live Well Care And Support",
+  "name": "Live Well Care And Support",
+  "email": "admin@livewellsupport.com.au",
+  "emails": [
+   "admin@livewellsupport.com.au"
+  ],
+  "domain": "livewellsupport.com.au",
+  "country": "AU",
+  "snippet": "",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.4108,
+  "jev_score": 0.4108,
+  "trade": "hcp_providers",
+  "province": "NT",
+  "state": "NT",
+  "campaign": "hcp_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "company": "Ready Enable",
+  "name": "Ready Enable",
+  "email": "info@readyenable.com.au",
+  "emails": [
+   "info@readyenable.com.au"
+  ],
+  "domain": "readyenable.com.au",
+  "country": "AU",
+  "snippet": "Ready Enable empowers individuals with disabilities & mental health needs in Australia. Get expert support, personalized plans & a brighter future. Contact us today!",
+  "source_tag": "mint_20261105",
+  "preverified": true,
+  "score": 0.3772,
+  "jev_score": 0.3772,
+  "trade": "disability_providers",
+  "province": "NSW",
+  "state": "NSW",
+  "campaign": "disability_providers",
+  "batch": "mint-20261105"
+ },
+ {
+  "email": "info@capacitylinx.org",
+  "domain": "capacitylinx.org",
+  "name": "Support Coordination Services",
+  "country": "AU",
+  "trade": "support coordination",
+  "state": "TAS",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-06",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-06T04:57:59Z",
+  "jev_score": 0.78,
+  "jev_ok": true
+ },
+ {
+  "email": "info@supportcentralco.com",
+  "domain": "supportcentralco.com",
+  "name": "Contact Support Central Co",
+  "country": "AU",
+  "trade": "support coordination",
+  "state": "ACT",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-06",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-06T04:58:19Z",
+  "jev_score": 0.79,
+  "jev_ok": true
+ }
 ]
