@@ -158,9 +158,25 @@ FREE_MAIL = {"gmail.com", "hotmail.com", "outlook.com", "yahoo.com", "yahoo.com.
 EMAIL_RX = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+")
 
 
+# 2026-11-05: the old version only knew .au second levels, so every .co.jp / .ne.jp / .co.za / .com.ae address
+# collapsed to the bare suffix ("co.jp"). pool_unsent() then treated all of them as ONE organisation: once a single
+# .co.jp lead was mailed the other ~720 were blocked, and pick() allowed one per run. 803 of 2,576 NameMarshal
+# leads were affected. Second-level public suffixes for the countries we mail:
+_SLD = {
+    "au": {"com", "org", "net", "gov", "edu", "asn", "id"},
+    "jp": {"co", "ne", "or", "ac", "go", "ad", "ed", "gr", "lg"},
+    "za": {"co", "org", "net", "ac", "gov", "web", "nom"},
+    "uk": {"co", "org", "me", "ltd", "plc", "ac", "gov", "net"},
+    "ae": {"co", "com", "net", "org", "gov", "ac"},
+    "nz": {"co", "org", "net", "govt", "ac", "school"},
+    "sg": {"com", "org", "net", "edu", "gov"},
+    "in": {"co", "net", "org", "gen", "firm", "ind", "ac"},
+}
+
+
 def reg_domain(host):
     host = host.lower().split(":")[0].replace("www.", "")
     parts = host.split(".")
-    if len(parts) >= 3 and parts[-1] == "au" and parts[-2] in ("com", "org", "net", "gov", "edu", "asn", "id"):
+    if len(parts) >= 3 and parts[-2] in _SLD.get(parts[-1], ()):
         return ".".join(parts[-3:])
     return ".".join(parts[-2:])
