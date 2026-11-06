@@ -1,1024 +1,522 @@
 [
- {
-  "company": "Assist Personal Activities High",
-  "name": "Assist Personal Activities High",
-  "email": "%20info@360essentialservices.com",
-  "emails": [
-   "%20info@360essentialservices.com"
-  ],
-  "domain": "360essentialservices.com",
-  "country": "AU",
-  "snippet": "Assist Personal Activities High - 360essentialservices.com  This service is designed to assist with daily activities, pr",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.61,
-  "trade": "care",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Big Changes May Be Coming for NDIS Providers",
-  "name": "Big Changes May Be Coming for NDIS Providers",
-  "email": "ndis@providerpartnersconsulting.com",
-  "emails": [
-   "ndis@providerpartnersconsulting.com"
-  ],
-  "domain": "providerpartnersconsulting.com",
-  "country": "AU",
-  "snippet": "Big Changes May Be Coming for NDIS Providers  At Provider Partners, we help people just like you register, stay complian",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.68,
-  "trade": "care",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "VHCC",
-  "name": "VHCC",
-  "email": "ballarat@vhcc.au",
-  "emails": [
-   "ballarat@vhcc.au"
-  ],
-  "domain": "vhcc.au",
-  "country": "AU",
-  "snippet": "VHCC: NDIS Registered Provider, Victoria & NSW  Practical support with cooking, cleaning, laundry, medication prompting,",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.78,
-  "trade": "care",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "NDIS & Aged Care Garden Support",
-  "name": "NDIS & Aged Care Garden Support",
-  "email": "john@example.com",
-  "emails": [
-   "john@example.com"
-  ],
-  "domain": "trdepledgegardeningandmaintenance.com",
-  "country": "AU",
-  "snippet": "NDIS & Aged Care Garden Support  provides House and Yard Maintenance services . Touch Call Thomas on 0474 844 204 or ema",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.76,
-  "trade": "care",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Focus ACT",
-  "name": "Focus ACT",
-  "email": "focus@focusact.org",
-  "emails": [
-   "focus@focusact.org"
-  ],
-  "domain": "focusact.org",
-  "country": "AU",
-  "snippet": "Focus ACT | Supported Independent Living (SIL) Canberra  a registered NDIS Provider, household tasks to daily routines. ",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.79,
-  "trade": "care",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "NDIS Support Coordination is Changing",
-  "name": "NDIS Support Coordination is Changing",
-  "email": "info@ngotrainingcentre.com",
-  "emails": [
-   "info@ngotrainingcentre.com"
-  ],
-  "domain": "ngotrainingcentre.com",
-  "country": "AU",
-  "snippet": "NDIS Support Coordination is Changing: What This Means ...  The Australian Government has confirmed that support coordin",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.52,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Navigating your NDIS with confidence",
-  "name": "Navigating your NDIS with confidence",
-  "email": "loren@unitesupportcoordination.com",
-  "emails": [
-   "loren@unitesupportcoordination.com"
-  ],
-  "domain": "unitesupportcoordination.com",
-  "country": "AU",
-  "snippet": "Navigating your NDIS with confidence  We look forward to hearing from you! UNITE Support Coordination. Adelaide SA, Aust",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.84,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "How to Hire and Choose the Right NDIS Support Worker",
-  "name": "How to Hire and Choose the Right NDIS Support Worker",
-  "email": "ndhs@ndhs.au",
-  "emails": [
-   "ndhs@ndhs.au"
-  ],
-  "domain": "ndhs.au",
-  "country": "AU",
-  "snippet": "How to Hire and Choose the Right NDIS Support Worker  Sep 22, 2026 — When personal care involves clinical risks, support",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.67,
-  "trade": "daily personal activities",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "ACE Care and Community Services",
-  "name": "ACE Care and Community Services",
-  "email": "info@acecommunityservices.com",
-  "emails": [
-   "info@acecommunityservices.com"
-  ],
-  "domain": "acecommunityservices.com",
-  "country": "AU",
-  "snippet": "ACE Care and Community Services | Trusted NDIS Provider in ...  Holistic Support. From personal care to community partic",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.71,
-  "trade": "community participation",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Support Coordination",
-  "name": "Support Coordination",
-  "email": "admin@supportcoordinationau.com",
-  "emails": [
-   "admin@supportcoordinationau.com"
-  ],
-  "domain": "supportcoordinationau.com",
-  "country": "AU",
-  "snippet": "Support Coordination | NDIS Providers & Plan Management Services  Our main goal is to help you achieve your goals. From ",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.67,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Top Disability Services Pty. Ltd.",
-  "name": "Top Disability Services Pty. Ltd.",
-  "email": "hello@ndis.delivery",
-  "emails": [
-   "hello@ndis.delivery"
-  ],
-  "domain": "ndis.delivery",
-  "country": "AU",
-  "snippet": "Top Disability Services Pty. Ltd. - NDIS.delivery  Daily Personal Activities. Help with everyday personal care like show",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.63,
-  "trade": "daily personal activities",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Sunrise Coordination services",
-  "name": "Sunrise Coordination services",
-  "email": "info@sunrisecoordination.au",
-  "emails": [
-   "info@sunrisecoordination.au"
-  ],
-  "domain": "sunrisecoordination.au",
-  "country": "AU",
-  "snippet": "Sunrise Coordination services  Our mission is to empower individuals and their families to confidently navigate the NDIS",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.71,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Achieve Disability Services",
-  "name": "Achieve Disability Services",
-  "email": "admin@achievedisabilityservices.com",
-  "emails": [
-   "admin@achievedisabilityservices.com"
-  ],
-  "domain": "achievedisabilityservices.com",
-  "country": "AU",
-  "snippet": "Achieve Disability Services: Home  Social & Community Participation. We support NDIS participants to engage in community",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.63,
-  "trade": "community participation",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Contact Us",
-  "name": "Contact Us",
-  "email": "info@ndisprovidergroup.com",
-  "emails": [
-   "info@ndisprovidergroup.com"
-  ],
-  "domain": "ndisprovidergroup.com",
-  "country": "AU",
-  "snippet": "Contact Us | Get in Touch With NDIS Provider Group Sydney  NDIS Provider group logo. Home · Services · NDIS Support Coor",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.64,
-  "trade": "community participation",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Using a home care agency",
-  "name": "Using a home care agency",
-  "email": "rahel@independentliving.org",
-  "emails": [
-   "rahel@independentliving.org"
-  ],
-  "domain": "independentliving.org",
-  "country": "AU",
-  "snippet": "Using a home care agency - A question and answer guide ...  Only qualified nursing staff can carry out these types of me",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.66,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "How to Choose a Support Coordinator",
-  "name": "How to Choose a Support Coordinator",
-  "email": "hello@navigatorinreach.com",
-  "emails": [
-   "hello@navigatorinreach.com"
-  ],
-  "domain": "navigatorinreach.com",
-  "country": "AU",
-  "snippet": "How to Choose a Support Coordinator: A Checklist  We are registered NDIS support coordinators in Adelaide, here for all ",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.76,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Cleaning Services in the Northern Territory",
-  "name": "Cleaning Services in the Northern Territory",
-  "email": "info@smurfettescleaningservice.net",
-  "emails": [
-   "info@smurfettescleaningservice.net"
-  ],
-  "domain": "smurfettescleaningservice.net",
-  "country": "AU",
-  "snippet": "Cleaning Services in the Northern Territory | Smurfettes  Smurfettes Service Pty Ltd is a registered NDIS provider for H",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.59,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Praxis Solutions",
-  "name": "Praxis Solutions",
-  "email": "hello@praxissolutions.org",
-  "emails": [
-   "hello@praxissolutions.org"
-  ],
-  "domain": "praxissolutions.org",
-  "country": "AU",
-  "snippet": "Praxis Solutions - Child Protection & NDIS, South East QLD  A private provider of trauma-informed child protection, out-",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.6,
-  "trade": "household and yard maintenance",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Domestic Assistance",
-  "name": "Domestic Assistance",
-  "email": "admin@boucherss.com",
-  "emails": [
-   "admin@boucherss.com"
-  ],
-  "domain": "boucherss.com",
-  "country": "AU",
-  "snippet": "Domestic Assistance | NDIS Support Moonah - Hobart  At Boucher Support Services, we offer customised Domestic Assistance",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.67,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "How to choose an NDIS provider",
-  "name": "How to choose an NDIS provider",
-  "email": "admin@carehubaustralia.com",
-  "emails": [
-   "admin@carehubaustralia.com"
-  ],
-  "domain": "carehubaustralia.com",
-  "country": "AU",
-  "snippet": "How to choose an NDIS provider: 7 questions to ask  Client Email Address *. Gender *. Race/Ethnicity. Are you Culturally",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.69,
-  "trade": "therapeutic supports",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "NDIS Support Coordination (CoS)",
-  "name": "NDIS Support Coordination (CoS)",
-  "email": "admin@bluegumability.com",
-  "emails": [
-   "admin@bluegumability.com"
-  ],
-  "domain": "bluegumability.com",
-  "country": "AU",
-  "snippet": "NDIS Support Coordination (CoS)  Make your NDIS plan work for you. Bluegum Ability's Support Coordination (CoS) helps yo",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.71,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Community Participation Support",
-  "name": "Community Participation Support",
-  "email": "bvasilescu@achieva.info",
-  "emails": [
-   "bvasilescu@achieva.info"
-  ],
-  "domain": "achieva.info",
-  "country": "AU",
-  "snippet": "Community Participation Support - Achieva  Achieva's Community Participation service is designed to integrate people wit",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.71,
-  "trade": "community participation",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Household Tasks",
-  "name": "Household Tasks",
-  "email": "hello@carendis.au",
-  "emails": [
-   "hello@carendis.au"
-  ],
-  "domain": "carendis.au",
-  "country": "AU",
-  "snippet": "Household Tasks  Our household tasks service includes but is not limited to: Cleaning; Dishwashing; Ironing; Garden main",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.55,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Support Coordination",
-  "name": "Support Coordination",
-  "email": "grace@caresupportservices.org",
-  "emails": [
-   "grace@caresupportservices.org"
-  ],
-  "domain": "caresupportservices.org",
-  "country": "AU",
-  "snippet": "Support Coordination  Expert support coordination services for individuals with disabilities. Advocacy, empowerment, and",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.76,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "The Role of Support Coordinators in Managing I/DD Services",
-  "name": "The Role of Support Coordinators in Managing I/DD Services",
-  "email": "njinfo@h2hhc.com",
-  "emails": [
-   "njinfo@h2hhc.com"
-  ],
-  "domain": "h2hhc.com",
-  "country": "AU",
-  "snippet": "The Role of Support Coordinators in Managing I/DD Services  ECCM offers a comprehensive range of services beyond support",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.57,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Assistance and Resources",
-  "name": "Assistance and Resources",
-  "email": "svsc@soundgenerations.org",
-  "emails": [
-   "svsc@soundgenerations.org"
-  ],
-  "domain": "snovalleysenior.org",
-  "country": "AU",
-  "snippet": "Assistance and Resources  Home Sweet Home is a program that assists seniors with household and yard maintenance and repa",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.61,
-  "trade": "household and yard maintenance",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "NDIS Specialist Support Coordination",
-  "name": "NDIS Specialist Support Coordination",
-  "email": "info@chosen.family",
-  "emails": [
-   "info@chosen.family"
-  ],
-  "domain": "chosen.family",
-  "country": "AU",
-  "snippet": "NDIS Specialist Support Coordination | Expert Providers  Experienced and Compassionate Professionals ; Sara Vamvas. Nati",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.71,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Household Tasks",
-  "name": "Household Tasks",
-  "email": "info@achievedisabilitysupports.org",
-  "emails": [
-   "info@achievedisabilitysupports.org"
-  ],
-  "domain": "achievedisabilitysupports.org",
-  "country": "AU",
-  "snippet": "Household Tasks | Redcliffe, QLD - Achieve Disability Supports  Achieve Disability Supports providing daily living skill",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.68,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Contact Ark Support Coordination For Disability Services — Ark …",
-  "name": "Contact Ark Support Coordination For Disability Services — Ark …",
-  "email": "info@arksc.org",
-  "emails": [
-   "info@arksc.org"
-  ],
-  "domain": "arksc.org",
-  "country": "AU",
-  "snippet": "Contact Ark Support Coordination For Disability Services — Ark …  Get in touch to enquire about our disability services ",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.71,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "NDIS Daily Personal Activities Support",
-  "name": "NDIS Daily Personal Activities Support",
-  "email": "info@careguide.au",
-  "emails": [
-   "info@careguide.au"
-  ],
-  "domain": "careguide.au",
-  "country": "AU",
-  "snippet": "NDIS Daily Personal Activities Support - Care Guide Australia  Care Guide Australia provides professional NDIS Daily Per",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.67,
-  "trade": "daily personal activities",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Home Care for Disabled People's Guide",
-  "name": "Home Care for Disabled People's Guide",
-  "email": "stories@onewell.org",
-  "emails": [
-   "stories@onewell.org"
-  ],
-  "domain": "onewell.org",
-  "country": "AU",
-  "snippet": "Home Care for Disabled People's Guide  Household Assistance: Help with household tasks such as cleaning, cooking, laundr",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.71,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Welcome to B Able Support Coordination",
-  "name": "Welcome to B Able Support Coordination",
-  "email": "admin@bablesupportco.com",
-  "emails": [
-   "admin@bablesupportco.com"
-  ],
-  "domain": "bablesupportco.com",
-  "country": "AU",
-  "snippet": "Welcome to B Able Support Coordination  B Able Support Coordination is a trusted NDIS-registered support coordination pr",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.67,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Managing Household Tasks for Adults with Disabilities",
-  "name": "Managing Household Tasks for Adults with Disabilities",
-  "email": "info@eviancare.com",
-  "emails": [
-   "info@eviancare.com"
-  ],
-  "domain": "eviancare.com",
-  "country": "AU",
-  "snippet": "Managing Household Tasks for Adults with Disabilities  By combining structured routines, decluttering practices, organiz",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.61,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Tag",
-  "name": "Tag",
-  "email": "advocacynetwork@syr.edu",
-  "emails": [
-   "advocacynetwork@syr.edu"
-  ],
-  "domain": "enydda.com",
-  "country": "AU",
-  "snippet": "Tag: Disability Services - ENYDDA  Budget decisions must reflect the rights of individuals with disabilities at a time w",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.55,
-  "trade": "therapeutic supports",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Overwhelmed by Household Tasks? Here's How to Make ...",
-  "name": "Overwhelmed by Household Tasks? Here's How to Make ...",
-  "email": "amanda@amandalynnephd.com",
-  "emails": [
-   "amanda@amandalynnephd.com"
-  ],
-  "domain": "amandalynnephd.com",
-  "country": "AU",
-  "snippet": "Overwhelmed by Household Tasks? Here's How to Make ...  Overwhelmed by Household Tasks? Here's How to Make Them More Man",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.54,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "NDIS Support Coordination",
-  "name": "NDIS Support Coordination",
-  "email": "hello@bluewing.care",
-  "emails": [
-   "hello@bluewing.care"
-  ],
-  "domain": "bluewing.care",
-  "country": "AU",
-  "snippet": "NDIS Support Coordination | QLD & NSW | Blue Wing Care  Need help with your NDIS plan? Learn how Support Coordination si",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.74,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Special Needs Household Tasks",
-  "name": "Special Needs Household Tasks",
-  "email": "email-info@nextleveldisabilityservice.com",
-  "emails": [
-   "email-info@nextleveldisabilityservice.com"
-  ],
-  "domain": "nextleveldisabilityservice.com",
-  "country": "AU",
-  "snippet": "Special Needs Household Tasks - Next Level Disability ...  As an approved NDIS provider, our custom plans cover a range ",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.76,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "NDIS Registrations & Compliance",
-  "name": "NDIS Registrations & Compliance",
-  "email": "info@supportingcommunitiesaustralia.com",
-  "emails": [
-   "info@supportingcommunitiesaustralia.com"
-  ],
-  "domain": "supportingcommunitiesaustralia.com",
-  "country": "AU",
-  "snippet": "NDIS Registrations & Compliance | SCA  Innovative Community Participation. 0117, Development of Daily Living and Life Sk",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.62,
-  "trade": "community participation",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Daily Personal Activities Support",
-  "name": "Daily Personal Activities Support",
-  "email": "info@wattlesupports.org",
-  "emails": [
-   "info@wattlesupports.org"
-  ],
-  "domain": "wattlesupports.org",
-  "country": "AU",
-  "snippet": "Daily Personal Activities Support | High-Intensity Care  Get support for daily personal activities with high-intensity c",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.67,
-  "trade": "daily personal activities",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Top Domestic Assistance & Household Tasks Providers in Australia",
-  "name": "Top Domestic Assistance & Household Tasks Providers in Australia",
-  "email": "hello@ndisprovider.review",
-  "emails": [
-   "hello@ndisprovider.review"
-  ],
-  "domain": "ndisprovider.review",
-  "country": "AU",
-  "snippet": "Top Domestic Assistance & Household Tasks Providers in Australia  Browse NDIS domestic assistance providers across Austr",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.6,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Participate Community",
-  "name": "Participate Community",
-  "email": "info@wecaresadisability.com",
-  "emails": [
-   "info@wecaresadisability.com"
-  ],
-  "domain": "wecaresadisability.com",
-  "country": "AU",
-  "snippet": "Participate Community - We Care Sa Disability  NDIS Registered Service Provider At We Care SA Disability, we believe tha",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.68,
-  "trade": "community participation",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Community Integration for People with I/DD",
-  "name": "Community Integration for People with I/DD",
-  "email": "tets_logo_light@2x.png",
-  "emails": [
-   "tets_logo_light@2x.png"
-  ],
-  "domain": "yourtrainingprovider.com",
-  "country": "AU",
-  "snippet": "Community Integration for People with I/DD: A Guide  Community participation represents far more than a mere social acti",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.56,
-  "trade": "community participation",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "247 Support Services",
-  "name": "247 Support Services",
-  "email": "david@247supportservices.au",
-  "emails": [
-   "david@247supportservices.au"
-  ],
-  "domain": "247supportservices.au",
-  "country": "AU",
-  "snippet": "247 Support Services - Household Tasks  Community Activities · Household Tasks · Day Programs · Disability services · FA",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.75,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Household Tasks",
-  "name": "Household Tasks",
-  "email": "info@missiondisabilitycareservice.com",
-  "emails": [
-   "info@missiondisabilitycareservice.com"
-  ],
-  "domain": "missiondisabilitycareservice.com",
-  "country": "AU",
-  "snippet": "Household Tasks  Household tasks support with cleaning, laundry and domestic chores so you can focus on the things that ",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.65,
-  "trade": "household tasks",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "NDIS Community Participation Western Australia",
-  "name": "NDIS Community Participation Western Australia",
-  "email": "info@enhancehopeservices.com",
-  "emails": [
-   "info@enhancehopeservices.com"
-  ],
-  "domain": "enhancehopeservices.com",
-  "country": "AU",
-  "snippet": "NDIS Community Participation Western Australia | Social ...  Our NDIS community participation Western Australia services",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.64,
-  "trade": "community participation",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Stronger Together",
-  "name": "Stronger Together",
-  "email": "cos@strongertogetherss.com",
-  "emails": [
-   "cos@strongertogetherss.com"
-  ],
-  "domain": "strongertogetherss.com",
-  "country": "AU",
-  "snippet": "Stronger Together | Support Coordination  Stronger Together offers tailored NDIS services , including support coordinati",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.76,
-  "trade": "support coordination",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "Daily Living Assistance",
-  "name": "Daily Living Assistance",
-  "email": "admin@dessaus.com",
-  "emails": [
-   "admin@dessaus.com"
-  ],
-  "domain": "dessaus.com",
-  "country": "AU",
-  "snippet": "Daily Living Assistance - Distinctive Edge Support Services  Aug 8, 2023 · DESS's highly trained support workers provide",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.67,
-  "trade": "daily personal activities",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "company": "NDIS Provider in Darwin",
-  "name": "NDIS Provider in Darwin",
-  "email": "info@ixoracare.com",
-  "emails": [
-   "info@ixoracare.com"
-  ],
-  "domain": "ixoracare.com",
-  "country": "AU",
-  "snippet": "NDIS Provider in Darwin | NDIS Disability Support in Darwin, NT  Community Participation Mental Health NDIS Consultation",
-  "source_tag": "acd_mint",
-  "platform": null,
-  "preverified": true,
-  "jev_score": 0.71,
-  "trade": "community participation",
-  "province": "NSW",
-  "campaign": "disability_providers",
-  "state": null
- },
- {
-  "email": "contact@k-onecommunityservices.com",
-  "domain": "k-onecommunityservices.com",
-  "name": "Therapeutic Supports",
-  "country": "AU",
-  "trade": "assistance with social participation",
-  "state": "ACT",
-  "trigger": {
-   "kind": "ndis_registration",
-   "date": "2026-11-06",
-   "ref": "ndis_provider_search"
-  },
-  "signals": {
-   "owner_confidence": "high",
-   "website_live": true,
-   "revenue_proxy": "registered NDIS provider"
-  },
-  "source_tag": "acd_mint",
-  "scraped_at": "2026-11-06T02:51:15Z",
-  "jev_score": 0.77,
-  "jev_ok": true
- },
- {
-  "email": "info@interchangeau.org",
-  "domain": "interchangeau.org",
-  "name": "Support Coordination",
-  "country": "AU",
-  "trade": "therapeutic supports",
-  "state": "NT",
-  "trigger": {
-   "kind": "ndis_registration",
-   "date": "2026-11-06",
-   "ref": "ndis_provider_search"
-  },
-  "signals": {
-   "owner_confidence": "medium",
-   "website_live": true,
-   "revenue_proxy": "registered NDIS provider"
-  },
-  "source_tag": "acd_mint",
-  "scraped_at": "2026-11-06T03:35:33Z",
-  "jev_score": 0.78,
-  "jev_ok": true
- },
- {
-  "email": "info@peacenw.org",
-  "domain": "peacenw.org",
-  "name": "Behavioral Health Focused Organizations and Support Groups",
-  "country": "AU",
-  "trade": "support coordination",
-  "state": "NSW",
-  "trigger": {
-   "kind": "ndis_registration",
-   "date": "2026-11-06",
-   "ref": "ndis_provider_search"
-  },
-  "signals": {
-   "owner_confidence": "medium",
-   "website_live": true,
-   "revenue_proxy": "registered NDIS provider"
-  },
-  "source_tag": "acd_mint",
-  "scraped_at": "2026-11-06T03:40:17Z",
-  "jev_score": 0.76,
-  "jev_ok": true
- },
- {
-  "email": "info@capacitylinx.org",
-  "domain": "capacitylinx.org",
-  "name": "Support Coordination Services",
-  "country": "AU",
-  "trade": "daily personal activities",
-  "state": "QLD",
-  "trigger": {
-   "kind": "ndis_registration",
-   "date": "2026-11-06",
-   "ref": "ndis_provider_search"
-  },
-  "signals": {
-   "owner_confidence": "medium",
-   "website_live": true,
-   "revenue_proxy": "registered NDIS provider"
-  },
-  "source_tag": "acd_mint",
-  "scraped_at": "2026-11-06T04:43:02Z",
-  "jev_score": 0.78,
-  "jev_ok": true
- },
- {
-  "email": "info@supportcentralco.com",
-  "domain": "supportcentralco.com",
-  "name": "Contact Support Central Co",
-  "country": "AU",
-  "trade": "daily personal activities",
-  "state": "SA",
-  "trigger": {
-   "kind": "ndis_registration",
-   "date": "2026-11-06",
-   "ref": "ndis_provider_search"
-  },
-  "signals": {
-   "owner_confidence": "medium",
-   "website_live": true,
-   "revenue_proxy": "registered NDIS provider"
-  },
-  "source_tag": "acd_mint",
-  "scraped_at": "2026-11-06T04:43:21Z",
-  "jev_score": 0.77,
-  "jev_ok": true
- }
+{
+"company": "Areability",
+"name": "Areability",
+"email": "adam@areability.com.au",
+"emails": [
+"adam@areability.com.au"
+],
+"domain": "areability.com.au",
+"country": "AU",
+"snippet": "Areability, Your Destination for Central Coast NSW 1-on-1 disability support services, tailored to your needs, available 24/7",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.695,
+"jev_score": 0.695,
+"trade": "disability_providers",
+"province": "NSW",
+"state": "NSW",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "P Homecare",
+"name": "P Homecare",
+"email": "ndis@phomecare.com.au",
+"emails": [
+"ndis@phomecare.com.au"
+],
+"domain": "phomecare.com.au",
+"country": "AU",
+"snippet": "P Home care is a Registered NDIS Provider Sydney, NSW SDA, SIL & Respite provider for disability, Home Nursing support & NDIS services.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.692,
+"jev_score": 0.692,
+"trade": "hcp_providers",
+"province": "NSW",
+"state": "NSW",
+"campaign": "hcp_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Positive Moods",
+"name": "Positive Moods",
+"email": "ndis@positivemoods.com.au",
+"emails": [
+"ndis@positivemoods.com.au"
+],
+"domain": "positivemoods.com.au",
+"country": "AU",
+"snippet": "NDIS-registered positive behaviour support, behaviour support plans and functional behaviour assessments across QLD and SA. Call 1300 001 470.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.652,
+"jev_score": 0.652,
+"trade": "disability_providers",
+"province": "QLD",
+"state": "QLD",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Active Lifestyle Supports",
+"name": "Active Lifestyle Supports",
+"email": "greg@activelifestylesupports.com.au",
+"emails": [
+"greg@activelifestylesupports.com.au"
+],
+"domain": "activelifestylesupports.com.au",
+"country": "AU",
+"snippet": "At Active Lifestyle Supports, we offer NDIS services & domestic assistance for people living with disabilities in the Illawarra region. Call 0436 293 366.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.651,
+"jev_score": 0.651,
+"trade": "disability_providers",
+"province": "NSW",
+"state": "NSW",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "St Louis Care at Home",
+"name": "St Louis Care at Home",
+"email": "homecare@stlouiscareathome.com.au",
+"emails": [
+"homecare@stlouiscareathome.com.au"
+],
+"domain": "stlouiscareathome.com.au",
+"country": "AU",
+"snippet": "Simply Better Care",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.642,
+"jev_score": 0.642,
+"trade": "hcp_providers",
+"province": "WA",
+"state": "WA",
+"campaign": "hcp_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Claremont Care",
+"name": "Claremont Care",
+"email": "john@claremontcare.com.au",
+"emails": [
+"john@claremontcare.com.au"
+],
+"domain": "claremontcare.com.au",
+"country": "AU",
+"snippet": "Claremont Care is an NDIS provider in Sydney. We registered and have skilled workers who provide high-quality support services for disabled people. Call at 0416873319.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.634,
+"jev_score": 0.634,
+"trade": "disability_providers",
+"province": "NSW",
+"state": "NSW",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "My Support Services",
+"name": "My Support Services",
+"email": "intake@mysupportservices.com.au",
+"emails": [
+"intake@mysupportservices.com.au"
+],
+"domain": "mysupportservices.com.au",
+"country": "AU",
+"snippet": "Explore SIL, personal care, respite and community support in Melbourne and Sydney with a registered NDIS provider. Talk to our team or make a referral.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.6339,
+"jev_score": 0.6339,
+"trade": "disability_providers",
+"province": "VIC",
+"state": "VIC",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Better Access",
+"name": "Better Access",
+"email": "adrian@betteraccessqld.com.au",
+"emails": [
+"adrian@betteraccessqld.com.au"
+],
+"domain": "betteraccessqld.com.au",
+"country": "AU",
+"snippet": "Local disability support in Toowoomba and surrounds: support coordination, SIL, personal care and community participation. Call 0435 957 909.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.625,
+"jev_score": 0.625,
+"trade": "disability_providers",
+"province": "QLD",
+"state": "QLD",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Sublime Care",
+"name": "Sublime Care",
+"email": "ndis.rosters@sublimecare.com.au",
+"emails": [
+"ndis.rosters@sublimecare.com.au"
+],
+"domain": "sublimecare.com.au",
+"country": "AU",
+"snippet": "Experience personalised NDIS disability and aged care services across NSW. Supporting independence, comfort, and quality of life. Contact Sublime Care today.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.6,
+"jev_score": 0.6,
+"trade": "disability_providers",
+"province": "NSW",
+"state": "NSW",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Melba Support Services",
+"name": "Melba Support Services",
+"email": "melba@melbasupport.com.au",
+"emails": [
+"melba@melbasupport.com.au"
+],
+"domain": "melbasupport.com.au",
+"country": "AU",
+"snippet": "Melba is a fully registered provider offering disability support services. One-to-one support for you to live the life you choose.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.598,
+"jev_score": 0.598,
+"trade": "disability_providers",
+"province": "VIC",
+"state": "VIC",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "SASScare Support Services",
+"name": "SASScare Support Services",
+"email": "trin.miller@sasscare.com.au",
+"emails": [
+"trin.miller@sasscare.com.au"
+],
+"domain": "sasscare.com.au",
+"country": "AU",
+"snippet": "SASScare is a Bendigo-based NDIS disability support provider delivering services across Bendigo, Melbourne and Regional Victoria. We support NDIS participants with choice and control, independence, co",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.576,
+"jev_score": 0.576,
+"trade": "disability_providers",
+"province": "VIC",
+"state": "VIC",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Support In Home",
+"name": "Support In Home",
+"email": "kam@supportinhome.au",
+"emails": [
+"kam@supportinhome.au"
+],
+"domain": "supportinhome.au",
+"country": "AU",
+"snippet": "Sih Aged Care In Your Home We deliver the intent of the government in the Support At Home program, in compliance with The Aged Care Quality Standards. Read More Call Us 0408 397 972 Make Us A Call Ema",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.571,
+"jev_score": 0.571,
+"trade": "hcp_providers",
+"province": "QLD",
+"state": "QLD",
+"campaign": "hcp_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Limestone Coast Ability",
+"name": "Limestone Coast Ability",
+"email": "enquiries@limestonecoastability.com.au",
+"emails": [
+"enquiries@limestonecoastability.com.au"
+],
+"domain": "limestonecoastability.com.au",
+"country": "AU",
+"snippet": "",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.5394,
+"jev_score": 0.5394,
+"trade": "disability_providers",
+"province": "SA",
+"state": "SA",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Gentle Grid",
+"name": "Gentle Grid",
+"email": "contact@gentlegrid.com.au",
+"emails": [
+"contact@gentlegrid.com.au"
+],
+"domain": "gentlegrid.com.au",
+"country": "AU",
+"snippet": "Gentle Grid is a locally owned NDIS provider in Ballarat offering 14 registration groups \u2014 personal care, nursing, SIL, support coordination and more. Contact us today.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.5148,
+"jev_score": 0.5148,
+"trade": "disability_providers",
+"province": "VIC",
+"state": "VIC",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Yes. Support For Everyone Pty Ltd",
+"name": "Yes. Support For Everyone Pty Ltd",
+"email": "admin@supportforeveryone.com.au",
+"emails": [
+"admin@supportforeveryone.com.au"
+],
+"domain": "supportforeveryone.com.au",
+"country": "AU",
+"snippet": "Registered NDIS provider in Brisbane, Logan and Ipswich. Person-centred, multilingual disability support, with support workers we employ and check, booked in our app at NDIS prices with no platform fe",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.5099,
+"jev_score": 0.5099,
+"trade": "disability_providers",
+"province": "QLD",
+"state": "QLD",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Good Company Disability Services",
+"name": "Good Company Disability Services",
+"email": "hello@goodcompanyds.com.au",
+"emails": [
+"hello@goodcompanyds.com.au"
+],
+"domain": "goodcompanyds.com.au",
+"country": "AU",
+"snippet": "We support NDIS participants in Perth & Melbourne through mentoring, employment, and community services, helping you build independence and confidence.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.4938,
+"jev_score": 0.4938,
+"trade": "disability_providers",
+"province": "VIC",
+"state": "VIC",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Toowoomba Aged Care Residence",
+"name": "Toowoomba Aged Care Residence",
+"email": "bayviewacr@tricare.com.au",
+"emails": [
+"bayviewacr@tricare.com.au"
+],
+"domain": "tricare.com.au",
+"country": "AU",
+"snippet": "TriCare is one of the leading providers of Retirement Living and Aged Care in Australia, as well as family-owned and operated.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.492,
+"jev_score": 0.492,
+"trade": "hcp_providers",
+"province": "QLD",
+"state": "QLD",
+"campaign": "hcp_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "The Avoca Group",
+"name": "The Avoca Group",
+"email": "info@avocagroup.com.au",
+"emails": [
+"info@avocagroup.com.au"
+],
+"domain": "avocagroup.com.au",
+"country": "AU",
+"snippet": "Local NDIS provider offering safe, personalised disability support across Adelaide Hills. Experienced team delivering care, housing, and community access.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.491,
+"jev_score": 0.491,
+"trade": "disability_providers",
+"province": "SA",
+"state": "SA",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Care Alliance Newcastle",
+"name": "Care Alliance Newcastle",
+"email": "info@carealliance.com.au",
+"emails": [
+"info@carealliance.com.au"
+],
+"domain": "carealliance.com.au",
+"country": "AU",
+"snippet": "Psychologist-led NDIS and disability support in Newcastle and the Hunter: psychology, community nursing, behaviour support, SIL and 24/7 care. 1300 206 309.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.4833,
+"jev_score": 0.4833,
+"trade": "hcp_providers",
+"province": "NSW",
+"state": "NSW",
+"campaign": "hcp_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Essential Care, Always There",
+"name": "Essential Care, Always There",
+"email": "info@essentialcare.net.au",
+"emails": [
+"info@essentialcare.net.au"
+],
+"domain": "essentialcare.net.au",
+"country": "AU",
+"snippet": "At Essential Care our mission is to support people across the Illawarra and Shoalhaven to stay home and remain independent as long as possible. Through NDIS, Aged Care and Veteran Care we are able to ",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.4584,
+"jev_score": 0.4584,
+"trade": "hcp_providers",
+"province": "NSW",
+"state": "NSW",
+"campaign": "hcp_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Intentional Connections",
+"name": "Intentional Connections",
+"email": "info@intentionalconnections.com.au",
+"emails": [
+"info@intentionalconnections.com.au"
+],
+"domain": "intentionalconnections.com.au",
+"country": "AU",
+"snippet": "NDIS Support Coordination and Specialist Support Coordination - Central Coast NSW. Registered provider.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.4577,
+"jev_score": 0.4577,
+"trade": "disability_providers",
+"province": "NSW",
+"state": "NSW",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Respect Aged Care",
+"name": "Respect Aged Care",
+"email": "michael.griffin@respect.com.au",
+"emails": [
+"michael.griffin@respect.com.au"
+],
+"domain": "respect.com.au",
+"country": "AU",
+"snippet": "",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.443,
+"jev_score": 0.443,
+"trade": "hcp_providers",
+"province": "NSW",
+"state": "NSW",
+"campaign": "hcp_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "you Healthcare",
+"name": "you Healthcare",
+"email": "admin@aboutyouhealthcare.com.au",
+"emails": [
+"admin@aboutyouhealthcare.com.au"
+],
+"domain": "aboutyouhealthcare.com.au",
+"country": "AU",
+"snippet": "About you Healthcare\nWe are a family owned NDIS  care and nursing  provider that offers old fashioned care to our clients",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.4409,
+"jev_score": 0.4409,
+"trade": "hcp_providers",
+"province": "QLD",
+"state": "QLD",
+"campaign": "hcp_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Life's Good",
+"name": "Life's Good",
+"email": "admin@lifesgoodservices.com.au",
+"emails": [
+"admin@lifesgoodservices.com.au"
+],
+"domain": "lifesgoodservices.com.au",
+"country": "AU",
+"snippet": "Warm, reliable and genuinely personal support at home and in the community across Victoria and South Australia.",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.4381,
+"jev_score": 0.4381,
+"trade": "hcp_providers",
+"province": "VIC",
+"state": "VIC",
+"campaign": "hcp_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Live Well Care And Support",
+"name": "Live Well Care And Support",
+"email": "admin@livewellsupport.com.au",
+"emails": [
+"admin@livewellsupport.com.au"
+],
+"domain": "livewellsupport.com.au",
+"country": "AU",
+"snippet": "",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.4108,
+"jev_score": 0.4108,
+"trade": "hcp_providers",
+"province": "NT",
+"state": "NT",
+"campaign": "hcp_providers",
+"batch": "mint-20261105"
+},
+{
+"company": "Ready Enable",
+"name": "Ready Enable",
+"email": "info@readyenable.com.au",
+"emails": [
+"info@readyenable.com.au"
+],
+"domain": "readyenable.com.au",
+"country": "AU",
+"snippet": "Ready Enable empowers individuals with disabilities & mental health needs in Australia. Get expert support, personalized plans & a brighter future. Contact us today!",
+"source_tag": "mint_20261105",
+"preverified": true,
+"score": 0.3772,
+"jev_score": 0.3772,
+"trade": "disability_providers",
+"province": "NSW",
+"state": "NSW",
+"campaign": "disability_providers",
+"batch": "mint-20261105"
+}
 ]
