@@ -314,6 +314,9 @@ def in_window():
 
 
 # ---------------- pool ----------------
+HOLD_EXEMPT = {x.strip().lower() for x in os.environ.get("HOLD_EXEMPT", "").split(",") if x.strip()}   # emails released early (pool rows that lost their batch tag)
+
+
 def today_utc():
     return dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
 
@@ -332,7 +335,7 @@ def pool_unsent(pool, sent_all, sup):
         # 2026-11-06: owner's call. Freshly minted, Jev-ranked leads carry a "batch" tag and go first; everything that
         # was already in the pool is held until HOLD_LEGACY_UNTIL (YYYY-MM-DD, UTC), then released automatically.
         _hold = os.environ.get("HOLD_LEGACY_UNTIL", "").strip()
-        if _hold and today_utc() < _hold and not l.get("batch"):
+        if _hold and today_utc() < _hold and not l.get("batch") and e.lower() not in HOLD_EXEMPT:
             continue
         if e in sent_all or e in sup["emails"] or d in sup["domains"] or reg_domain(d) in mailed_domains:
             continue
