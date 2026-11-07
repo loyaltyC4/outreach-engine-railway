@@ -2102,5 +2102,84 @@
   "scraped_at": "2026-11-07T18:31:29Z",
   "jev_score": 0.76,
   "jev_ok": true
+ },
+ {
+  "company": "Handy Wendy General Services (HWGS)",
+  "name": "Handy Wendy General Services (HWGS)",
+  "email": "ndis@handywendy.com.au",
+  "emails": [
+   "ndis@handywendy.com.au"
+  ],
+  "domain": "handywendy.org",
+  "country": "AU",
+  "snippet": "Handy Wendy General Services (HWGS)  Registered NDIS provider in Sydney，We’re COVID Safe\n\nWelcome!What can we do for you",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.77,
+  "trade": "household and yard maintenance",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Cleaning Services NDIS and Aged Care",
+  "name": "Cleaning Services NDIS and Aged Care",
+  "email": "hello@horizoncommunityservices.au",
+  "emails": [
+   "hello@horizoncommunityservices.au"
+  ],
+  "domain": "horizoncommunityservices.au",
+  "country": "AU",
+  "snippet": "Cleaning Services NDIS and Aged Care - In-home Supports  Cleaning and household tasks fall under Core Supports – Assista",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.72,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Social and Community Participation",
+  "name": "NDIS Social and Community Participation",
+  "email": "planmanager@elsaustralia.org",
+  "emails": [
+   "planmanager@elsaustralia.org"
+  ],
+  "domain": "elsaustralia.org",
+  "country": "AU",
+  "snippet": "NDIS Social and Community Participation  ELS has extensive experience as an NDIS registered provider. We offer culturall",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.75,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "info@reachout.com",
+  "domain": "reachout.com",
+  "name": "Contact us",
+  "country": "AU",
+  "trade": "household and yard maintenance",
+  "state": "NT",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-07",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-07T20:55:48Z",
+  "jev_score": 0.75,
+  "jev_ok": true
  }
 ]
