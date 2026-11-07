@@ -1966,5 +1966,141 @@
   "scraped_at": "2026-11-07T07:49:19Z",
   "jev_score": 0.78,
   "jev_ok": true
+ },
+ {
+  "company": "Daily Personal Activities Assistance Perth WA",
+  "name": "Daily Personal Activities Assistance Perth WA",
+  "email": "usadmin@beinghumansupportservices.com.au",
+  "emails": [
+   "usadmin@beinghumansupportservices.com.au"
+  ],
+  "domain": "beinghumansupportservices.com",
+  "country": "AU",
+  "snippet": "Daily Personal Activities Assistance Perth WA  Being Human Support Services offers daily personal activities assistance ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.75,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "About",
+  "name": "About",
+  "email": "info@australian.support",
+  "emails": [
+   "info@australian.support"
+  ],
+  "domain": "australian.support",
+  "country": "AU",
+  "snippet": "About – Australian Support Services  Therapeutic Supports · SIL (Supported Independent Living)/ Respite/ ILO · SDA (Spec",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.67,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Contact Us",
+  "name": "Contact Us",
+  "email": "brisbane@qldsupportcoordination.org",
+  "emails": [
+   "brisbane@qldsupportcoordination.org"
+  ],
+  "domain": "qldsupportcoordination.org",
+  "country": "AU",
+  "snippet": "Contact Us  Email(required). Phone(required). Message(required). SubmitSubmit. NDIS Registration number: 4-LCNARY8 ABN: ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.73,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Disability Community Support",
+  "name": "Disability Community Support",
+  "email": "office@inclusive-policy.org",
+  "emails": [
+   "office@inclusive-policy.org"
+  ],
+  "domain": "inclusive-policy.org",
+  "country": "AU",
+  "snippet": "Disability Community Support: Choice & Independence | CIP  This CIP brief explores how the Older Persons Convention can ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.51,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Synergy Care Link",
+  "name": "Synergy Care Link",
+  "email": "perth@synergycarelink.com",
+  "emails": [
+   "perth@synergycarelink.com"
+  ],
+  "domain": "synergycarelink.com",
+  "country": "AU",
+  "snippet": "Synergy Care Link | Registered NDIS Provider Sydney & NSW  Synergy Care Link is a Registered NDIS Provider in Sydney, Pa",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.68,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Household Tasks",
+  "name": "Household Tasks",
+  "email": "info@wellnessability.org",
+  "emails": [
+   "info@wellnessability.org"
+  ],
+  "domain": "wellnessability.org",
+  "country": "AU",
+  "snippet": "Household Tasks - Wellness Ability Solutions | NDIS Support Melbourne  Wellness Ability Solutions provide support to NDI",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.64,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "info@infinitysupporthealthcare.com",
+  "domain": "infinitysupporthealthcare.com",
+  "name": "NDIS Gardening Maintenance Melbourne",
+  "country": "AU",
+  "trade": "development of daily living skills",
+  "state": "SA",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-07",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-07T18:31:29Z",
+  "jev_score": 0.76,
+  "jev_ok": true
  }
 ]
