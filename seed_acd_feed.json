@@ -1716,5 +1716,255 @@
   "scraped_at": "2026-11-07T00:01:53Z",
   "jev_score": 0.75,
   "jev_ok": true
+ },
+ {
+  "company": "Therapeutic Supports Policy and Procedure",
+  "name": "Therapeutic Supports Policy and Procedure",
+  "email": "name@company.com.au",
+  "emails": [
+   "name@company.com.au"
+  ],
+  "domain": "providerinstitute.au",
+  "country": "AU",
+  "snippet": "Therapeutic Supports Policy and Procedure | Provider ...  This Policy and Procedure provides guidance for allied health ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.54,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Disability Support Services Queensland",
+  "name": "Disability Support Services Queensland",
+  "email": "info@reachabilitysupport.com",
+  "emails": [
+   "info@reachabilitysupport.com"
+  ],
+  "domain": "reachabilitysupport.com",
+  "country": "AU",
+  "snippet": "Disability Support Services Queensland | Reach Ability ...  NDIS Disability Support Provider Queensland| Reachabilitysup",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.64,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Privacy policy",
+  "name": "Privacy policy",
+  "email": "hello@gesond.health",
+  "emails": [
+   "hello@gesond.health"
+  ],
+  "domain": "gesond.health",
+  "country": "AU",
+  "snippet": "Privacy policy - Gesond  Registered NDIS provider, ID 4-KRIQRGN; Registered for Community Nursing Care and High Intensit",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.64,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Support Coordination",
+  "name": "NDIS Support Coordination",
+  "email": "admin@empoweredcs.com",
+  "emails": [
+   "admin@empoweredcs.com"
+  ],
+  "domain": "empoweredcommunityservices.com",
+  "country": "AU",
+  "snippet": "NDIS Support Coordination - Empowered Community Services  We offer personalized Support Coordination services to navigat",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.69,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Home",
+  "name": "Home",
+  "email": "info@supportcoau.com",
+  "emails": [
+   "info@supportcoau.com"
+  ],
+  "domain": "supportcoau.com",
+  "country": "AU",
+  "snippet": "Home | Support Co Au  Support coordination helps you to make the best use of your supports in plan. Support coordination",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.65,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Contact Us",
+  "name": "Contact Us",
+  "email": "benalla@infinitycoordination.com",
+  "emails": [
+   "benalla@infinitycoordination.com"
+  ],
+  "domain": "infinitycoordination.com",
+  "country": "AU",
+  "snippet": "Contact Us – Infinity Coordination & Supports Pty Ltd  Office Locations Albury Office Suite 3 530-540 Swift Street Albur",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.69,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Meet Care Around You on SuccessCENTER.com Sydney, New South ...",
+  "name": "Meet Care Around You on SuccessCENTER.com Sydney, New South ...",
+  "email": "name@yoursite.com",
+  "emails": [
+   "name@yoursite.com"
+  ],
+  "domain": "successcenter.com",
+  "country": "AU",
+  "snippet": "Meet Care Around You on SuccessCENTER.com Sydney, New South ...  Care Around You is a registered NDIS provider based in ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.68,
+  "trade": "household and yard maintenance",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "The Importance of Community Integration for People with Disabilities",
+  "name": "The Importance of Community Integration for People with Disabilities",
+  "email": "resourcecenter@udservices.org",
+  "emails": [
+   "resourcecenter@udservices.org"
+  ],
+  "domain": "udservices.org",
+  "country": "AU",
+  "snippet": "The Importance of Community Integration for People with Disabilities  But people with disabilities are often excluded fr",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.6,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Services — Hayee Group Services",
+  "name": "NDIS Services — Hayee Group Services",
+  "email": "info@hayeegroup.com",
+  "emails": [
+   "info@hayeegroup.com"
+  ],
+  "domain": "hayeegroup.com",
+  "country": "AU",
+  "snippet": "NDIS Services — Hayee Group Services  Registered NDIS provider in NSW delivering personalised disability support — daily",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.68,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Selecting and Evaluating a DDD Support Coordination Agency",
+  "name": "Selecting and Evaluating a DDD Support Coordination Agency",
+  "email": "info@vanarellilaw.com",
+  "emails": [
+   "info@vanarellilaw.com"
+  ],
+  "domain": "vanarellilaw.com",
+  "country": "AU",
+  "snippet": "Selecting and Evaluating a DDD Support Coordination Agency  A Support Coordination Agency assigns a Support Coordinator ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.55,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Support Coordination",
+  "name": "Support Coordination",
+  "email": "info@alignsupportservices.com",
+  "emails": [
+   "info@alignsupportservices.com"
+  ],
+  "domain": "alignsupportservices.com",
+  "country": "AU",
+  "snippet": "Support Coordination  Align Support Services provides support coordination to help individuals and their family to get t",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.7,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Household Tasks",
+  "name": "Household Tasks",
+  "email": "admin@supportpoint.au",
+  "emails": [
+   "admin@supportpoint.au"
+  ],
+  "domain": "supportpoint.au",
+  "country": "AU",
+  "snippet": "Household Tasks - supportpoint  At Support Point, we're here to make household tasks easier, whether you need short-term",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.65,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "adminteam@innatetherapies.com",
+  "domain": "innatetherapies.com",
+  "name": "NDIS Therapy Services",
+  "country": "AU",
+  "trade": "assistance with social participation",
+  "state": "VIC",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-07",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "high",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-07T07:49:19Z",
+  "jev_score": 0.78,
+  "jev_ok": true
  }
 ]
