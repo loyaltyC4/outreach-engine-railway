@@ -2181,5 +2181,388 @@
   "scraped_at": "2026-11-07T20:55:48Z",
   "jev_score": 0.75,
   "jev_ok": true
+ },
+ {
+  "company": "NDIS Therapy Services for Kids in Melbourne",
+  "name": "NDIS Therapy Services for Kids in Melbourne",
+  "email": "infosm@desilvakc.com",
+  "emails": [
+   "infosm@desilvakc.com"
+  ],
+  "domain": "desilvakc.com",
+  "country": "AU",
+  "snippet": "NDIS Therapy Services for Kids in Melbourne  Therapeutic Supports. Speech therapy, occupational therapy, and psychology ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.71,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Support Services",
+  "name": "Support Services",
+  "email": "info@arcfc.org",
+  "emails": [
+   "info@arcfc.org"
+  ],
+  "domain": "arcfc.org",
+  "country": "AU",
+  "snippet": "Support Services  Support Coordination is available for people of any age. This support can be a one-time service or it ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.71,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Household Task Support",
+  "name": "NDIS Household Task Support",
+  "email": "info@hivecareau.com",
+  "emails": [
+   "info@hivecareau.com"
+  ],
+  "domain": "hivecareau.com",
+  "country": "AU",
+  "snippet": "NDIS Household Task Support  Your email address. Services required. Assistance with daily personal activities ... Househ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.65,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "S2AH",
+  "name": "S2AH",
+  "email": "admin@step2alliedhealth.com",
+  "emails": [
+   "admin@step2alliedhealth.com"
+  ],
+  "domain": "step2alliedhealth.com",
+  "country": "AU",
+  "snippet": "S2AH - Guidance - Therapeutic Supports for Psychosocial ...  Under the NDIS, Therapeutic Supports for psychosocial disab",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.61,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Community Participation",
+  "name": "NDIS Community Participation",
+  "email": "info@vic.care",
+  "emails": [
+   "info@vic.care"
+  ],
+  "domain": "vic.care",
+  "country": "AU",
+  "snippet": "NDIS Community Participation | Care Solutions Victoria  Contact us to request or a session. All our services are covered",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.75,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Portal — Your independent guide to the NDIS",
+  "name": "NDIS Portal — Your independent guide to the NDIS",
+  "email": "hello@ndisportal.com",
+  "emails": [
+   "hello@ndisportal.com"
+  ],
+  "domain": "ndisportal.com",
+  "country": "AU",
+  "snippet": "NDIS Portal — Your independent guide to the NDIS  Clear, independent guides to NDIS eligibility, applications, plans, fu",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.57,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS House Cleaning and Gardening Services in Adelaide",
+  "name": "NDIS House Cleaning and Gardening Services in Adelaide",
+  "email": "editors@literallydarling.com",
+  "emails": [
+   "editors@literallydarling.com"
+  ],
+  "domain": "literallydarling.com",
+  "country": "AU",
+  "snippet": "NDIS House Cleaning and Gardening Services in Adelaide: What’s Covered? - Literally, Darling  # NDIS House Cleaning and ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.69,
+  "trade": "household and yard maintenance",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Registered NDIS Provider — Good Days Health Pty Ltd",
+  "name": "Registered NDIS Provider — Good Days Health Pty Ltd",
+  "email": "hello@gooddays.health",
+  "emails": [
+   "hello@gooddays.health"
+  ],
+  "domain": "gooddays.health",
+  "country": "AU",
+  "snippet": "Registered NDIS Provider — Good Days Health Pty Ltd  Good Days Health is also an NDIS Quality and Safeguards Commission ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.68,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Intellectual Disability Services",
+  "name": "Intellectual Disability Services",
+  "email": "info@elitescarellc.com",
+  "emails": [
+   "info@elitescarellc.com"
+  ],
+  "domain": "elitescarellc.com",
+  "country": "AU",
+  "snippet": "Intellectual Disability Services | In-Home Support  In-Home Support provides direct assistance in these settings, helpin",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.63,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Integrated Behavior Support",
+  "name": "Integrated Behavior Support",
+  "email": "info@empoweringics.com",
+  "emails": [
+   "info@empoweringics.com"
+  ],
+  "domain": "empoweringics.com",
+  "country": "AU",
+  "snippet": "Integrated Behavior Support  To meet the needs of transitional-age youth and adults, our IBSS programs use a modified AB",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.64,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Registration for Community Participation Providers",
+  "name": "NDIS Registration for Community Participation Providers",
+  "email": "admin@ndisproviderregistration.au",
+  "emails": [
+   "admin@ndisproviderregistration.au"
+  ],
+  "domain": "ndisproviderregistration.au",
+  "country": "AU",
+  "snippet": "NDIS Registration for Community Participation Providers  Community participation supports help NDIS participants build s",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.52,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "www.metierre.com",
+  "name": "www.metierre.com",
+  "email": "ndis@metierre.com",
+  "emails": [
+   "ndis@metierre.com"
+  ],
+  "domain": "metierre.com",
+  "country": "AU",
+  "snippet": "www.metierre.com | Metierre Disability Services | Sydney, NSW  Metierre Disability Services is a Registered NDIS Provide",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.77,
+  "trade": "household and yard maintenance",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS High Intensity Daily Personal Activities in Perth WA",
+  "name": "NDIS High Intensity Daily Personal Activities in Perth WA",
+  "email": "info@hillcrestt.com",
+  "emails": [
+   "info@hillcrestt.com"
+  ],
+  "domain": "hillcrestt.com",
+  "country": "AU",
+  "snippet": "NDIS High Intensity Daily Personal Activities in Perth WA  Our services offer NDIS High Intensity Daily Personal Activit",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.68,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Daily Personal Activities",
+  "name": "Daily Personal Activities",
+  "email": "info@121supportshunter.org",
+  "emails": [
+   "info@121supportshunter.org"
+  ],
+  "domain": "121supportshunter.org",
+  "country": "AU",
+  "snippet": "Daily Personal Activities - 121supportshunter.org  This funding is allocated in NDIS plans to provide support to people ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.57,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "VBE",
+  "name": "VBE",
+  "email": "vbe@veteransbenefitsevaluations.com",
+  "emails": [
+   "vbe@veteransbenefitsevaluations.com"
+  ],
+  "domain": "veteransbenefitsevaluations.com",
+  "country": "AU",
+  "snippet": "VBE - Home - Veterans Benefits Evaluations  Our medical experts work with you to help connect the dots and provide the E",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.72,
+  "trade": "household and yard maintenance",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS & DVA Gardening",
+  "name": "NDIS & DVA Gardening",
+  "email": "info@crystalcleaningqld.com",
+  "emails": [
+   "info@crystalcleaningqld.com"
+  ],
+  "domain": "crystalcleaning-qld.com",
+  "country": "AU",
+  "snippet": "NDIS & DVA Gardening - Crystal Cleaning QLD  NDIS & DVA Gardening What is NDIS & DVA Gardening Service? Your Professiona",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.65,
+  "trade": "household and yard maintenance",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Household Tasks",
+  "name": "Household Tasks",
+  "email": "info@nissihomecare.au",
+  "emails": [
+   "info@nissihomecare.au"
+  ],
+  "domain": "nissihomecare.au",
+  "country": "AU",
+  "snippet": "Household Tasks | Nissi Home Care AU  Contact us today We are ready to help right now. See All Services Household tasks ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.74,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Better Living Services",
+  "name": "Better Living Services",
+  "email": "info@betterlivingservices.au",
+  "emails": [
+   "info@betterlivingservices.au"
+  ],
+  "domain": "betterlivingservices.au",
+  "country": "AU",
+  "snippet": "Better Living Services | Empowering Every Ability  Better Living Services (BLS) is a Tasmanian-based NDIS partner commit",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.69,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "How to Become a Support Coordinator",
+  "name": "How to Become a Support Coordinator",
+  "email": "hello@goodhuman.me",
+  "emails": [
+   "hello@goodhuman.me"
+  ],
+  "domain": "goodhuman.me",
+  "country": "AU",
+  "snippet": "How to Become a Support Coordinator  NDIS support coordination plays a key role in helping Aussies with disabilities liv",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.61,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "info@sydneydisabilitysupport.com",
+  "domain": "sydneydisabilitysupport.com",
+  "name": "Home",
+  "country": "AU",
+  "trade": "support coordination",
+  "state": "NT",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-09",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-09T07:15:19Z",
+  "jev_score": 0.75,
+  "jev_ok": true
  }
 ]
