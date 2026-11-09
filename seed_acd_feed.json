@@ -2564,5 +2564,141 @@
   "scraped_at": "2026-11-09T07:15:19Z",
   "jev_score": 0.75,
   "jev_ok": true
+ },
+ {
+  "company": "Support Coordination",
+  "name": "Support Coordination",
+  "email": "admin@aplusdisability.org",
+  "emails": [
+   "admin@aplusdisability.org"
+  ],
+  "domain": "aplusdisability.org",
+  "country": "AU",
+  "snippet": "Support Coordination - Aplus Disability  At Aplus Disability, our dedicated and loyal support coordination team is commi",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.67,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Disability Physiotherapy Exercise Hydrotherapy",
+  "name": "NDIS Disability Physiotherapy Exercise Hydrotherapy",
+  "email": "enquiries@aphs.net.au",
+  "emails": [
+   "enquiries@aphs.net.au"
+  ],
+  "domain": "araratphysio.com",
+  "country": "AU",
+  "snippet": "NDIS Disability Physiotherapy Exercise Hydrotherapy  ... Pty Ltd (APHS) is a non-registered NDIS provider. Registered Se",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.62,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Active Support Community Services",
+  "name": "Active Support Community Services",
+  "email": "robert.mcgregor@email.com",
+  "emails": [
+   "robert.mcgregor@email.com"
+  ],
+  "domain": "ndisreviews.com",
+  "country": "AU",
+  "snippet": "Active Support Community Services - NDIS Reviews  ... NDIS provider information for Active Support Community Services in",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.61,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Gecko SA",
+  "name": "Gecko SA",
+  "email": "admin@geckosa.com",
+  "emails": [
+   "admin@geckosa.com"
+  ],
+  "domain": "geckosa.com",
+  "country": "AU",
+  "snippet": "Gecko SA: NDIS Provider in Port Pirie - Kindness ...  Gecko SA is a registered NDIS provider delivering Supported Indepe",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.65,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "National Coordination Services",
+  "name": "National Coordination Services",
+  "email": "info@nationalcs.org",
+  "emails": [
+   "info@nationalcs.org"
+  ],
+  "domain": "nationalcs.org",
+  "country": "AU",
+  "snippet": "National Coordination Services – Helping Families, Connecting ...  About Us Welcome to National Coordination Services, y",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.67,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Empowering Choice",
+  "name": "Empowering Choice",
+  "email": "info@dr-wa.org",
+  "emails": [
+   "info@dr-wa.org"
+  ],
+  "domain": "disabilityrightswa.org",
+  "country": "AU",
+  "snippet": "Empowering Choice  ... community participation requires options for “activities and places of interest which are availab",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.55,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "lcsb40@commopps.org",
+  "domain": "commopps.org",
+  "name": "Community Services",
+  "country": "AU",
+  "trade": "community participation",
+  "state": "VIC",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-09",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "high",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-09T18:35:41Z",
+  "jev_score": 0.76,
+  "jev_ok": true
  }
 ]
