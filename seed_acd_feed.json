@@ -3029,5 +3029,103 @@
   "scraped_at": "2026-11-10T14:50:43Z",
   "jev_score": 0.79,
   "jev_ok": true
+ },
+ {
+  "company": "NDIS Community Participation Support",
+  "name": "NDIS Community Participation Support",
+  "email": "admin@prospr.care",
+  "emails": [
+   "admin@prospr.care"
+  ],
+  "domain": "prospr.care",
+  "country": "AU",
+  "snippet": "NDIS Community Participation Support | Prospr  Prospr helps you connect, socialise, and thrive with NDIS community parti",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.68,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Assistance with Daily Personal Activities",
+  "name": "Assistance with Daily Personal Activities",
+  "email": "admin@silverlinedisability.net",
+  "emails": [
+   "admin@silverlinedisability.net"
+  ],
+  "domain": "silverlinedisability.net",
+  "country": "AU",
+  "snippet": "Assistance with Daily Personal Activities  Receive compassionate support for daily personal activities with Silver Line ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.68,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Disability Support",
+  "name": "Disability Support",
+  "email": "info@justbettercare.com",
+  "emails": [
+   "info@justbettercare.com"
+  ],
+  "domain": "justbettercare.com",
+  "country": "AU",
+  "snippet": "Disability Support | Domestic Assistance and Help around the Home  ... help with a range of everyday household tasks. Ou",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.66,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Understanding the Role of Support Coordinators in the NDIS",
+  "name": "Understanding the Role of Support Coordinators in the NDIS",
+  "email": "albion.pa@nextpracticehealth.com",
+  "emails": [
+   "albion.pa@nextpracticehealth.com"
+  ],
+  "domain": "nextpracticehealth.com",
+  "country": "AU",
+  "snippet": "Understanding the Role of Support Coordinators in the NDIS  Provider organisations offering support coordination need to",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.6,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "jenny@innovatesupportcoordination.org",
+  "domain": "innovatesupportcoordination.org",
+  "name": "NDIS Services — Innovate Support Coordination",
+  "country": "AU",
+  "trade": "therapeutic supports",
+  "state": "NSW",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-10",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "high",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-10T21:34:20Z",
+  "jev_score": 0.8,
+  "jev_ok": true
  }
 ]
