@@ -2700,5 +2700,334 @@
   "scraped_at": "2026-11-09T18:35:41Z",
   "jev_score": 0.76,
   "jev_ok": true
+ },
+ {
+  "company": "Community Participation Supports",
+  "name": "Community Participation Supports",
+  "email": "bellevernon@goodwillswpa.org",
+  "emails": [
+   "bellevernon@goodwillswpa.org"
+  ],
+  "domain": "goodwillswpa.org",
+  "country": "AU",
+  "snippet": "Community Participation Supports  Goodwill offers community participation supports for individuals with intellectual or ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.7,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Support Coordination",
+  "name": "Support Coordination",
+  "email": "info@joiningfamilies.org",
+  "emails": [
+   "info@joiningfamilies.org"
+  ],
+  "domain": "joiningfamilies.org",
+  "country": "AU",
+  "snippet": "Support Coordination | JFSS  Support Coordination assists you in understanding the NDIS and maximizing your NDIS plan so",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.69,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Innovative Community Participation Service",
+  "name": "Innovative Community Participation Service",
+  "email": "admin@ndiscarer.com",
+  "emails": [
+   "admin@ndiscarer.com"
+  ],
+  "domain": "ndiscarer.com",
+  "country": "AU",
+  "snippet": "Innovative Community Participation Service - We Care  Innovative Community Participation support . Service. Innovative C",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.66,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Personal Care Disability Launceston",
+  "name": "Personal Care Disability Launceston",
+  "email": "admin@uniqueneeds.care",
+  "emails": [
+   "admin@uniqueneeds.care"
+  ],
+  "domain": "uniqueneeds.care",
+  "country": "AU",
+  "snippet": "Personal Care Disability Launceston: A Typical Visit at Home  Sep 28, 2026 · Can personal care and household tasks happe",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.7,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Inclusive Disability Assist",
+  "name": "Inclusive Disability Assist",
+  "email": "ndis@inclusiveda.org",
+  "emails": [
+   "ndis@inclusiveda.org"
+  ],
+  "domain": "inclusiveda.org",
+  "country": "AU",
+  "snippet": "Inclusive Disability Assist  Inclusive Disability Assist provides specialist and everyday supports to assist people in a",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.77,
+  "trade": "household and yard maintenance",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Contact Us",
+  "name": "Contact Us",
+  "email": "david@inclusiveassist.org",
+  "emails": [
+   "david@inclusiveassist.org"
+  ],
+  "domain": "inclusivesc.org",
+  "country": "AU",
+  "snippet": "Contact Us  Inclusive Support Coordination . Home · About · Referral Form · Contact Us · Our ... Email (required). Messa",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.61,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Assistance with Daily Personal Activities",
+  "name": "Assistance with Daily Personal Activities",
+  "email": "info@blueumbrellasupport.au",
+  "emails": [
+   "info@blueumbrellasupport.au"
+  ],
+  "domain": "blueumbrellasupport.au",
+  "country": "AU",
+  "snippet": "Assistance with Daily Personal Activities  What Are Daily Personal Activities ? · This may include assistance with: · Pe",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.64,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "p.i.e. therapeutic supports",
+  "name": "p.i.e. therapeutic supports",
+  "email": "monika@piesupports.com",
+  "emails": [
+   "monika@piesupports.com"
+  ],
+  "domain": "piesupports.com",
+  "country": "AU",
+  "snippet": "p.i.e. therapeutic supports  p.i.e. therapeutic supports. Open Menu Close Menu. Folder: Menu · Get in touch · Back · Sup",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.72,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Support Coordination Brisbane",
+  "name": "NDIS Support Coordination Brisbane",
+  "email": "info@parcaresupports.com",
+  "emails": [
+   "info@parcaresupports.com"
+  ],
+  "domain": "parcarelifestyle.com",
+  "country": "AU",
+  "snippet": "NDIS Support Coordination Brisbane - Parcare Lifestyle  Contact · Make a referral Call (07) 3899 1759 · Home; /Locations",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.73,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "When Should Families Choose Support Coordination or Direct ...",
+  "name": "When Should Families Choose Support Coordination or Direct ...",
+  "email": "intake@decenniumgroup.com",
+  "emails": [
+   "intake@decenniumgroup.com"
+  ],
+  "domain": "decenniummanagementgroup.com",
+  "country": "AU",
+  "snippet": "When Should Families Choose Support Coordination or Direct ...  Jul 30, 2026 — Support coordination focuses on organizin",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.7,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Ethical Tick New South Wales",
+  "name": "Ethical Tick New South Wales",
+  "email": "ward@ethicaltick.au",
+  "emails": [
+   "ward@ethicaltick.au"
+  ],
+  "domain": "ethicaltick.au",
+  "country": "AU",
+  "snippet": "Ethical Tick New South Wales - Disability Support Services  Discover Ethical Tick New South Wales - a directory of appro",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.69,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Community Participation Supports Programme",
+  "name": "Community Participation Supports Programme",
+  "email": "info@eastpennhumanservices.org",
+  "emails": [
+   "info@eastpennhumanservices.org"
+  ],
+  "domain": "eastpennhumanservices.org",
+  "country": "AU",
+  "snippet": "Community Participation Supports Programme  What is Community Participation Support ? Community Participation Support (C",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.62,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Specialized Habilitation Services",
+  "name": "Specialized Habilitation Services",
+  "email": "azfamilyhealthservices@outook.com",
+  "emails": [
+   "azfamilyhealthservices@outook.com"
+  ],
+  "domain": "azfhs.com",
+  "country": "AU",
+  "snippet": "Specialized Habilitation Services | Home and Community-Based ...  Habilitation, Music Therapy. Services provide a variet",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.62,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Queensland Disability Employment Services",
+  "name": "Queensland Disability Employment Services",
+  "email": "employment@gcess.org",
+  "emails": [
+   "employment@gcess.org"
+  ],
+  "domain": "gcess.org",
+  "country": "AU",
+  "snippet": "Queensland Disability Employment Services | GCESS  By using a dedicated service guarantee to supply the highest quality ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.77,
+  "trade": "household and yard maintenance",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Household Tasks",
+  "name": "Household Tasks",
+  "email": "nds@naathdisabilityservices.com",
+  "emails": [
+   "nds@naathdisabilityservices.com"
+  ],
+  "domain": "naathdisabilityservices.com",
+  "country": "AU",
+  "snippet": "Household Tasks – Naath Disability Services | NDIS Alice ...  Support with cleaning, laundry, meal preparation, and main",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.69,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "info@peacenw.org",
+  "domain": "peacenw.org",
+  "name": "Behavioral Health Focused Organizations and Support Groups",
+  "country": "AU",
+  "trade": "support coordination",
+  "state": "SA",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-10",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-10T14:50:43Z",
+  "jev_score": 0.76,
+  "jev_ok": true
+ },
+ {
+  "email": "info@disabilityempowerment.org",
+  "domain": "disabilityempowerment.org",
+  "name": "Give Your Input",
+  "country": "AU",
+  "trade": "support coordination",
+  "state": "SA",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-10",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-10T14:50:43Z",
+  "jev_score": 0.79,
+  "jev_ok": true
  }
 ]
