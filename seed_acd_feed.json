@@ -3127,5 +3127,27 @@
   "scraped_at": "2026-11-10T21:34:20Z",
   "jev_score": 0.8,
   "jev_ok": true
+ },
+ {
+  "email": "services@disabilityco.com",
+  "domain": "disabilityco.com",
+  "name": "Community Access Services in Victoria",
+  "country": "AU",
+  "trade": "support coordination",
+  "state": "VIC",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-11",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "high",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-11T00:52:40Z",
+  "jev_score": 0.76,
+  "jev_ok": true
  }
 ]
