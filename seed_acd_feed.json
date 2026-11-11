@@ -3408,5 +3408,46 @@
   "scraped_at": "2026-11-11T19:51:09Z",
   "jev_score": 0.79,
   "jev_ok": true
+ },
+ {
+  "company": "Daily Personal Activities NDIS",
+  "name": "Daily Personal Activities NDIS",
+  "email": "%20info@apexsupportservices.org",
+  "emails": [
+   "%20info@apexsupportservices.org"
+  ],
+  "domain": "apexsupportservices.org",
+  "country": "AU",
+  "snippet": "Daily Personal Activities NDIS - Apex Support Services  If you’re ready to take the next step towards a more independent",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.73,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "info@enablecoordination.com",
+  "domain": "enablecoordination.com",
+  "name": "enablecoordination.com",
+  "country": "AU",
+  "trade": "household tasks",
+  "state": "VIC",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-11",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-11T21:53:13Z",
+  "jev_score": 0.79,
+  "jev_ok": true
  }
 ]
