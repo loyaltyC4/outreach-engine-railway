@@ -3171,5 +3171,46 @@
   "scraped_at": "2026-11-11T02:06:10Z",
   "jev_score": 0.75,
   "jev_ok": true
+ },
+ {
+  "company": "NDIS Support Coordination and Specialist ...",
+  "name": "NDIS Support Coordination and Specialist ...",
+  "email": "admin@mayflowersupports.com",
+  "emails": [
+   "admin@mayflowersupports.com"
+  ],
+  "domain": "mayflowersupports.com",
+  "country": "AU",
+  "snippet": "NDIS Support Coordination and Specialist ...  Our experienced team provides both Support Coordination (Level 2) and Spec",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.7,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "admin@aspiresc.net",
+  "domain": "aspiresc.net",
+  "name": "Aspire Support Coordination",
+  "country": "AU",
+  "trade": "daily personal activities",
+  "state": "SA",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-11",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-11T04:23:04Z",
+  "jev_score": 0.76,
+  "jev_ok": true
  }
 ]
