@@ -3149,5 +3149,27 @@
   "scraped_at": "2026-11-11T00:52:40Z",
   "jev_score": 0.76,
   "jev_ok": true
+ },
+ {
+  "email": "addressinfo@connectedcaresupport.au",
+  "domain": "connectedcaresupport.au",
+  "name": "Development Life Skills",
+  "country": "AU",
+  "trade": "therapeutic supports",
+  "state": "TAS",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-11",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "high",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-11T02:06:10Z",
+  "jev_score": 0.75,
+  "jev_ok": true
  }
 ]
