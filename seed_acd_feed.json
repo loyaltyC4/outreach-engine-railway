@@ -3212,5 +3212,46 @@
   "scraped_at": "2026-11-11T04:23:04Z",
   "jev_score": 0.76,
   "jev_ok": true
+ },
+ {
+  "company": "Aspire Support Coordination",
+  "name": "Aspire Support Coordination",
+  "email": "brent@aspiresc.net",
+  "emails": [
+   "brent@aspiresc.net"
+  ],
+  "domain": "aspiresc.net",
+  "country": "AU",
+  "snippet": "Aspire Support Coordination  Email : Brent@aspiresc.net. Phone: 0473 060 783. Jess Donnelly. Email : Jess@aspiresc.net. ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.7,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "admin@statewidecs.org",
+  "domain": "statewidecs.org",
+  "name": "NDIS Household Tasks Support Perth",
+  "country": "AU",
+  "trade": "household tasks",
+  "state": "QLD",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-11",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-11T10:56:46Z",
+  "jev_score": 0.75,
+  "jev_ok": true
  }
 ]
