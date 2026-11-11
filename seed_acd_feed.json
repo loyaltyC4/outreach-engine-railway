@@ -3253,5 +3253,160 @@
   "scraped_at": "2026-11-11T10:56:46Z",
   "jev_score": 0.75,
   "jev_ok": true
+ },
+ {
+  "company": "Daily Life Assistance",
+  "name": "Daily Life Assistance",
+  "email": "info@wecaremorellc.com",
+  "emails": [
+   "info@wecaremorellc.com"
+  ],
+  "domain": "wecaremorellc.com",
+  "country": "AU",
+  "snippet": "Daily Life Assistance - We Care More  We can help you with household tasks such as cleaning,. Help with yardwork ... \"su",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.62,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Social & Community Services",
+  "name": "Social & Community Services",
+  "email": "info@sadisability.org",
+  "emails": [
+   "info@sadisability.org"
+  ],
+  "domain": "sadisability.org",
+  "country": "AU",
+  "snippet": "Social & Community Services - SA Disability  Support for maintaining mental health through engagement. Individualized pl",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.64,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Support & Connection",
+  "name": "Support & Connection",
+  "email": "sunnyaid@example.com",
+  "emails": [
+   "sunnyaid@example.com"
+  ],
+  "domain": "zintelcreekafh.com",
+  "country": "AU",
+  "snippet": "Support & Connection - Zintel Creek  We can help you with household tasks such as cleaning,. Help with yardwork ... \"sun",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.64,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS House Hold Tasks Support",
+  "name": "NDIS House Hold Tasks Support",
+  "email": "info@northds.org",
+  "emails": [
+   "info@northds.org"
+  ],
+  "domain": "northds.org",
+  "country": "AU",
+  "snippet": "NDIS House Hold Tasks Support | Melbourne | NDS  If you have any queries, we're here for your help. Some of the NDIS hou",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.64,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS support coordinator in Sydney, NSW",
+  "name": "NDIS support coordinator in Sydney, NSW",
+  "email": "info@edhcs.com.au",
+  "emails": [
+   "info@edhcs.com.au"
+  ],
+  "domain": "equalityhealthcareservices.com",
+  "country": "AU",
+  "snippet": "NDIS support coordinator in Sydney, NSW - Contact Us ...  ... Disability and Health Care Services , 172 Mona Vale Road, ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.58,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Intellectual and Developmental Disabilities",
+  "name": "Intellectual and Developmental Disabilities",
+  "email": "info@ntc-us.com",
+  "emails": [
+   "info@ntc-us.com"
+  ],
+  "domain": "ntc-us.com",
+  "country": "AU",
+  "snippet": "Intellectual and Developmental Disabilities  Once it is determined that you are eligible for supports in the Intellectua",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.55,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Domestic Assistance Services",
+  "name": "Domestic Assistance Services",
+  "email": "info@ccarehome.org",
+  "emails": [
+   "info@ccarehome.org"
+  ],
+  "domain": "ccarehome.org",
+  "country": "AU",
+  "snippet": "Domestic Assistance Services - Expert Support For Daily Life  If you have NDIS funding for assistance with daily life or",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.68,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "info@bluestarhomecare.org",
+  "domain": "bluestarhomecare.org",
+  "name": "Our Services",
+  "country": "AU",
+  "trade": "development of daily living skills",
+  "state": "QLD",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-11",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-11T19:51:09Z",
+  "jev_score": 0.79,
+  "jev_ok": true
  }
 ]
