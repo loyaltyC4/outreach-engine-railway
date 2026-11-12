@@ -3449,5 +3449,179 @@
   "scraped_at": "2026-11-11T21:53:13Z",
   "jev_score": 0.79,
   "jev_ok": true
+ },
+ {
+  "company": "Specialised Support Coordination Co",
+  "name": "Specialised Support Coordination Co",
+  "email": "alexis@ssccqld.com",
+  "emails": [
+   "alexis@ssccqld.com"
+  ],
+  "domain": "ssccqld.com",
+  "country": "AU",
+  "snippet": "Specialised Support Coordination Co | NDIS Support Coordinators Gold Coast & Brisbane  every step of the way.\nOur Missio",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.76,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Support Coordination Brisbane & Redlands",
+  "name": "NDIS Support Coordination Brisbane & Redlands",
+  "email": "enquiries@nafwamcare.org",
+  "emails": [
+   "enquiries@nafwamcare.org"
+  ],
+  "domain": "nafwamcare.org",
+  "country": "AU",
+  "snippet": "NDIS Support Coordination Brisbane & Redlands | Nafwam Care  for your suburb and the support you need.\n## How to arrange",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.82,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "0104 High Intensity Daily Personal Activities (43)",
+  "name": "0104 High Intensity Daily Personal Activities (43)",
+  "email": "hello@ndismarketplace.com",
+  "emails": [
+   "hello@ndismarketplace.com"
+  ],
+  "domain": "ndismarketplace.com",
+  "country": "AU",
+  "snippet": "0104 High Intensity Daily Personal Activities (43)  Covers high-intensity daily personal activities — complex daily supp",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.64,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "How Can NDIS Support Daily Activities?",
+  "name": "How Can NDIS Support Daily Activities?",
+  "email": "hello@bunny.net",
+  "emails": [
+   "hello@bunny.net"
+  ],
+  "domain": "b-cdn.net",
+  "country": "AU",
+  "snippet": "How Can NDIS Support Daily Activities?  Daily living and personal care services include personal assistance, high-intens",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.56,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "authenticcareservices.org/s/Provider",
+  "name": "authenticcareservices.org/s/Provider",
+  "email": "info@authenticcareservices.org",
+  "emails": [
+   "info@authenticcareservices.org"
+  ],
+  "domain": "authenticcareservices.org",
+  "country": "AU",
+  "snippet": "authenticcareservices.org/s/Provider-Capability-Statement.pdf  Authentic Care Services (ACS) is a registered NDIS provid",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.65,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Specialised Support Coordination Co",
+  "name": "Specialised Support Coordination Co",
+  "email": "kristel@ssccqld.com",
+  "emails": [
+   "kristel@ssccqld.com"
+  ],
+  "domain": "ssccqld.com",
+  "country": "AU",
+  "snippet": "Specialised Support Coordination Co | NDIS Support Coordinators Gold Coast & Brisbane  every step of the way.\nOur Missio",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.76,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Household Tasks Support VIC & NSW",
+  "name": "NDIS Household Tasks Support VIC & NSW",
+  "email": "nino@havencommunitycare.au",
+  "emails": [
+   "nino@havencommunitycare.au"
+  ],
+  "domain": "havencommunitycare.au",
+  "country": "AU",
+  "snippet": "NDIS Household Tasks Support VIC & NSW | Haven Community Care  Household Tasks in Melbourne, Regional Victoria & Regiona",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.76,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Book a Support Consultation",
+  "name": "Book a Support Consultation",
+  "email": "hello@benjicare.au",
+  "emails": [
+   "hello@benjicare.au"
+  ],
+  "domain": "benjicare.au",
+  "country": "AU",
+  "snippet": "Book a Support Consultation - Benjicare NDIS Provider  Household tasks . Transport and travel assistance. Daily tasks in",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.72,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "support@myodp.org",
+  "domain": "myodp.org",
+  "name": "Course",
+  "country": "AU",
+  "trade": "daily personal activities",
+  "state": "NSW",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-12",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "high",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-12T05:41:39Z",
+  "jev_score": 0.75,
+  "jev_ok": true
  }
 ]
