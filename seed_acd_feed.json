@@ -3686,5 +3686,46 @@
   "scraped_at": "2026-11-12T16:27:39Z",
   "jev_score": 0.79,
   "jev_ok": true
+ },
+ {
+  "company": "Jakaranda Australia",
+  "name": "Jakaranda Australia",
+  "email": "info@jakaranda.org",
+  "emails": [
+   "info@jakaranda.org"
+  ],
+  "domain": "jakaranda.org",
+  "country": "AU",
+  "snippet": "Jakaranda Australia  #### Jakaranda Australia\nUnit 3 / 113-137 Morayfield Road, Caboolture South QLD, Australia\n[info@ja",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.58,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "carolyn@essentialsupportcoordination.com",
+  "domain": "essentialsupportcoordination.com",
+  "name": "Feedback",
+  "country": "AU",
+  "trade": "support coordination",
+  "state": "ACT",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-12",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "high",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-12T19:59:52Z",
+  "jev_score": 0.79,
+  "jev_ok": true
  }
 ]
