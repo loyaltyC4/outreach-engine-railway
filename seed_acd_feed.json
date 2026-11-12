@@ -3623,5 +3623,27 @@
   "scraped_at": "2026-11-12T05:41:39Z",
   "jev_score": 0.75,
   "jev_ok": true
+ },
+ {
+  "email": "admin@aussiedailydisability.com",
+  "domain": "aussiedailydisability.com",
+  "name": "Aussie Daily Support Group PTY LTD — Registered NDIS Provider",
+  "country": "AU",
+  "trade": "community participation",
+  "state": "WA",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-12",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-12T06:36:03Z",
+  "jev_score": 0.76,
+  "jev_ok": true
  }
 ]
