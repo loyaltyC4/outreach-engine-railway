@@ -3727,5 +3727,84 @@
   "scraped_at": "2026-11-12T19:59:52Z",
   "jev_score": 0.79,
   "jev_ok": true
+ },
+ {
+  "company": "Ochre Therapeutic Supports",
+  "name": "Ochre Therapeutic Supports",
+  "email": "admin@ochre-ts.com",
+  "emails": [
+   "admin@ochre-ts.com"
+  ],
+  "domain": "ochre-ts.com",
+  "country": "AU",
+  "snippet": "Ochre Therapeutic Supports - Positive Behaviour Support Perth ...  At Ochre we are committed to providing tailored and p",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.68,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "About",
+  "name": "About",
+  "email": "info@tassiesupportservices.com",
+  "emails": [
+   "info@tassiesupportservices.com"
+  ],
+  "domain": "tassiesupportservices.com",
+  "country": "AU",
+  "snippet": "About  Whether it's Supported Independent Living (SIL), In-home Care, Nursing Services, or Community Participation, ever",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.68,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Disability Support",
+  "name": "Disability Support",
+  "email": "danielruot@independentcaredisabilityservice.com",
+  "emails": [
+   "danielruot@independentcaredisabilityservice.com"
+  ],
+  "domain": "independentcaresdisabilityservices.com",
+  "country": "AU",
+  "snippet": "Disability Support | Independent Care Disability Service  Household Tasks; Participation in Community; Group / Centre Ac",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.66,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "dssllc@diversifiedsupportiveservices.org",
+  "domain": "diversifiedsupportiveservices.org",
+  "name": "Provider Agencies",
+  "country": "AU",
+  "trade": "support coordination",
+  "state": "VIC",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-13",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "high",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-13T17:30:28Z",
+  "jev_score": 0.76,
+  "jev_ok": true
  }
 ]
