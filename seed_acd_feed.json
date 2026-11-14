@@ -3926,5 +3926,141 @@
   "scraped_at": "2026-11-14T04:56:17Z",
   "jev_score": 0.79,
   "jev_ok": true
+ },
+ {
+  "company": "NDIS Support Coordination",
+  "name": "NDIS Support Coordination",
+  "email": "admin@coworth.co",
+  "emails": [
+   "admin@coworth.co"
+  ],
+  "domain": "coworth.co",
+  "country": "AU",
+  "snippet": "NDIS Support Coordination - Coworth Life  Support workers, therapists, behaviour specialists, and coordinators working t",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.68,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Futura Group Australia and New Zealand",
+  "name": "Futura Group Australia and New Zealand",
+  "email": "info@futuragroupanz.com",
+  "emails": [
+   "info@futuragroupanz.com"
+  ],
+  "domain": "futuragroupanz.com",
+  "country": "AU",
+  "snippet": "Futura Group Australia and New Zealand  help with\n- Assistance with meals (planning, preparation and cooking)\n- Deliver ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.64,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "IDD Services",
+  "name": "IDD Services",
+  "email": "resourcecenter@udsfoundation.org",
+  "emails": [
+   "resourcecenter@udsfoundation.org"
+  ],
+  "domain": "udservices.org",
+  "country": "AU",
+  "snippet": "IDD Services - UDS Foundation  COMPLETE THE CONTACT FORM BELOW FOR MORE INFORMATION · Community Participation Support (C",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.7,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Support Coordination Brisbane",
+  "name": "NDIS Support Coordination Brisbane",
+  "email": "info@ambitionhealthgroup.au",
+  "emails": [
+   "info@ambitionhealthgroup.au"
+  ],
+  "domain": "ambitionhealthgroup.au",
+  "country": "AU",
+  "snippet": "NDIS Support Coordination Brisbane | Plan Management Support QLD | Ambition Health Group  Specialist Support Coordinatio",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.71,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Household Tasks",
+  "name": "Household Tasks",
+  "email": "info@littlelenterngroup.com",
+  "emails": [
+   "info@littlelenterngroup.com"
+  ],
+  "domain": "littlelanterngroup.com",
+  "country": "AU",
+  "snippet": "Household Tasks - Little Lantern Group  At Little Lantern Group, we provide personalised support to assist people with d",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.67,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Disability Support in Darwin, NT",
+  "name": "NDIS Disability Support in Darwin, NT",
+  "email": "info@topendcare.au",
+  "emails": [
+   "info@topendcare.au"
+  ],
+  "domain": "topendcare.au",
+  "country": "AU",
+  "snippet": "NDIS Disability Support in Darwin, NT | Top End Care  - [![](/_astro/group.roCGW-Tx_1bEgr5.webp)\n### Group and Centre Ba",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.66,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "admin@yourstorycommunitysupports.com",
+  "domain": "yourstorycommunitysupports.com",
+  "name": "Your Story Community Supports",
+  "country": "AU",
+  "trade": "development of daily living skills",
+  "state": "QLD",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-14",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-14T18:30:11Z",
+  "jev_score": 0.79,
+  "jev_ok": true
  }
 ]
