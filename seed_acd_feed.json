@@ -3806,5 +3806,103 @@
   "scraped_at": "2026-11-13T17:30:28Z",
   "jev_score": 0.76,
   "jev_ok": true
+ },
+ {
+  "company": "Therapeutic Support",
+  "name": "Therapeutic Support",
+  "email": "info@carerconnection.com.au",
+  "emails": [
+   "info@carerconnection.com.au"
+  ],
+  "domain": "carerconnectiondisabilityservices.com",
+  "country": "AU",
+  "snippet": "Therapeutic Support  Therapeutic Supports that the NDIS funds include: Assessment and regular ... 224 Lonsdale Street, D",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.62,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Community Participation Supports",
+  "name": "Community Participation Supports",
+  "email": "mcar@mercerarc.org",
+  "emails": [
+   "mcar@mercerarc.org"
+  ],
+  "domain": "mercerarc.org",
+  "country": "AU",
+  "snippet": "Community Participation Supports  Through both facility-based trainings and hands-on exploration, our Community Particip",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.7,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Household Tasks & Domestic Help, Sydney",
+  "name": "NDIS Household Tasks & Domestic Help, Sydney",
+  "email": "info@powercare.au",
+  "emails": [
+   "info@powercare.au"
+  ],
+  "domain": "powercare.au",
+  "country": "AU",
+  "snippet": "NDIS Household Tasks & Domestic Help, Sydney | PowerCare  PowerCare provides household tasks and domestic assistance in ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.65,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Be You Support Coordination",
+  "name": "Be You Support Coordination",
+  "email": "elle.cook@beyousupportcoordination.com",
+  "emails": [
+   "elle.cook@beyousupportcoordination.com"
+  ],
+  "domain": "beyousupportcoordination.com",
+  "country": "AU",
+  "snippet": "Be You Support Coordination: Support Coordination Central ...  We are NDIS registered provider. ​. We're committed to de",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.76,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "admin@amiacare.life",
+  "domain": "amiacare.life",
+  "name": "Why It Matters",
+  "country": "AU",
+  "trade": "daily personal activities",
+  "state": "NSW",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-14",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-14T04:39:35Z",
+  "jev_score": 0.77,
+  "jev_ok": true
  }
 ]
