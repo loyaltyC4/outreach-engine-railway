@@ -3904,5 +3904,27 @@
   "scraped_at": "2026-11-14T04:39:35Z",
   "jev_score": 0.77,
   "jev_ok": true
+ },
+ {
+  "email": "contact@felixscc.au",
+  "domain": "felixscc.au",
+  "name": "Contact",
+  "country": "AU",
+  "trade": "support coordination",
+  "state": "ACT",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-14",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "high",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-14T04:56:17Z",
+  "jev_score": 0.79,
+  "jev_ok": true
  }
 ]
