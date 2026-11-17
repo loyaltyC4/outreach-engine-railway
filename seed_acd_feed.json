@@ -4331,5 +4331,103 @@
   "scraped_at": "2026-11-16T13:13:04Z",
   "jev_score": 0.78,
   "jev_ok": true
+ },
+ {
+  "company": "Reach Services",
+  "name": "Reach Services",
+  "email": "info@reach.services",
+  "emails": [
+   "info@reach.services"
+  ],
+  "domain": "reach.services",
+  "country": "AU",
+  "snippet": "Reach Services - Resources for Individuals with Disabilities  Reach Services provides resources for individuals with liv",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.62,
+  "trade": "household and yard maintenance",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "ASSISTANCE WITH DAILY PERSONAL ACTIVITIES",
+  "name": "ASSISTANCE WITH DAILY PERSONAL ACTIVITIES",
+  "email": "inquiry@shorecomfortcare.com",
+  "emails": [
+   "inquiry@shorecomfortcare.com"
+  ],
+  "domain": "shorecomfortcare.com",
+  "country": "AU",
+  "snippet": "ASSISTANCE WITH DAILY PERSONAL ACTIVITIES  Assistance with Daily Personal Activities in NSW. Do not worry if you are in ",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.76,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Household Task Assistance",
+  "name": "Household Task Assistance",
+  "email": "disability@neurospicysupportnetwork.com",
+  "emails": [
+   "disability@neurospicysupportnetwork.com"
+  ],
+  "domain": "neurospicysupportnetwork.com",
+  "country": "AU",
+  "snippet": "Household Task Assistance | NDIS Cleaning & Domestic ...  What are household tasks under the NDIS? Household task servic",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.66,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Community Participation Support",
+  "name": "Community Participation Support",
+  "email": "info@communitylivingcare.com",
+  "emails": [
+   "info@communitylivingcare.com"
+  ],
+  "domain": "communitylivingcare.com",
+  "country": "AU",
+  "snippet": "Community Participation Support  We look forward to having the opportunity to serve you and your loved ones in our progr",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.7,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "susank@sharedsupportjourney.com",
+  "domain": "sharedsupportjourney.com",
+  "name": "Contact our Adelaide NDIS support team",
+  "country": "AU",
+  "trade": "community participation",
+  "state": "SA",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-17",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "high",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-17T15:41:37Z",
+  "jev_score": 0.82,
+  "jev_ok": true
  }
 ]
