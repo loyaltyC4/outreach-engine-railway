@@ -4470,5 +4470,46 @@
   "scraped_at": "2026-11-18T02:32:49Z",
   "jev_score": 0.8,
   "jev_ok": true
+ },
+ {
+  "company": "Daily Personal Activities Support Cairns",
+  "name": "Daily Personal Activities Support Cairns",
+  "email": "enquiries@brightfuturesnq.com",
+  "emails": [
+   "enquiries@brightfuturesnq.com"
+  ],
+  "domain": "brightfuturesnq.com",
+  "country": "AU",
+  "snippet": "Daily Personal Activities Support Cairns | Bright Futures Nq  NDIS Line Item Integration**\nEasily delivered under your N",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.71,
+  "trade": "daily personal activities",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "info@bluedragonfly.au",
+  "domain": "bluedragonfly.au",
+  "name": "Social & Community Participation",
+  "country": "AU",
+  "trade": "development of daily living skills",
+  "state": "WA",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-18",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-18T15:04:10Z",
+  "jev_score": 0.79,
+  "jev_ok": true
  }
 ]
