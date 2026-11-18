@@ -4429,5 +4429,46 @@
   "scraped_at": "2026-11-17T15:41:37Z",
   "jev_score": 0.82,
   "jev_ok": true
+ },
+ {
+  "company": "In",
+  "name": "In",
+  "email": "info@soaringtogether.au",
+  "emails": [
+   "info@soaringtogether.au"
+  ],
+  "domain": "soaringtogether.au",
+  "country": "AU",
+  "snippet": "In-Home Support Services in Adelaide - Soaring Together  Get practical NDIS in-home support services in Adelaide for per",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.7,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "info@supportcoordinationau.com",
+  "domain": "supportcoordinationau.com",
+  "name": "NDIS Planning Experts",
+  "country": "AU",
+  "trade": "development of daily living skills",
+  "state": "NT",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-18",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-18T02:32:49Z",
+  "jev_score": 0.8,
+  "jev_ok": true
  }
 ]
