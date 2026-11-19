@@ -81,10 +81,13 @@ def discover():
     for k in KEYS:
         c, d = am(k, "GET", "/inboxes?limit=100")
         for x in d.get("inboxes", []) if c == 200 else []:
-            iid = x.get("inbox_id") or x.get("email")
-            if rx and not rx.search(iid):
+            # the API hands back an inbox_id UUID and the address; filters are written against the
+            # address, so test both and key on the address (that is what the send path uses).
+            iid = x.get("email") or x.get("inbox_id")
+            hay = f"{x.get('email') or ''} {x.get('inbox_id') or ''}"
+            if rx and not rx.search(hay):
                 continue
-            if rx_deny and rx_deny.search(iid):
+            if rx_deny and rx_deny.search(hay):
                 continue
             ib[iid] = k
     if rx or rx_deny:
