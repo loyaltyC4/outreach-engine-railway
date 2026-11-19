@@ -700,8 +700,8 @@ def stage_harvest(args):
     limit = args.get("limit") or 4000
     if which == "awards":
         sup = harvest_awards()[:limit]
-        done = {h["name"] for h in jl_read(CACHE / "harvest_tw.jsonl")}
-        miss = {h["name"] for h in jl_read(CACHE / "harvest_tw_nosite.jsonl")}
+        done = {h["name"] for h in jl_read(CACHE / "harvest_tw.jsonl") if h.get("name")}
+        miss = {h["name"] for h in jl_read(CACHE / "harvest_tw_nosite.jsonl") if h.get("name")}
         todo = [s for s in sup if s["name"] not in done and s["name"] not in miss]
         log("harvest awards: %d suppliers, %d to resolve to a website" % (len(sup), len(todo)))
         n_ok = 0
@@ -892,13 +892,13 @@ def stage_enrich(args):
     for c in cands:
         s = c["site"]
         sites.setdefault(s, c["camp"])
-        if c.get("kind") in ("role", "unknown", "role_ok"):
+        if c.get("kind") in ("role", "unknown", "role_ok") or not c.get("email"):      # harvested sites have no email yet: fetch /contact too
             need_contact[s] = True
     todo = [(s, need_contact.get(s, False)) for s in sites if s not in have]
     if limit:
         todo = todo[:limit]
     log("enrich: %d sites to fetch (%d already cached)" % (len(todo), len(have)))
-    batches = [todo[i:i + 4] for i in range(0, len(todo), 4)]
+    batches = [todo[i:i + 3] for i in range(0, len(todo), 3)]      # 3 sites x 3 pages = 9 URLs, TinyFish rejects >10 per request
     n = ok = 0
     t0 = time.time()
     with ThreadPoolExecutor(int(args.get("workers") or 20)) as ex:
@@ -943,7 +943,7 @@ def stage_resolve(args):
         want = CAMP_COUNTRY.get(camp) or base.get("country")
         marks = dict(f["marks"])
         sig = country_signals(base["site"], marks, want)
-        if sig < 2:
+        if sig < 2 and not rd(base["site"]).endswith(TLD_OF[want]):      # a country-code TLD is evidence on its own; .com sites still need two signals
             rej[camp]["country_unverified"] += 1
             continue
         if marks.get("ja_chars", 0) and want in ("AU", "ZA", "AE") and marks.get("ja_chars", 0) > 200:

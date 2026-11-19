@@ -18,8 +18,8 @@ import hashlib, html, json, re, urllib.parse, urllib.request, datetime as dt
 
 SITE = "https://tenderwin.com.au"
 CAMPAIGN = "tw1000"
-SENDER_NAME = "TenderWin"  # the From display name; the signature carries a real person's first name (see playbook)
-POSTAL = "TenderWin, Sydney NSW"
+SENDER_NAME = "Mitch Delaney"  # owner 2026-11-19: an invented but plausible AU persona, no real staffer
+POSTAL = "TenderWin, Melbourne VIC"   # owner 2026-11-19: send from Melbourne
 PLACE = POSTAL.split(", ", 1)[-1]  # Spam Act 2003: identify the sender. Playbook: replace with the registered address.
 STEPS = {1: 0, 2: 3, 3: 7, 4: 14}  # step -> day offset from step 1
 STOP_WORDS = re.compile(r"\b(remove|unsubscribe|stop|hide|not interested|no thanks|take me off)\b", re.I)

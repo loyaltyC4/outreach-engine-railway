@@ -4511,5 +4511,43 @@
   "scraped_at": "2026-11-18T15:04:10Z",
   "jev_score": 0.79,
   "jev_ok": true
+ },
+ {
+  "company": "Springboard WA",
+  "name": "Springboard WA",
+  "email": "hello@springboardwa.com",
+  "emails": [
+   "hello@springboardwa.com"
+  ],
+  "domain": "springboardwa.com",
+  "country": "AU",
+  "snippet": "Springboard WA - NDIS Support Coordination and Planning Perth  Springboard Support Coordination is a NDIS registered pro",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.69,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS Household Tasks",
+  "name": "NDIS Household Tasks",
+  "email": "info@chomeandcommunitycare.com",
+  "emails": [
+   "info@chomeandcommunitycare.com"
+  ],
+  "domain": "chomeandcommunitycare.com",
+  "country": "AU",
+  "snippet": "NDIS Household Tasks | Household Tasks Victoria services  Get reliable NDIS Household Tasks services tailored to your ne",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.67,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
  }
 ]
