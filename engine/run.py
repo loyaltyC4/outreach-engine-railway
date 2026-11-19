@@ -814,6 +814,13 @@ def tw_main():
         else:
             parked.add(k)
             used[ib] += 1
+            # same two-strike rule as the shared path: a target that rejects on every org stops eating a slot
+            if c in (400, 403, 404, 422, 451, 550, 551, 553):
+                p_try = int(progress[em].get("tries") or 0) + 1
+                progress[em]["tries"] = p_try
+                if p_try >= 2:
+                    progress[em]["stopped"] = f"blocked:{c}"
+                    log("BLOCKED lead after", p_try, "tries:", em, str(d)[:80])
             log("ERR", c, ib, em, str(d)[:140])
         order.sort(key=lambda i: used[i])
         time.sleep(random.uniform(15, 35))
