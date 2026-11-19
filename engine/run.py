@@ -9,7 +9,7 @@
 Environment: AGENTMAIL_KEYS (comma list), TYPESAFE_API_KEY (Jev), FIRECRAWL_KEYS (comma list), OWNER_EMAIL,
 DATA_DIR, DRY_RUN, KILL_SWITCH, INBOX_DAILY_CAP, DAILY_MAX, MAX_PER_RUN, AU_OFFSET_HOURS, WINDOW (e.g. 9:00-16:30), WEEKDAYS_ONLY.
 """
-import collections, concurrent.futures as cf, importlib, json, os, random, re, sys, time, fcntl
+import collections, concurrent.futures as cf, hashlib, importlib, json, os, random, re, sys, time, fcntl, urllib.parse
 import datetime as dt
 from util import *
 
@@ -200,11 +200,14 @@ def process_inbound(inbox_key, sent_addrs):
                         notify(inbox_key, f"[{CAMP.upper()}] spam complaint about mail NOT sent by this engine",
                                f"Inbox: {iid}\nOriginal subject: {orig}\nSomething else is sending from this inbox; complaints hurt every campaign that shares it.")
             elif kind == "stop":
+                # who stopped and how, so a multi-step campaign can end that lead's sequence
+                st("stops", []).append({"f": f, "ts": ts, "hide": bool(re.search(r"\bhide\b", prev, re.I))})
                 if dom and dom not in sup["domains"] and dom not in FREE_MAIL:
                     sup["domains"].append(dom)
                 if f and f not in sup["emails"]:
                     sup["emails"].append(f)
             elif kind == "human":
+                st("replies", []).append({"f": f, "ts": ts})
                 # a person answered: never cold-mail that organisation again, and tell the owner (no auto-reply)
                 if dom and dom not in sup["domains"] and dom not in FREE_MAIL:
                     sup["domains"].append(dom)
@@ -516,6 +519,8 @@ def digest(inbox_key, events_total):
 
 # ---------------- main ----------------
 def main():
+    if CAMP == "tw1000":
+        return tw_main()
     bootstrap()
     lock = open(P(".lock"), "w")
     try:
@@ -580,6 +585,259 @@ def main():
     digest(inbox_key, events)
     flush()
     log("run complete")
+
+
+# ============================== tw1000: multi-step campaign ==============================
+# Playbook docs/tw1000-playbook.md §10.1. Separate flow from the single-step pool engine used by
+# acd/bc/nm: tw1000 sends a fixed 4-step sequence per lead, so what it needs is per-lead progress,
+# a due-step queue, threading and a step-1 daily ramp — not a refilling pool.
+
+STEPS = {"1": 0, "2": 3, "3": 7, "4": 14}
+THREADED = ("2", "4")            # steps whose subject starts "Re:" and must continue the step-1 thread
+RAMP = ((3, 45), (6, 90), (10 ** 6, 120))   # campaign day -> step-1 sends per day (playbook §5)
+STATE_TZ = {"NSW": 11, "VIC": 11, "TAS": 11, "ACT": 11, "QLD": 10, "SA": 10.5, "NT": 9.5, "WA": 8}
+
+
+def _local_now(state):
+    return dt.datetime.utcnow() + dt.timedelta(hours=STATE_TZ.get((state or "").upper(), 10))
+
+
+def _in_window(state):
+    t = _local_now(state)
+    if t.weekday() not in (1, 2, 3):          # Tue-Thu only
+        return False
+    return (7, 30) <= (t.hour, t.minute) <= (10, 30)
+
+
+def _campaign_day(progress):
+    firsts = [p.get("t1") for p in progress.values() if p.get("t1")]
+    if not firsts:
+        return 1
+    try:
+        return (dt.date.today() - dt.date.fromisoformat(min(firsts)[:10])).days + 1
+    except Exception:
+        return 1
+
+
+def _step1_cap(progress):
+    d = _campaign_day(progress)
+    for limit_day, per_day in RAMP:
+        if d <= limit_day:
+            return per_day
+    return 120
+
+
+def _tw_log(row):
+    try:
+        with open(P("tw1000_sends.jsonl"), "a") as f:
+            f.write(json.dumps(row) + "\n")
+    except Exception:
+        pass
+
+
+def _tw_stop(email, reason, progress, sup, lead=None):
+    p = progress.setdefault(email, {})
+    p["stopped"] = reason
+    p["stopped_ts"] = iso()
+    if email not in sup["emails"]:
+        sup["emails"].append(email)
+    if reason == "hide" and lead and lead.get("profile_id"):
+        _tw_hide(lead["profile_id"])
+    log("STOP", email, reason)
+
+
+def _tw_hide(profile_id):
+    """playbook §6: a 'hide' reply hides the directory listing the same day."""
+    base = E("SUPABASE_URL", "")
+    key = E("SUPABASE_SECRET_KEY", "") or E("SUPABASE_SERVICE_ROLE_KEY", "")
+    if not base or not key:
+        log("hide: no SUPABASE_URL/SUPABASE_SECRET_KEY; profile", profile_id, "not updated")
+        return
+    c, d = http("PATCH", f"{base}/rest/v1/vula_sub_profiles?id=eq.{profile_id}",
+                {"status": "hidden"}, {"apikey": key, "Authorization": "Bearer " + key,
+                                       "Content-Type": "application/json", "Prefer": "return=minimal"})
+    log("hide profile", profile_id, c)
+
+
+def _tw_strand(protocol_name, since_hours=14):
+    """(email -> first classified reply) so a reply strand stops the sequence before we send again."""
+    seen = st("inbound_seen", {})
+    cut = (now() - dt.timedelta(hours=since_hours)).strftime("%Y-%m-%dT%H:%M:%S")
+    return {mid: k for mid, k in seen.items() if False} or {}
+
+
+def tw_main():
+    bootstrap()
+    lock = open(P(".lock"), "w")
+    try:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        log("another run holds the lock; exiting")
+        return
+    sender = E("SENDER_NAME", "") or C.SENDER_NAME
+    inbox_key = discover()
+    log(f"tw1000: {len(inbox_key)} inboxes, DRY={DRY}, sender={sender}")
+    if not inbox_key:
+        log("no inboxes found: check AGENTMAIL_KEYS")
+        return
+    leads = C.seed_rows()
+    progress = st("progress", {})
+    if not leads:
+        log("no seed leads: seed/tw1000_leads.json missing")
+        return
+    for l in leads:                                        # arm is stable, never reassigned
+        p = progress.setdefault(l["email"], {})
+        p.setdefault("arm", C.arm_for(l["email"]))
+        l["_arm"] = p["arm"]
+    split = collections.Counter(l["_arm"] for l in leads)
+    log("seed", len(leads), "arms", dict(split))
+
+    sent_addrs, per_inbox_today, last48 = sent_ground_truth(inbox_key)
+    st("sent", {})                                     # shared key names kept for guard/digest
+    sup = _load_blocklist(st("suppress", {"emails": [], "domains": []}))
+    events = process_inbound(inbox_key, sent_addrs)
+
+    # a reply of any kind, or a stop, ends the sequence for that address (playbook §3)
+    seed_addrs = {l["email"].lower() for l in leads}
+    for r in st("replies", []):
+        em = (r.get("f") or "").lower()
+        if em in seed_addrs and not progress.get(em, {}).get("stopped"):
+            _tw_stop(em, "replied", progress, sup)
+    for s_ in st("stops", []):
+        em = (s_.get("f") or "").lower()
+        if em in seed_addrs and progress.get(em, {}).get("stopped") != "hide":
+            lead = next((l for l in leads if l["email"].lower() == em), None)
+            _tw_stop(em, "hide" if s_.get("hide") else "remove", progress, sup, lead)
+    st("replies", []).clear()
+    st("stops", []).clear()
+
+    if MODE == "status":
+        done = collections.Counter(p.get("s", 0) for p in progress.values())
+        due = sum(1 for l in leads if _tw_due(l["email"], progress) )
+        print(json.dumps({"leads": len(leads), "arms": dict(split), "by_last_step": done,
+                          "stopped": sum(1 for p in progress.values() if p.get("stopped")),
+                          "campaign_day": _campaign_day(progress), "step1_cap_today": _step1_cap(progress),
+                          "due_now": due, "sent_today": dict(per_inbox_today),
+                          "paused": st("paused", {})}, indent=1))
+        flush()
+        return
+
+    reason = guard(inbox_key, last48, set())
+    if reason:
+        log("NOT SENDING:", reason)
+        flush()
+        return
+
+    step1_today = sum(1 for p in progress.values() if str(p.get("t1") or "")[:10] == iso()[:10])
+    cap1 = _step1_cap(progress)
+    room = {i: max(0, INBOX_CAP - per_inbox_today.get(i, 0)) for i in inbox_key}
+    queue = []
+    for l in leads:
+        em = l["email"]
+        p = progress[em]
+        if p.get("stopped"):
+            continue
+        step = _tw_due(em, progress)
+        if not step:
+            continue
+        if step == 1 and step1_today >= cap1:
+            continue
+        if not _in_window(l.get("state")) and not E("IGNORE_WINDOW", ""):
+            continue
+        queue.append((l, step))
+    # interleave arms inside the batch so no arm gets a better inbox or a later hour (playbook §5)
+    queue.sort(key=lambda x: hashlib.sha1(x[0]["email"].encode()).hexdigest())
+    # skips do not consume an inbox slot, so the queue is over-filled: a lead that cannot render for
+    # its arm is dropped at send time rather than eating one of the day's sends.
+    budget = min(MAX_RUN, DAILY_MAX)
+    queue = queue[:budget * 2]
+    log(f"queue {len(queue)} (step1 today {step1_today}/{cap1}, inbox cap {INBOX_CAP}, inboxes {len(inbox_key)})")
+    if not queue:
+        digest(inbox_key, events)
+        flush()
+        return
+
+    order = sorted(inbox_key, key=lambda i: -room[i])
+    used, parked, sent = collections.Counter(), set(), 0
+    for lead, step in queue:
+        ib = next((i for i in order if used[i] < room[i] and inbox_key[i] not in parked), None)
+        if not ib:
+            log("no inbox with room left")
+            break
+        em, arm = lead["email"], lead["_arm"]
+        try:
+            r = C.render_step(lead, step, C.trade_rx_for(lead.get("trade")), sender)
+        except ValueError as e:
+            log("skip", em, f"arm {arm} step {step}:", e)
+            progress[em]["stopped"] = f"skip:{e}"
+            continue
+        subj = r["subject"]
+        if DRY:
+            log("DRY", ib, f"{arm}{step}", "->", em, "|", subj)
+            used[ib] += 1
+            if step == 1:
+                step1_today += 1
+            order.sort(key=lambda i: used[i])
+            continue
+        k = inbox_key[ib]
+        payload = {"to": [em], "text": r["text"]}
+        if r.get("html"):
+            payload["html"] = r["html"]
+        mid1 = (progress[em].get("m1") or "")
+        if str(step) in THREADED and mid1:
+            path = f"/inboxes/{q(ib)}/messages/{urllib.parse.quote(mid1, safe='')}/reply"
+            c, d = am(k, "POST", path, payload)
+        else:
+            c, d = am(k, "POST", f"/inboxes/{q(ib)}/messages/send", dict(payload, subject=subj))
+        if c in (200, 201):
+            sent += 1
+            used[ib] += 1
+            mid = d.get("message_id") or d.get("id")
+            p = progress[em]
+            p["s"] = step
+            p["ts" + str(step)] = iso()
+            p["ib" + str(step)] = ib
+            if step == 1:
+                p["t1"] = iso()
+                p["m1"] = mid
+                step1_today += 1
+            else:
+                p.setdefault("follow", []).append(step)
+            _tw_log({"ts": iso(), "em": em, "arm": arm, "step": step, "subj": subj[:120], "inbox": ib, "mid": mid})
+            log("SENT", ib, f"{arm}{step}", "->", em, "|", subj)
+        elif c == 429:
+            parked.add(k)
+            log("429 parked", k[:6])
+        else:
+            parked.add(k)
+            used[ib] += 1
+            log("ERR", c, ib, em, str(d)[:140])
+        order.sort(key=lambda i: used[i])
+        time.sleep(random.uniform(15, 35))
+    log("tw1000 run complete:", sent, "sent")
+    digest(inbox_key, events)
+    flush()
+
+
+def _tw_due(email, progress):
+    """Next step number that is due for this lead, or 0. Days are offsets from step 1 (playbook §3)."""
+    p = progress.get(email) or {}
+    if p.get("stopped"):
+        return 0
+    last = int(p.get("s") or 0)
+    if last >= 4:
+        return 0
+    nxt = last + 1
+    if nxt == 1:
+        return 1
+    t1 = p.get("t1")
+    if not t1:
+        return 1
+    try:
+        due = dt.date.fromisoformat(t1[:10]) + dt.timedelta(days=STEPS[str(nxt)])
+    except Exception:
+        return nxt
+    return nxt if dt.date.today() >= due else 0
 
 
 if __name__ == "__main__":

@@ -16,7 +16,7 @@ UTM = "utm_source=cold_email&utm_medium=email&utm_campaign=tw_engine"
 TRADE_RX = {"cleaning": r"clean|janitor|hygiene|laundry",
             "construction": r"construct|build|civil|refurb|maintenance|repair|electrical|plumb|roof|paint|fenc|landscap",
             "ICT": r"software|\bict\b|cyber|cloud|digital|licen[cs]e|it support|network|web|telecom",
-            "security": r"(?<!cyber )security|guard|surveillance|patrol",
+            "security": r"(?<!cyber )security|\bguards?\b|guarding|surveillance|patrol",
             "catering": r"cater|food|meal|kitchen",
             "professional services": r"consult|advis|review|audit|training|research|legal|recruit|project manage|evaluation",
             "supplies": r"suppl|equipment|vehicle|furniture|uniform|stationery|print|medical|goods|purchase",
