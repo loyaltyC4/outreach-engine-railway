@@ -126,9 +126,10 @@ award_buyers, last_award, award_count, award_total, consent_source_url, consent_
 
 - Service: Railway project `outreach`, service `tenderwin-sender` (currently `DRY_RUN=1`). Campaign module: wire
   `CAMPAIGN=tw1000` to call `tw1000.render_step` (see §10).
-- Inboxes: the TenderWin orgs TW1–TW5 only (15 inboxes). Never borrow ACD, BidCheck or NameMarshal inboxes.
-- From name: a real first name of someone at TenderWin who will answer replies (owner to supply; set
-  `SENDER_NAME` env and pass it as `sender`). Never a made-up persona.
+- Inboxes: **every live AgentMail inbox** (owner decision 2026-11-19), currently 20 across 9 orgs, all with the
+  display name `Mitch Delaney | TenderWin` so the fleet reads as one brand. The OTP sink is denied by regex.
+- From name: **`Mitch Delaney`** (owner decision 2026-11-19: an invented but plausible Australian persona; nobody
+  at TenderWin answers replies). Set via `SENDER_NAME`; signature carries it, footer identifies Melbourne VIC.
 - Window: Tuesday to Thursday, 07:30–10:30 in the lead's own state time zone (QLD has no daylight saving). No sends
   Friday to Monday or on that state's public holidays.
 - Volume ramp (step 1 sends per day, across all inboxes, follow-ups on top):
