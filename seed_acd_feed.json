@@ -4549,5 +4549,122 @@
   "province": "NSW",
   "campaign": "disability_providers",
   "state": null
+ },
+ {
+  "company": "The Gloria Center Supportive Services Multi",
+  "name": "The Gloria Center Supportive Services Multi",
+  "email": "energy@mccac.com",
+  "emails": [
+   "energy@mccac.com"
+  ],
+  "domain": "mccac.com",
+  "country": "AU",
+  "snippet": "The Gloria Center Supportive Services Multi-Agency ...  The Gloria Center is a multi-agency social service center that p",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.59,
+  "trade": "household and yard maintenance",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Community Access & Participation Support",
+  "name": "Community Access & Participation Support",
+  "email": "info@ableconnect.au",
+  "emails": [
+   "info@ableconnect.au"
+  ],
+  "domain": "ableconnect.au",
+  "country": "AU",
+  "snippet": "Community Access & Participation Support  Benefits of Community Participation for NDIS Participants · How We Support You",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.66,
+  "trade": "community participation",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "goldenpathsupportservices.com/contact",
+  "name": "goldenpathsupportservices.com/contact",
+  "email": "hello@goldenpathsupportservices.com",
+  "emails": [
+   "hello@goldenpathsupportservices.com"
+  ],
+  "domain": "goldenpathsupportservices.com",
+  "country": "AU",
+  "snippet": "goldenpathsupportservices.com/contact  Servicing the Central Coast NSW\nZDC Australia Pty Ltd trading as Golden Path Supp",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.67,
+  "trade": "support coordination",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "NDIS & Therapy Services",
+  "name": "NDIS & Therapy Services",
+  "email": "enquiries@playtherapymelbourne.com",
+  "emails": [
+   "enquiries@playtherapymelbourne.com"
+  ],
+  "domain": "playtherapymelbourne.com",
+  "country": "AU",
+  "snippet": "NDIS & Therapy Services  Services may be delivered under relevant Early Childhood Supports, Therapeutic Supports or Posi",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.7,
+  "trade": "therapeutic supports",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "company": "Household Tasks",
+  "name": "Household Tasks",
+  "email": "info@lasporthealthcare.com",
+  "emails": [
+   "info@lasporthealthcare.com"
+  ],
+  "domain": "lasporthealthcare.com",
+  "country": "AU",
+  "snippet": "Household Tasks - Lasport Healthcare  with disabilities. If your disability hinders your ability to manage domestic resp",
+  "source_tag": "acd_mint",
+  "platform": null,
+  "preverified": true,
+  "jev_score": 0.69,
+  "trade": "household tasks",
+  "province": "NSW",
+  "campaign": "disability_providers",
+  "state": null
+ },
+ {
+  "email": "admin@ussfnq.com",
+  "domain": "ussfnq.com",
+  "name": "Household Tasks",
+  "country": "AU",
+  "trade": "daily personal activities",
+  "state": "TAS",
+  "trigger": {
+   "kind": "ndis_registration",
+   "date": "2026-11-20",
+   "ref": "ndis_provider_search"
+  },
+  "signals": {
+   "owner_confidence": "medium",
+   "website_live": true,
+   "revenue_proxy": "registered NDIS provider"
+  },
+  "source_tag": "acd_mint",
+  "scraped_at": "2026-11-20T01:58:22Z",
+  "jev_score": 0.7,
+  "jev_ok": true
  }
 ]
