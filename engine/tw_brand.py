@@ -30,6 +30,15 @@ TRUST_LINE = "Built on official Department of Finance AusTender data."
 
 HEAD = f"font-family:{FONT};font-size:28px;line-height:35px;font-weight:500;letter-spacing:-0.03em;"
 
+FONT_FACES = """
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf) format('truetype'); }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf) format('truetype'); }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600;
+    src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf) format('truetype'); }
+"""
+
 DARK_CSS = """
   :root { color-scheme: light dark; supported-color-schemes: light dark; }
   @media (max-width: 620px) {
@@ -149,7 +158,7 @@ def shell(preview, body_html, postal, note=None):
         '<meta name="color-scheme" content="light dark">'
         '<meta name="supported-color-schemes" content="light dark">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
-        f'<style>{DARK_CSS}</style></head>'
+        f'<style>{FONT_FACES}{DARK_CSS}</style></head>'
         f'<body class="bc-paper" style="background-color:{PAPER};margin:0;padding:0;'
         f'font-family:{FONT};-webkit-font-smoothing:antialiased">'
         f'<div style="display:none;max-height:0;overflow:hidden;opacity:0">{esc(preview)}</div>'
