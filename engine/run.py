@@ -848,6 +848,8 @@ def tw_main():
             continue
         if used_arm != arm:
             log("fallback", em, f"{arm}->{used_arm} step {step}")
+        if str(progress[em].get("stopped") or "").startswith("skip:"):
+            progress[em].pop("stopped", None)
         subj = r["subject"]
         if DRY:
             log("DRY", ib, f"{arm}{step}", "->", em, "|", subj)
@@ -928,7 +930,7 @@ def tw_main():
 def _tw_due(email, progress):
     """Next step number that is due for this lead, or 0. Days are offsets from step 1 (playbook §3)."""
     p = progress.get(email) or {}
-    if p.get("stopped"):
+    if p.get("stopped") and not str(p["stopped"]).startswith("skip:"):
         return 0
     last = int(p.get("s") or 0)
     if last >= 4:
