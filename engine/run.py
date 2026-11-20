@@ -726,6 +726,14 @@ def tw_main():
         log("no inboxes found: check AGENTMAIL_KEYS")
         return
     leads = C.seed_rows()
+    # harvested emails can arrive wrapped ("<info@x.com>") or with stray spaces
+    clean = []
+    for l in leads:
+        e = re.sub(r"[<>\s\"']", "", str(l.get("email") or "")).lower()
+        if "@" in e and "." in e.split("@")[-1]:
+            l["email"] = e
+            clean.append(l)
+    leads = clean
     progress = st("progress", {})
     if not leads:
         log("no seed leads: seed/tw1000_leads.json missing")
