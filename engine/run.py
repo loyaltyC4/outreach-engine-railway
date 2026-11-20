@@ -89,6 +89,8 @@ def discover():
                 continue
             if rx_deny and rx_deny.search(hay):
                 continue
+            if st("limit_park", {}).get(iid) == lday(iso()):
+                continue
             ib[iid] = k
     if rx or rx_deny:
         log(f"inbox filter allow=[{allow}] deny=[{deny}]: {len(ib)} inboxes in use")
@@ -623,6 +625,9 @@ def _campaign_day(progress):
 
 
 def _step1_cap(progress):
+    override = E("STEP1_CAP", "")
+    if override:
+        return int(override)
     d = _campaign_day(progress)
     for limit_day, per_day in RAMP:
         if d <= limit_day:
@@ -808,9 +813,10 @@ def tw_main():
                 p.setdefault("follow", []).append(step)
             _tw_log({"ts": iso(), "em": em, "arm": arm, "step": step, "subj": subj[:120], "inbox": ib, "mid": mid})
             log("SENT", ib, f"{arm}{step}", "->", em, "|", subj)
-        elif c == 429:
+        elif c == 429 or c == 402 or "limit" in str(d).lower():
             parked.add(k)
-            log("429 parked", k[:6])
+            st("limit_park", {})[ib] = lday(iso())
+            log("LIMIT parked", ib, c, str(d)[:90])
         else:
             parked.add(k)
             used[ib] += 1
