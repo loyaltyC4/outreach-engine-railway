@@ -213,6 +213,9 @@ def process_inbound(inbox_key, sent_addrs):
                     sup["emails"].append(f)
             elif kind == "human":
                 st("replies", []).append({"f": f, "ts": ts})
+                _rl = st("reply_log", [])
+                if not any(x.get("f") == f for x in _rl):
+                    _rl.append({"f": f, "ts": ts})
                 # a person answered: never cold-mail that organisation again, and tell the owner (no auto-reply)
                 if dom and dom not in sup["domains"] and dom not in FREE_MAIL:
                     sup["domains"].append(dom)
@@ -752,6 +755,13 @@ def tw_main():
 
     # a reply of any kind, or a stop, ends the sequence for that address (playbook §3)
     seed_addrs = {l["email"].lower() for l in leads}
+    for x in st("reply_log", []):
+        em = (x.get("f") or "").lower()
+        if em in seed_addrs and not progress.get(em, {}).get("stopped"):
+            _tw_stop(em, "replied", progress, sup)
+    for em in [a.strip().lower() for a in E("STOP_LIST", "").split(",") if a.strip()]:
+        if not progress.get(em, {}).get("stopped"):
+            _tw_stop(em, "operator", progress, sup)
     for r in st("replies", []):
         em = (r.get("f") or "").lower()
         if em in seed_addrs and not progress.get(em, {}).get("stopped"):
