@@ -452,11 +452,15 @@ def pick(avail, n, per_state_cap=18):
 
 
 def send_batch(batch, inbox_key, per_inbox_today, sent_state):
-    room = {i: max(0, INBOX_CAP - per_inbox_today.get(i, 0)) for i in inbox_key}
+    room = {}
+    for i in inbox_key:
+        room[i] = _om_room(om[i]) if i in om else max(0, INBOX_CAP - per_inbox_today.get(i, 0))
     order = sorted(inbox_key, key=lambda i: -room[i])
     used, parked, sent = collections.Counter(), set(), 0
     for lead in batch:
-        ib = next((i for i in order if used[i] < room[i] and inbox_key[i] not in parked), None)
+        # follow-ups have to go out from the inbox that opened the thread, so omail only takes step 1
+        cands = [i for i in order if (i not in om) or step == 1]
+        ib = next((i for i in cands if used[i] < room[i] and inbox_key[i] not in parked), None)
         if not ib:
             log("no inbox with room left")
             break
@@ -674,6 +678,36 @@ def _tw_strand(protocol_name, since_hours=14):
     return {mid: k for mid, k in seen.items() if False} or {}
 
 
+
+# ---------------------------- OpenMail transport (TenderWin-branded inboxes) ----------------------------
+# Owner order 2026-11-20: cold mail goes from TenderWin or generic-brand mailboxes. AgentMail's only
+# TenderWin org is capped at 100 recipients a day, so the omail.sh TenderWin inboxes carry first-touch
+# sends. Plain text only (step 1/3/4); the designed HTML card stays on AgentMail.
+def _om_senders():
+    try:
+        return {s["address"]: s for s in json.loads(E("OPENMAIL_SENDERS", "[]") or "[]")}
+    except Exception:
+        return {}
+
+
+def _om_room(snd):
+    """Remaining cold contacts for this account today, straight from the provider."""
+    c, d = http("GET", "https://api.openmail.sh/v1/limits/cold", None,
+                {"Authorization": "Bearer " + snd["key"], "User-Agent": "Mozilla/5.0 Chrome/141.0"})
+    try:
+        acc = (d or {}).get("account") or {}
+        return max(0, int(acc.get("remaining") or 0))
+    except Exception:
+        return 0
+
+
+def _om_send(snd, to, subject, text):
+    body = {"to": to, "subject": subject, "body": text}
+    return http("POST", f"https://api.openmail.sh/v1/inboxes/{snd['id']}/send", body,
+                {"Authorization": "Bearer " + snd["key"], "User-Agent": "Mozilla/5.0 Chrome/141.0",
+                 "Content-Type": "application/json"})
+
+
 def tw_main():
     bootstrap()
     lock = open(P(".lock"), "w")
@@ -684,6 +718,9 @@ def tw_main():
         return
     sender = E("SENDER_NAME", "") or C.SENDER_NAME
     inbox_key = discover()
+    om = _om_senders()
+    for a in om:
+        inbox_key.setdefault(a, "om")
     log(f"tw1000: {len(inbox_key)} inboxes, DRY={DRY}, sender={sender}")
     if not inbox_key:
         log("no inboxes found: check AGENTMAIL_KEYS")
@@ -738,7 +775,9 @@ def tw_main():
 
     step1_today = sum(1 for p in progress.values() if str(p.get("t1") or "")[:10] == iso()[:10])
     cap1 = _step1_cap(progress)
-    room = {i: max(0, INBOX_CAP - per_inbox_today.get(i, 0)) for i in inbox_key}
+    room = {}
+    for i in inbox_key:
+        room[i] = _om_room(om[i]) if i in om else max(0, INBOX_CAP - per_inbox_today.get(i, 0))
     queue = []
     for l in leads:
         em = l["email"]
@@ -768,7 +807,9 @@ def tw_main():
     order = sorted(inbox_key, key=lambda i: -room[i])
     used, parked, sent = collections.Counter(), set(), 0
     for lead, step in queue:
-        ib = next((i for i in order if used[i] < room[i] and inbox_key[i] not in parked), None)
+        # follow-ups have to go out from the inbox that opened the thread, so omail only takes step 1
+        cands = [i for i in order if (i not in om) or step == 1]
+        ib = next((i for i in cands if used[i] < room[i] and inbox_key[i] not in parked), None)
         if not ib:
             log("no inbox with room left")
             break
@@ -788,6 +829,26 @@ def tw_main():
             order.sort(key=lambda i: used[i])
             continue
         k = inbox_key[ib]
+        if ib in om:
+            c, d = _om_send(om[ib], em, subj, r["text"])
+            if c in (200, 201):
+                sent += 1
+                used[ib] += 1
+                progress[em].update({"s": 1, "ts1": iso(), "ib1": ib, "t1": iso(),
+                                     "m1": d.get("messageId") or d.get("threadId")})
+                step1_today += 1
+                _tw_log({"ts": iso(), "em": em, "arm": arm, "step": 1, "subj": subj[:120], "inbox": ib,
+                         "mid": d.get("messageId"), "transport": "openmail"})
+                log("SENT", ib, f"{arm}{step}", "->", em, "|", subj)
+            elif c in (429, 402) or "limit" in str(d).lower():
+                used[ib] = room[ib]
+                log("LIMIT", ib, c, str(d)[:90])
+            else:
+                used[ib] += 1
+                log("ERR", c, ib, em, str(d)[:140])
+            order.sort(key=lambda i: used[i])
+            time.sleep(random.uniform(15, 35))
+            continue
         payload = {"to": [em], "text": r["text"]}
         if r.get("html"):
             payload["html"] = r["html"]
