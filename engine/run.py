@@ -800,7 +800,7 @@ def tw_main():
     for l in leads:
         em = l["email"]
         p = progress[em]
-        if p.get("stopped"):
+        if p.get("stopped") and not str(p["stopped"]).startswith("skip:"):
             continue
         step = _tw_due(em, progress)
         if not step:
@@ -832,12 +832,22 @@ def tw_main():
             log("no inbox with room left")
             break
         em, arm = lead["email"], lead["_arm"]
-        try:
-            r = C.render_step(lead, step, C.trade_rx_for(lead.get("trade")), sender)
-        except ValueError as e:
-            log("skip", em, f"arm {arm} step {step}:", e)
-            progress[em]["stopped"] = f"skip:{e}"
+        r, used_arm = None, arm
+        for cand in (arm, *[a for a in "BAC" if a != arm]):
+            try:
+                lead["_arm"] = cand
+                r = C.render_step(lead, step, C.trade_rx_for(lead.get("trade")), sender)
+                used_arm = cand
+                break
+            except ValueError as e:
+                last = e
+        lead["_arm"] = arm
+        if r is None:
+            log("skip", em, f"arm {arm} step {step}: all arms short of evidence ({last})")
+            progress[em]["stopped"] = f"skip:{last}"
             continue
+        if used_arm != arm:
+            log("fallback", em, f"{arm}->{used_arm} step {step}")
         subj = r["subject"]
         if DRY:
             log("DRY", ib, f"{arm}{step}", "->", em, "|", subj)
@@ -855,8 +865,8 @@ def tw_main():
                 progress[em].update({"s": 1, "ts1": iso(), "ib1": ib, "t1": iso(),
                                      "m1": d.get("messageId") or d.get("threadId")})
                 step1_today += 1
-                _tw_log({"ts": iso(), "em": em, "arm": arm, "step": 1, "subj": subj[:120], "inbox": ib,
-                         "mid": d.get("messageId"), "transport": "openmail"})
+                _tw_log({"ts": iso(), "em": em, "arm": used_arm, "arm_assigned": arm, "step": 1,
+                         "subj": subj[:120], "inbox": ib, "mid": d.get("messageId"), "transport": "openmail"})
                 log("SENT", ib, f"{arm}{step}", "->", em, "|", subj)
             elif c in (429, 402) or "limit" in str(d).lower():
                 used[ib] = room[ib]
@@ -890,7 +900,8 @@ def tw_main():
                 step1_today += 1
             else:
                 p.setdefault("follow", []).append(step)
-            _tw_log({"ts": iso(), "em": em, "arm": arm, "step": step, "subj": subj[:120], "inbox": ib, "mid": mid})
+            _tw_log({"ts": iso(), "em": em, "arm": used_arm, "arm_assigned": arm, "step": step,
+                     "subj": subj[:120], "inbox": ib, "mid": mid})
             log("SENT", ib, f"{arm}{step}", "->", em, "|", subj)
         elif c == 429 or c == 402 or "limit" in str(d).lower():
             parked.add(k)
