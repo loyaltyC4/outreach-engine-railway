@@ -15,6 +15,7 @@ Every fact in an email comes from data on the lead or live TenderWin APIs. If a 
 falls back to the documented fallback line; it never invents a buyer, a date, a value or a count.
 """
 import hashlib, html, json, re, urllib.parse, urllib.request, datetime as dt
+import tw_brand as TB
 
 SITE = "https://tenderwin.com.au"
 CAMPAIGN = "tw1000"
@@ -255,45 +256,72 @@ def _card(rows, link, label):
             f'<a href="{_esc(link)}" style="display:inline-block;background:{INK};color:#fff;text-decoration:none;font:600 14px/1 {FONT};padding:12px 20px;border-radius:999px">{_esc(label)} &rarr;</a></td></tr></table>')
 
 
+def _clean_title(t, n=90):
+    """Drop the buyer's reference codes that lead most titles ("TC26120- MI187911- Lot 74 ...")."""
+    t = re.sub(r"^([A-Z]{1,5}\d{2,}[-\s]+)+", "", str(t or "")).strip()
+    t = re.sub(r"^([A-Z0-9]{2,}[-/]\s*)+", "", t).strip() if t else t
+    return clip(t or "", n)
+
+
 def step2_html(lead, arm, trade_rx, sender):
-    """Designed HTML for step 2 of the given arm. Same facts and wording as step_text(arm, 2)."""
+    """Designed HTML for step 2, on the TenderWin v2 design system (engine/tw_brand.py).
+
+    Same facts and wording as step_text(arm, 2); only the presentation changes.
+    """
     subject, text = step_text(lead, arm, 2, trade_rx, sender)
     f = facts(lead, trade_rx)
     t0 = f["featured"]
+    money_rng = (f"{money(f['bench']['p25'])} to {money(f['bench']['p75'])}" if f["bench"] else "")
+
     if arm == "A":
-        intro = "Rather than wait, here it is, with the price range and closing date."
-        rows = [("Tender", _esc(t0["title"])), ("Buyer", _esc(t0.get("buyer", ""))), ("Closes", _esc(day(t0["closes"])))]
+        rows = [("Tender", TB.esc(_clean_title(t0["title"]))),
+                ("Buyer", TB.esc(t0.get("buyer", ""))),
+                ("Closes", TB.esc(day(t0["closes"])))]
         if f["bench"]:
-            rows.append(("Similar awards", f"{money(f['bench']['p25'])} – {money(f['bench']['p75'])} <span style=\"font-weight:400;color:{MUTED}\">({f['bench']['n']} past)</span>"))
-        card = _card(rows, tender_url(t0, "A", 2), "Open the tender")
-        after = "Happy to send who won the similar contracts too."
+            rows.append(("Similar awards", f"{money_rng} <span style=\"font-weight:400;color:{TB.GREY}\">({f['bench']['n']} past)</span>"))
+        body = (TB.eyebrow("The tender, and what similar work sold for")
+                + TB.h1("Here it is, with the numbers")
+                + TB.p(f"Closing {day(t0['closes'])}."
+                       + (f" The range comes from {f['bench']['n']} past awards for comparable work." if f["bench"] else ""))
+                + TB.kv(rows)
+                + TB.cta(tender_url(t0, "A", 2), "Open the tender")
+                + TB.spacer(22)
+                + TB.p("Happy to send who won the similar contracts too.", mb=0))
     elif arm == "B":
-        intro = "Here is your listing as head contractors see it today."
-        rows = [("Business", _esc(f["co"])), ("Trade", _esc(f["trade"])), ("Contracts on record", str(f["award_count"]))]
+        rows = [("Business", TB.esc(f["co"])), ("Trade", TB.esc((f["trade"] or "")[:1].upper() + (f["trade"] or "")[1:])),
+                ("Contracts on record", str(f["award_count"]))]
         if f["buyer"]:
-            rows.append(("Most recent buyer", _esc(f["buyer"])))
-        rows.append(("Contact details", f'<span style="color:{MUTED};font-weight:400">Not added yet</span>'))
-        card = _card(rows, f["claim_url"], "Add your details")
-        after = "It takes two minutes (your ABN and a work email). Reply &ldquo;hide&rdquo; and I will remove it instead."
+            rows.append(("Most recent buyer", TB.esc(f["buyer"])))
+        rows.append(("Contact details", f'<span style="color:{TB.GREY};font-weight:400">Not added yet</span>'))
+        body = (TB.eyebrow("Your listing in the directory")
+                + TB.h1("Here it is as they see it today")
+                + TB.p("Head contractors search this directory when they need subcontractors. "
+                       "Yours is there, but nothing on it lets them reach you.")
+                + TB.kv(rows)
+                + TB.cta(f["claim_url"], "Add your details")
+                + TB.spacer(22)
+                + TB.p("It takes two minutes (your ABN and a work email). Reply \"hide\" and I will remove "
+                       "the listing instead.", mb=0))
     else:
-        rng = f"{money(f['bench']['p25'])} – {money(f['bench']['p75'])}"
-        intro = "Here it is, no sign-up needed."
-        rows = [("Tender", _esc(t0["title"])), ("Buyer", _esc(t0.get("buyer", ""))), ("Closes", _esc(day(t0["closes"]))),
-                ("Similar awards", f"{rng} <span style=\"font-weight:400;color:{MUTED}\">({f['bench']['n']} past)</span>"), ("Brief", "6 slides: decision, factors, eligibility, gaps, price, next steps")]
-        card = _card(rows, tender_url(t0, "C", 2, brief=True), "Open the brief")
-        after = "The eligibility slide is the one to read first."
-    greet = f"Hi {_esc(f['first'])}," if f["first"] else "Hi,"
-    body = (f'<!doctype html><html><body style="margin:0;padding:0;background:#ffffff">'
-            f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center" style="padding:28px 16px">'
-            f'<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%">'
-            f'<tr><td style="font:400 15px/1.6 {FONT};color:{INK}">{greet}</td></tr>'
-            f'<tr><td style="padding:14px 0 18px;font:400 15px/1.6 {FONT};color:{INK}">{intro}</td></tr>'
-            f'<tr><td>{card}</td></tr>'
-            f'<tr><td style="padding:18px 0 0;font:400 15px/1.6 {FONT};color:{INK}">{after}</td></tr>'
-            f'<tr><td style="padding:22px 0 0;font:400 15px/1.5 {FONT};color:{INK}">{_esc(sender)}<br><span style="color:{MUTED}">TenderWin</span></td></tr>'
-            f'<tr><td style="padding:26px 0 0;font:400 11.5px/1.5 {FONT};color:#8A94A6">Not for you? Reply &ldquo;no&rdquo; and I will not write again. TenderWin, {_esc(PLACE)}</td></tr>'
-            f'</table></td></tr></table></body></html>')
-    return subject, text, body
+        rows = [("Tender", TB.esc(_clean_title(t0["title"]))), ("Buyer", TB.esc(t0.get("buyer", ""))),
+                ("Closes", TB.esc(day(t0["closes"])))]
+        if f["bench"]:
+            rows.append(("Similar awards", f"{money_rng} <span style=\"font-weight:400;color:{TB.GREY}\">({f['bench']['n']} past)</span>"))
+        rows.append(("Brief", "6 slides: decision, factors, eligibility, gaps, price, next steps"))
+        body = (TB.eyebrow("Your bid or no-bid brief")
+                + TB.h1("Six slides, no sign-up")
+                + TB.p("What they check, where the risks are, and the price band"
+                       + (f" from {f['bench']['n']} similar contracts" if f["bench"] else "") + ".")
+                + TB.kv(rows)
+                + TB.cta(tender_url(t0, "C", 2, brief=True), "Open the brief")
+                + TB.spacer(22)
+                + TB.p("The eligibility slide is the one to read first.", mb=0))
+
+    body += TB.signoff(sender)
+    html = TB.shell(preview=text.split("\n\n")[1][:110] if "\n\n" in text else text[:110],
+                    body_html=body, postal=PLACE,
+                    note='Not for you? Reply "no" and I will not write again.')
+    return subject, text, html
 
 
 def render_step(lead, step, trade_rx, sender):
