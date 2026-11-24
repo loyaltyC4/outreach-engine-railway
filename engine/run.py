@@ -546,6 +546,10 @@ def main():
         log("no inboxes found: check AGENTMAIL_KEYS")
         return
     sent_addrs, per_inbox_today, last48 = sent_ground_truth(inbox_key)
+    _before = len(leads)
+    leads = [l for l in leads if l["email"] not in sent_addrs]
+    if len(leads) != _before:
+        log("dedupe: dropped", _before - len(leads), "leads already contacted from these inboxes")
     sent_state = st("sent", {})
     sent_all = sent_addrs | set(sent_state) | C.seed_contacted()
     events = process_inbound(inbox_key, sent_addrs)
@@ -749,6 +753,10 @@ def tw_main():
     log("seed", len(leads), "arms", dict(split))
 
     sent_addrs, per_inbox_today, last48 = sent_ground_truth(inbox_key)
+    _before = len(leads)
+    leads = [l for l in leads if l["email"] not in sent_addrs]
+    if len(leads) != _before:
+        log("dedupe: dropped", _before - len(leads), "leads already contacted from these inboxes")
     st("sent", {})                                     # shared key names kept for guard/digest
     sup = _load_blocklist(st("suppress", {"emails": [], "domains": []}))
     events = process_inbound(inbox_key, sent_addrs)
@@ -810,8 +818,11 @@ def tw_main():
         if not _in_window(l.get("state")) and not E("IGNORE_WINDOW", ""):
             continue
         queue.append((l, step))
-    # interleave arms inside the batch so no arm gets a better inbox or a later hour (playbook §5)
-    queue.sort(key=lambda x: hashlib.sha1(x[0]["email"].encode()).hexdigest())
+    # keep the day's strongest leads, then interleave arms so no arm gets a better inbox or hour
+    queue.sort(key=lambda x: -float(x[0].get("_score") or 0))
+    _band = queue[: max(24, min(len(queue), MAX_RUN * DAILY_MAX))]
+    _band.sort(key=lambda x: hashlib.sha1(x[0]["email"].encode()).hexdigest())
+    queue = _band
     # skips do not consume an inbox slot, so the queue is over-filled: a lead that cannot render for
     # its arm is dropped at send time rather than eating one of the day's sends.
     budget = min(MAX_RUN, DAILY_MAX)
