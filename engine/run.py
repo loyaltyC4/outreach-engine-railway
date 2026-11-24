@@ -9,7 +9,10 @@
 Environment: AGENTMAIL_KEYS (comma list), TYPESAFE_API_KEY (Jev), FIRECRAWL_KEYS (comma list), OWNER_EMAIL,
 DATA_DIR, DRY_RUN, KILL_SWITCH, INBOX_DAILY_CAP, DAILY_MAX, MAX_PER_RUN, AU_OFFSET_HOURS, WINDOW (e.g. 9:00-16:30), WEEKDAYS_ONLY.
 """
-import collections, concurrent.futures as cf, hashlib, importlib, json, os, random, re, sys, time, fcntl, urllib.parse
+import collections, concurrent.futures as cf, hashlib, importlib, json, os, random, re, socket, sys, time, fcntl, urllib.parse
+
+# 2026-11-24: one socket read without a timeout hung the sender for eight hours. No call may block forever.
+socket.setdefaulttimeout(45)
 import datetime as dt
 from util import *
 
