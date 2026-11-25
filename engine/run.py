@@ -862,8 +862,12 @@ def tw_main():
                 last = e
         lead["_arm"] = arm
         if r is None:
-            log("skip", em, f"arm {arm} step {step}: all arms short of evidence ({last})")
-            progress[em]["stopped"] = f"skip:{last}"
+            # two honest attempts is enough: a lead with no evidence today is retried once the feed
+            # refreshes, not on every pass for the rest of the campaign
+            tries = int(progress[em].get("skips") or 0) + 1
+            progress[em]["skips"] = tries
+            log("skip", em, f"arm {arm} step {step}: all arms short of evidence ({last}) [try {tries}]")
+            progress[em]["stopped"] = (f"skip-final:{last}" if tries >= 2 else f"skip:{last}")
             continue
         if used_arm != arm:
             log("fallback", em, f"{arm}->{used_arm} step {step}")
