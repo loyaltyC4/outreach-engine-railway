@@ -461,7 +461,9 @@ def send_batch(batch, inbox_key, per_inbox_today, sent_state):
     room = {}
     for i in inbox_key:
         room[i] = _om_room(om[i]) if i in om else max(0, INBOX_CAP - per_inbox_today.get(i, 0))
-    order = sorted(inbox_key, key=lambda i: -room[i])
+    _pref = E("PREFER_INBOX_REGEX", "")
+    _prx = __import__("re").compile(_pref) if _pref else None
+    order = sorted(inbox_key, key=lambda i: (0 if (_prx and _prx.search(i)) else 1, -room[i]))
     used, parked, sent = collections.Counter(), set(), 0
     for lead in batch:
         # follow-ups have to go out from the inbox that opened the thread, so omail only takes step 1
@@ -836,7 +838,9 @@ def tw_main():
         flush()
         return
 
-    order = sorted(inbox_key, key=lambda i: -room[i])
+    _pref = E("PREFER_INBOX_REGEX", "")
+    _prx = __import__("re").compile(_pref) if _pref else None
+    order = sorted(inbox_key, key=lambda i: (0 if (_prx and _prx.search(i)) else 1, -room[i]))
     used, parked, sent = collections.Counter(), set(), 0
     for lead, step in queue:
         # follow-ups have to go out from the inbox that opened the thread, so omail only takes step 1
@@ -891,7 +895,7 @@ def tw_main():
                 used[ib] += 1
                 log("ERR", c, ib, em, str(d)[:140])
             order.sort(key=lambda i: used[i])
-            time.sleep(random.uniform(15, 35))
+            time.sleep(random.uniform(float(E("SEND_GAP_MIN", "15")), float(E("SEND_GAP_MAX", "35"))))
             continue
         payload = {"to": [em], "text": r["text"]}
         if r.get("html"):
@@ -935,7 +939,7 @@ def tw_main():
                     log("BLOCKED lead after", p_try, "tries:", em, str(d)[:80])
             log("ERR", c, ib, em, str(d)[:140])
         order.sort(key=lambda i: used[i])
-        time.sleep(random.uniform(15, 35))
+        time.sleep(random.uniform(float(E("SEND_GAP_MIN", "15")), float(E("SEND_GAP_MAX", "35"))))
     log("tw1000 run complete:", sent, "sent")
     digest(inbox_key, events)
     flush()
