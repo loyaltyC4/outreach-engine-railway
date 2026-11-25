@@ -831,7 +831,8 @@ def tw_main():
     # skips do not consume an inbox slot, so the queue is over-filled: a lead that cannot render for
     # its arm is dropped at send time rather than eating one of the day's sends.
     budget = min(MAX_RUN, DAILY_MAX)
-    queue = queue[:budget * 2]
+    # a lead that cannot render costs a second, not a send: keep trying until the day's budget is met
+    queue = queue[: max(budget * 2, int(E("QUEUE_ATTEMPTS", "600")))]
     log(f"queue {len(queue)} (step1 today {step1_today}/{cap1}, inbox cap {INBOX_CAP}, inboxes {len(inbox_key)})")
     if not queue:
         digest(inbox_key, events)

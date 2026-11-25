@@ -63,7 +63,9 @@ def comparables(t):
         q = urllib.parse.urlencode({"title": t.get("title", ""), "buyer": t.get("buyer", ""), "province": t.get("province", "")})
         j = _get(f"{SITE}/api/comparables?{q}")
         s = j.get("stats") or {}
-        return s if s.get("n", 0) >= 3 and s.get("p25") and s.get("p75") else None
+        # 2026-11-25: a 3-award floor was rejecting most trades and starving the queue; two real
+        # awards still support "between X and Y", so the bar is now two.
+        return s if s.get("n", 0) >= 2 and s.get("p25") and s.get("p75") else None
     except Exception:
         return None
 
